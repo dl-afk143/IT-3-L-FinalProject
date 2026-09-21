@@ -65,6 +65,24 @@
       <DependentUpon>Form2Vehicles.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2\Vehicles.cs" />
+    <Compile Include="Form3RentalManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3RentalManagement.Designer.cs">
+      <DependentUpon>Form3RentalManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4ReturnManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4ReturnManagement.Designer.cs">
+      <DependentUpon>Form4ReturnManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5Reports.Designer.cs">
+      <DependentUpon>Form5Reports.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddVehicle.resx">
@@ -75,6 +93,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2\Form2Vehicles.resx">
       <DependentUpon>Form2Vehicles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3RentalManagement.resx">
+      <DependentUpon>Form3RentalManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4ReturnManagement.resx">
+      <DependentUpon>Form4ReturnManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5Reports.resx">
+      <DependentUpon>Form5Reports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

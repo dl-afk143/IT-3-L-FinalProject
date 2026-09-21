@@ -28,248 +28,327 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnX = new System.Windows.Forms.Button();
+            this.grbVehicleInformation = new System.Windows.Forms.GroupBox();
+            this.grbActions = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbSearchVehicle = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.cbFilter = new System.Windows.Forms.ComboBox();
-            this.btnAddVehicle = new System.Windows.Forms.Button();
-            this.dgvVehicledStored = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Vehicle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Plate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RateDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Active = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnChangeStatus = new System.Windows.Forms.Button();
-            this.btnDeactivate = new System.Windows.Forms.Button();
-            this.object_8dcd3529_5e53_47e6_b583_96b9c4411cf7 = new System.Windows.Forms.Form();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvVehicledStored)).BeginInit();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.grbVehicleInformation.SuspendLayout();
+            this.grbActions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnX
+            // grbVehicleInformation
             // 
-            this.btnX.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnX.Location = new System.Drawing.Point(634, 35);
-            this.btnX.Name = "btnX";
-            this.btnX.Size = new System.Drawing.Size(74, 34);
-            this.btnX.TabIndex = 0;
-            this.btnX.Text = "X";
-            this.btnX.UseVisualStyleBackColor = true;
-            this.btnX.Click += new System.EventHandler(this.button1_Click);
+            this.grbVehicleInformation.Controls.Add(this.textBox5);
+            this.grbVehicleInformation.Controls.Add(this.textBox4);
+            this.grbVehicleInformation.Controls.Add(this.textBox3);
+            this.grbVehicleInformation.Controls.Add(this.textBox2);
+            this.grbVehicleInformation.Controls.Add(this.textBox1);
+            this.grbVehicleInformation.Controls.Add(this.textBox6);
+            this.grbVehicleInformation.Controls.Add(this.comboBox2);
+            this.grbVehicleInformation.Controls.Add(this.comboBox1);
+            this.grbVehicleInformation.Controls.Add(this.label8);
+            this.grbVehicleInformation.Controls.Add(this.label7);
+            this.grbVehicleInformation.Controls.Add(this.label6);
+            this.grbVehicleInformation.Controls.Add(this.label5);
+            this.grbVehicleInformation.Controls.Add(this.label4);
+            this.grbVehicleInformation.Controls.Add(this.label3);
+            this.grbVehicleInformation.Controls.Add(this.label2);
+            this.grbVehicleInformation.Controls.Add(this.label1);
+            this.grbVehicleInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbVehicleInformation.Location = new System.Drawing.Point(15, 17);
+            this.grbVehicleInformation.Name = "grbVehicleInformation";
+            this.grbVehicleInformation.Size = new System.Drawing.Size(786, 442);
+            this.grbVehicleInformation.TabIndex = 0;
+            this.grbVehicleInformation.TabStop = false;
+            this.grbVehicleInformation.Text = "Vehicle Information";
+            // 
+            // grbActions
+            // 
+            this.grbActions.Controls.Add(this.button4);
+            this.grbActions.Controls.Add(this.button3);
+            this.grbActions.Controls.Add(this.button2);
+            this.grbActions.Controls.Add(this.button1);
+            this.grbActions.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbActions.Location = new System.Drawing.Point(830, 17);
+            this.grbActions.Name = "grbActions";
+            this.grbActions.Size = new System.Drawing.Size(359, 442);
+            this.grbActions.TabIndex = 1;
+            this.grbActions.TabStop = false;
+            this.grbActions.Text = "Actions";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(15, 483);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1174, 220);
+            this.dataGridView1.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 35);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Navy;
+            this.label1.Location = new System.Drawing.Point(56, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 31);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Vehicle Management";
+            this.label1.Size = new System.Drawing.Size(112, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Vehicle ID:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(34, 133);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Navy;
+            this.label2.Location = new System.Drawing.Point(56, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Search Vehicle:";
-            // 
-            // tbSearchVehicle
-            // 
-            this.tbSearchVehicle.Location = new System.Drawing.Point(200, 133);
-            this.tbSearchVehicle.Multiline = true;
-            this.tbSearchVehicle.Name = "tbSearchVehicle";
-            this.tbSearchVehicle.Size = new System.Drawing.Size(179, 25);
-            this.tbSearchVehicle.TabIndex = 3;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(406, 130);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(78, 34);
-            this.btnSearch.TabIndex = 4;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.label2.Size = new System.Drawing.Size(143, 24);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Plate Number:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(34, 194);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Navy;
+            this.label3.Location = new System.Drawing.Point(56, 153);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 25);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Filter:";
+            this.label3.Size = new System.Drawing.Size(140, 24);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Vehicle Type:";
             // 
-            // cbFilter
+            // label4
             // 
-            this.cbFilter.FormattingEnabled = true;
-            this.cbFilter.Items.AddRange(new object[] {
-            "All                ",
-            "Available     ",
-            "Rented",
-            "Maintenance"});
-            this.cbFilter.Location = new System.Drawing.Point(100, 198);
-            this.cbFilter.Name = "cbFilter";
-            this.cbFilter.Size = new System.Drawing.Size(101, 21);
-            this.cbFilter.TabIndex = 6;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Navy;
+            this.label4.Location = new System.Drawing.Point(56, 200);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 24);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Brand:";
             // 
-            // btnAddVehicle
+            // label5
             // 
-            this.btnAddVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddVehicle.Location = new System.Drawing.Point(301, 194);
-            this.btnAddVehicle.Name = "btnAddVehicle";
-            this.btnAddVehicle.Size = new System.Drawing.Size(119, 28);
-            this.btnAddVehicle.TabIndex = 7;
-            this.btnAddVehicle.Text = "Add Vehicle";
-            this.btnAddVehicle.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Navy;
+            this.label5.Location = new System.Drawing.Point(56, 243);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(74, 24);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Model:";
             // 
-            // dgvVehicledStored
+            // label6
             // 
-            this.dgvVehicledStored.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dgvVehicledStored.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVehicledStored.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.Vehicle,
-            this.Type,
-            this.Plate,
-            this.RateDay,
-            this.Status,
-            this.Active});
-            this.dgvVehicledStored.Location = new System.Drawing.Point(91, 255);
-            this.dgvVehicledStored.Name = "dgvVehicledStored";
-            this.dgvVehicledStored.Size = new System.Drawing.Size(745, 230);
-            this.dgvVehicledStored.TabIndex = 8;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Navy;
+            this.label6.Location = new System.Drawing.Point(56, 285);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 24);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Year:";
             // 
-            // ID
+            // label7
             // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Navy;
+            this.label7.Location = new System.Drawing.Point(56, 332);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(109, 24);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Daily Rate:";
             // 
-            // Vehicle
+            // label8
             // 
-            this.Vehicle.HeaderText = "Vehicle";
-            this.Vehicle.Name = "Vehicle";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Navy;
+            this.label8.Location = new System.Drawing.Point(61, 376);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(72, 24);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Status:";
             // 
-            // Type
+            // comboBox1
             // 
-            this.Type.HeaderText = "Type";
-            this.Type.Name = "Type";
+            this.comboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.IntegralHeight = false;
+            this.comboBox1.ItemHeight = 30;
+            this.comboBox1.Location = new System.Drawing.Point(225, 148);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(463, 36);
+            this.comboBox1.TabIndex = 12;
             // 
-            // Plate
+            // comboBox2
             // 
-            this.Plate.HeaderText = "Plate";
-            this.Plate.Name = "Plate";
+            this.comboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.IntegralHeight = false;
+            this.comboBox2.ItemHeight = 30;
+            this.comboBox2.Location = new System.Drawing.Point(225, 376);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(463, 36);
+            this.comboBox2.TabIndex = 13;
             // 
-            // RateDay
+            // textBox6
             // 
-            this.RateDay.HeaderText = "RateDay";
-            this.RateDay.Name = "RateDay";
+            this.textBox6.Location = new System.Drawing.Point(225, 46);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(463, 38);
+            this.textBox6.TabIndex = 16;
             // 
-            // Status
+            // textBox1
             // 
-            this.Status.HeaderText = "Status";
-            this.Status.Name = "Status";
+            this.textBox1.Location = new System.Drawing.Point(225, 97);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(463, 38);
+            this.textBox1.TabIndex = 17;
             // 
-            // Active
+            // textBox2
             // 
-            this.Active.HeaderText = "Active";
-            this.Active.Name = "Active";
+            this.textBox2.Location = new System.Drawing.Point(225, 194);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(463, 38);
+            this.textBox2.TabIndex = 18;
             // 
-            // btnEdit
+            // textBox3
             // 
-            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(91, 525);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(119, 38);
-            this.btnEdit.TabIndex = 9;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.textBox3.Location = new System.Drawing.Point(225, 242);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(463, 38);
+            this.textBox3.TabIndex = 19;
             // 
-            // btnChangeStatus
+            // textBox4
             // 
-            this.btnChangeStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChangeStatus.Location = new System.Drawing.Point(216, 525);
-            this.btnChangeStatus.Name = "btnChangeStatus";
-            this.btnChangeStatus.Size = new System.Drawing.Size(161, 38);
-            this.btnChangeStatus.TabIndex = 10;
-            this.btnChangeStatus.Text = "Change Status";
-            this.btnChangeStatus.UseVisualStyleBackColor = true;
+            this.textBox4.Location = new System.Drawing.Point(225, 287);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(463, 38);
+            this.textBox4.TabIndex = 20;
             // 
-            // btnDeactivate
+            // textBox5
             // 
-            this.btnDeactivate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeactivate.Location = new System.Drawing.Point(383, 525);
-            this.btnDeactivate.Name = "btnDeactivate";
-            this.btnDeactivate.Size = new System.Drawing.Size(141, 38);
-            this.btnDeactivate.TabIndex = 11;
-            this.btnDeactivate.Text = "Deactivate";
-            this.btnDeactivate.UseVisualStyleBackColor = true;
+            this.textBox5.Location = new System.Drawing.Point(225, 332);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(463, 38);
+            this.textBox5.TabIndex = 21;
             // 
-            // object_8dcd3529_5e53_47e6_b583_96b9c4411cf7
+            // button1
             // 
-            this.object_8dcd3529_5e53_47e6_b583_96b9c4411cf7.BackColor = System.Drawing.SystemColors.Control;
-            this.object_8dcd3529_5e53_47e6_b583_96b9c4411cf7.ClientSize = new System.Drawing.Size(926, 575);
-            this.object_8dcd3529_5e53_47e6_b583_96b9c4411cf7.Location = new System.Drawing.Point(15, 15);
-            this.object_8dcd3529_5e53_47e6_b583_96b9c4411cf7.Name = "object_8dcd3529_5e53_47e6_b583_96b9c4411cf7";
-            this.object_8dcd3529_5e53_47e6_b583_96b9c4411cf7.Visible = false;
-            this.object_8dcd3529_5e53_47e6_b583_96b9c4411cf7.Load += new System.EventHandler(this.object_8dcd3529_5e53_47e6_b583_96b9c4411cf7_Load);
+            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(38, 60);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(291, 69);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Add Vehicle";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(38, 148);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(291, 69);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Update Vehicle";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(38, 222);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(291, 69);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Delete Vehicle";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(38, 297);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(291, 69);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Clear";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // Form2Vehicles
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(926, 575);
-            this.Controls.Add(this.btnDeactivate);
-            this.Controls.Add(this.btnChangeStatus);
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.dgvVehicledStored);
-            this.Controls.Add(this.btnAddVehicle);
-            this.Controls.Add(this.cbFilter);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.tbSearchVehicle);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnX);
+            this.ClientSize = new System.Drawing.Size(1234, 715);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grbActions);
+            this.Controls.Add(this.grbVehicleInformation);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form2Vehicles";
             this.Text = "Form2Vehicles";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvVehicledStored)).EndInit();
+            this.grbVehicleInformation.ResumeLayout(false);
+            this.grbVehicleInformation.PerformLayout();
+            this.grbActions.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnX;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbSearchVehicle;
-        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.GroupBox grbVehicleInformation;
+        private System.Windows.Forms.GroupBox grbActions;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cbFilter;
-        private System.Windows.Forms.Button btnAddVehicle;
-        private System.Windows.Forms.DataGridView dgvVehicledStored;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Vehicle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Plate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RateDay;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Active;
-        private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.Button btnChangeStatus;
-        private System.Windows.Forms.Button btnDeactivate;
-        private System.Windows.Forms.Form object_8dcd3529_5e53_47e6_b583_96b9c4411cf7;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

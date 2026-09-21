@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
+namespace Vehicle_Rental_Fleet__Management_System_Documentation
 {
-    public partial class Form2Vehicles : Form
+    public partial class Form4ReturnManagement : Form
     {
-        public Form2Vehicles()
+        public Form4ReturnManagement()
         {
             InitializeComponent();
         }
