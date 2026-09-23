@@ -16,5 +16,10 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
         {
             InitializeComponent();
         }
+
+        private void AddVehicle_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

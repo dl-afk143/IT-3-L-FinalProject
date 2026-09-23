@@ -16,5 +16,10 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
         {
             InitializeComponent();
         }
+
+        private void Form2Vehicles_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

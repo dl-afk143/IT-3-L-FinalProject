@@ -196,6 +196,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AddVehicle";
             this.Text = "AddVehicle";
+            this.Load += new System.EventHandler(this.AddVehicle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
