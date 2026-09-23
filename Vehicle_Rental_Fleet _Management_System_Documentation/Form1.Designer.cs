@@ -40,8 +40,13 @@
             this.label15 = new System.Windows.Forms.Label();
             this.btnReports = new System.Windows.Forms.Button();
             this.pnlDashboard = new System.Windows.Forms.Panel();
+            this.btnCustomers = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnVehicles = new System.Windows.Forms.Button();
+            this.btnReturns = new System.Windows.Forms.Button();
+            this.btnRentals = new System.Windows.Forms.Button();
             this.pnlTotalVehicle = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,11 +59,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.pnlActiveRentals = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnRentals = new System.Windows.Forms.Button();
-            this.btnReturns = new System.Windows.Forms.Button();
-            this.btnVehicles = new System.Windows.Forms.Button();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.btnCustomers = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecentRentals)).BeginInit();
             this.pnlDashboard.SuspendLayout();
             this.pnlTotalVehicle.SuspendLayout();
@@ -88,6 +88,7 @@
             this.label2.Size = new System.Drawing.Size(209, 31);
             this.label2.TabIndex = 1;
             this.label2.Text = "Welcome Admin";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // dgvRecentRentals
             // 
@@ -102,6 +103,7 @@
             this.dgvRecentRentals.RowHeadersWidth = 51;
             this.dgvRecentRentals.Size = new System.Drawing.Size(888, 242);
             this.dgvRecentRentals.TabIndex = 12;
+            this.dgvRecentRentals.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRecentRentals_CellContentClick);
             // 
             // Customer
             // 
@@ -169,6 +171,7 @@
             this.btnReports.TabIndex = 17;
             this.btnReports.Text = "Reports";
             this.btnReports.UseVisualStyleBackColor = false;
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
             // pnlDashboard
             // 
@@ -182,10 +185,24 @@
             this.pnlDashboard.Controls.Add(this.btnRentals);
             this.pnlDashboard.Controls.Add(this.btnReports);
             this.pnlDashboard.Location = new System.Drawing.Point(0, 2);
-            this.pnlDashboard.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlDashboard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlDashboard.Name = "pnlDashboard";
             this.pnlDashboard.Size = new System.Drawing.Size(220, 656);
             this.pnlDashboard.TabIndex = 24;
+            // 
+            // btnCustomers
+            // 
+            this.btnCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnCustomers.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomers.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCustomers.Location = new System.Drawing.Point(12, 218);
+            this.btnCustomers.Name = "btnCustomers";
+            this.btnCustomers.Size = new System.Drawing.Size(196, 52);
+            this.btnCustomers.TabIndex = 31;
+            this.btnCustomers.Text = "Customers";
+            this.btnCustomers.UseVisualStyleBackColor = false;
             // 
             // btnLogout
             // 
@@ -201,6 +218,21 @@
             this.btnLogout.Text = "LogOut";
             this.btnLogout.UseVisualStyleBackColor = false;
             // 
+            // btnDashboard
+            // 
+            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnDashboard.Location = new System.Drawing.Point(10, 79);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(196, 52);
+            this.btnDashboard.TabIndex = 30;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            // 
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -212,12 +244,58 @@
             this.label7.TabIndex = 25;
             this.label7.Text = "Vehicle Rental and Fleet Management";
             // 
+            // btnVehicles
+            // 
+            this.btnVehicles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnVehicles.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnVehicles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVehicles.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVehicles.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnVehicles.Location = new System.Drawing.Point(12, 146);
+            this.btnVehicles.Name = "btnVehicles";
+            this.btnVehicles.Size = new System.Drawing.Size(196, 52);
+            this.btnVehicles.TabIndex = 29;
+            this.btnVehicles.Text = "Vehicles";
+            this.btnVehicles.UseVisualStyleBackColor = false;
+            this.btnVehicles.Click += new System.EventHandler(this.btnVehicles_Click);
+            // 
+            // btnReturns
+            // 
+            this.btnReturns.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.btnReturns.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnReturns.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnReturns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReturns.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturns.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnReturns.Location = new System.Drawing.Point(10, 360);
+            this.btnReturns.Name = "btnReturns";
+            this.btnReturns.Size = new System.Drawing.Size(196, 52);
+            this.btnReturns.TabIndex = 28;
+            this.btnReturns.Text = "Returns";
+            this.btnReturns.UseVisualStyleBackColor = false;
+            this.btnReturns.Click += new System.EventHandler(this.btnReturns_Click);
+            // 
+            // btnRentals
+            // 
+            this.btnRentals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnRentals.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnRentals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRentals.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRentals.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnRentals.Location = new System.Drawing.Point(10, 289);
+            this.btnRentals.Name = "btnRentals";
+            this.btnRentals.Size = new System.Drawing.Size(196, 52);
+            this.btnRentals.TabIndex = 27;
+            this.btnRentals.Text = "Rentals";
+            this.btnRentals.UseVisualStyleBackColor = false;
+            this.btnRentals.Click += new System.EventHandler(this.btnRentals_Click);
+            // 
             // pnlTotalVehicle
             // 
             this.pnlTotalVehicle.Controls.Add(this.pictureBox1);
             this.pnlTotalVehicle.Controls.Add(this.label3);
             this.pnlTotalVehicle.Location = new System.Drawing.Point(250, 131);
-            this.pnlTotalVehicle.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlTotalVehicle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlTotalVehicle.Name = "pnlTotalVehicle";
             this.pnlTotalVehicle.Size = new System.Drawing.Size(180, 125);
             this.pnlTotalVehicle.TabIndex = 25;
@@ -248,7 +326,7 @@
             // 
             this.pnlAvailableVehicle.Controls.Add(this.label4);
             this.pnlAvailableVehicle.Location = new System.Drawing.Point(434, 131);
-            this.pnlAvailableVehicle.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlAvailableVehicle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlAvailableVehicle.Name = "pnlAvailableVehicle";
             this.pnlAvailableVehicle.Size = new System.Drawing.Size(175, 125);
             this.pnlAvailableVehicle.TabIndex = 26;
@@ -269,7 +347,7 @@
             this.pnlUnderMaintenanceVehicle.Controls.Add(this.label9);
             this.pnlUnderMaintenanceVehicle.Controls.Add(this.label5);
             this.pnlUnderMaintenanceVehicle.Location = new System.Drawing.Point(613, 131);
-            this.pnlUnderMaintenanceVehicle.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlUnderMaintenanceVehicle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlUnderMaintenanceVehicle.Name = "pnlUnderMaintenanceVehicle";
             this.pnlUnderMaintenanceVehicle.Size = new System.Drawing.Size(176, 125);
             this.pnlUnderMaintenanceVehicle.TabIndex = 26;
@@ -300,7 +378,7 @@
             // 
             this.pnlRentedVehicle.Controls.Add(this.label6);
             this.pnlRentedVehicle.Location = new System.Drawing.Point(795, 131);
-            this.pnlRentedVehicle.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlRentedVehicle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlRentedVehicle.Name = "pnlRentedVehicle";
             this.pnlRentedVehicle.Size = new System.Drawing.Size(174, 125);
             this.pnlRentedVehicle.TabIndex = 26;
@@ -320,7 +398,7 @@
             // 
             this.pnlActiveRentals.Controls.Add(this.label8);
             this.pnlActiveRentals.Location = new System.Drawing.Point(973, 131);
-            this.pnlActiveRentals.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlActiveRentals.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlActiveRentals.Name = "pnlActiveRentals";
             this.pnlActiveRentals.Size = new System.Drawing.Size(165, 125);
             this.pnlActiveRentals.TabIndex = 26;
@@ -336,83 +414,12 @@
             this.label8.TabIndex = 4;
             this.label8.Text = "Active Rentals";
             // 
-            // btnRentals
-            // 
-            this.btnRentals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
-            this.btnRentals.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
-            this.btnRentals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRentals.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRentals.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRentals.Location = new System.Drawing.Point(10, 289);
-            this.btnRentals.Name = "btnRentals";
-            this.btnRentals.Size = new System.Drawing.Size(196, 52);
-            this.btnRentals.TabIndex = 27;
-            this.btnRentals.Text = "Rentals";
-            this.btnRentals.UseVisualStyleBackColor = false;
-            // 
-            // btnReturns
-            // 
-            this.btnReturns.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btnReturns.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
-            this.btnReturns.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
-            this.btnReturns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReturns.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReturns.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnReturns.Location = new System.Drawing.Point(10, 360);
-            this.btnReturns.Name = "btnReturns";
-            this.btnReturns.Size = new System.Drawing.Size(196, 52);
-            this.btnReturns.TabIndex = 28;
-            this.btnReturns.Text = "Returns";
-            this.btnReturns.UseVisualStyleBackColor = false;
-            // 
-            // btnVehicles
-            // 
-            this.btnVehicles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
-            this.btnVehicles.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
-            this.btnVehicles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVehicles.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVehicles.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnVehicles.Location = new System.Drawing.Point(12, 146);
-            this.btnVehicles.Name = "btnVehicles";
-            this.btnVehicles.Size = new System.Drawing.Size(196, 52);
-            this.btnVehicles.TabIndex = 29;
-            this.btnVehicles.Text = "Vehicles";
-            this.btnVehicles.UseVisualStyleBackColor = false;
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
-            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnDashboard.Location = new System.Drawing.Point(10, 79);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(196, 52);
-            this.btnDashboard.TabIndex = 30;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = false;
-            // 
-            // btnCustomers
-            // 
-            this.btnCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
-            this.btnCustomers.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
-            this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomers.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCustomers.Location = new System.Drawing.Point(12, 218);
-            this.btnCustomers.Name = "btnCustomers";
-            this.btnCustomers.Size = new System.Drawing.Size(196, 52);
-            this.btnCustomers.TabIndex = 31;
-            this.btnCustomers.Text = "Customers";
-            this.btnCustomers.UseVisualStyleBackColor = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1159, 665);
+            this.ClientSize = new System.Drawing.Size(1155, 665);
             this.Controls.Add(this.pnlActiveRentals);
             this.Controls.Add(this.pnlRentedVehicle);
             this.Controls.Add(this.pnlUnderMaintenanceVehicle);
@@ -427,6 +434,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecentRentals)).EndInit();
             this.pnlDashboard.ResumeLayout(false);
             this.pnlTotalVehicle.ResumeLayout(false);

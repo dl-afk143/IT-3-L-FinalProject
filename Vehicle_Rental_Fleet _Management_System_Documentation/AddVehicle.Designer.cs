@@ -251,6 +251,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddVehicle";
             this.Text = "AddVehicle";
+            this.Load += new System.EventHandler(this.AddVehicle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
