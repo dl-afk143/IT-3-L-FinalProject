@@ -61,10 +61,20 @@
             this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DailyRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnlReturnSidebar = new System.Windows.Forms.Panel();
+            this.btnCustomers = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnVehicles = new System.Windows.Forms.Button();
+            this.btnReturns = new System.Windows.Forms.Button();
+            this.btnRentals = new System.Windows.Forms.Button();
+            this.btnReports = new System.Windows.Forms.Button();
             this.grbRentalInformation.SuspendLayout();
             this.grbReturnDetails.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pnlReturnSidebar.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbRentalInformation
@@ -83,7 +93,7 @@
             this.grbRentalInformation.Controls.Add(this.label1);
             this.grbRentalInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbRentalInformation.ForeColor = System.Drawing.Color.Navy;
-            this.grbRentalInformation.Location = new System.Drawing.Point(27, 28);
+            this.grbRentalInformation.Location = new System.Drawing.Point(339, 57);
             this.grbRentalInformation.Name = "grbRentalInformation";
             this.grbRentalInformation.Size = new System.Drawing.Size(703, 378);
             this.grbRentalInformation.TabIndex = 3;
@@ -211,49 +221,49 @@
             this.grbReturnDetails.Controls.Add(this.btnProcessReturn);
             this.grbReturnDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbReturnDetails.ForeColor = System.Drawing.Color.Navy;
-            this.grbReturnDetails.Location = new System.Drawing.Point(775, 29);
+            this.grbReturnDetails.Location = new System.Drawing.Point(1064, 59);
             this.grbReturnDetails.Name = "grbReturnDetails";
-            this.grbReturnDetails.Size = new System.Drawing.Size(461, 376);
+            this.grbReturnDetails.Size = new System.Drawing.Size(434, 376);
             this.grbReturnDetails.TabIndex = 4;
             this.grbReturnDetails.TabStop = false;
             this.grbReturnDetails.Text = "Return Details";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(210, 222);
+            this.textBox4.Location = new System.Drawing.Point(205, 222);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(218, 42);
+            this.textBox4.Size = new System.Drawing.Size(201, 42);
             this.textBox4.TabIndex = 13;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(210, 169);
+            this.textBox3.Location = new System.Drawing.Point(205, 169);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(218, 42);
+            this.textBox3.Size = new System.Drawing.Size(201, 42);
             this.textBox3.TabIndex = 12;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(210, 115);
+            this.textBox2.Location = new System.Drawing.Point(205, 115);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(218, 42);
+            this.textBox2.Size = new System.Drawing.Size(201, 42);
             this.textBox2.TabIndex = 11;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(210, 59);
+            this.textBox1.Location = new System.Drawing.Point(205, 59);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(218, 42);
+            this.textBox1.Size = new System.Drawing.Size(201, 42);
             this.textBox1.TabIndex = 10;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(48, 229);
+            this.label10.Location = new System.Drawing.Point(43, 229);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(146, 25);
             this.label10.TabIndex = 9;
@@ -262,7 +272,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(48, 178);
+            this.label9.Location = new System.Drawing.Point(43, 178);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(104, 25);
             this.label9.TabIndex = 8;
@@ -271,7 +281,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(49, 122);
+            this.label8.Location = new System.Drawing.Point(44, 122);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(124, 25);
             this.label8.TabIndex = 7;
@@ -280,7 +290,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(48, 65);
+            this.label7.Location = new System.Drawing.Point(43, 65);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(148, 25);
             this.label7.TabIndex = 6;
@@ -288,9 +298,9 @@
             // 
             // btnProcessReturn
             // 
-            this.btnProcessReturn.Location = new System.Drawing.Point(30, 297);
+            this.btnProcessReturn.Location = new System.Drawing.Point(25, 297);
             this.btnProcessReturn.Name = "btnProcessReturn";
-            this.btnProcessReturn.Size = new System.Drawing.Size(409, 53);
+            this.btnProcessReturn.Size = new System.Drawing.Size(381, 53);
             this.btnProcessReturn.TabIndex = 0;
             this.btnProcessReturn.Text = "Process Return";
             this.btnProcessReturn.UseVisualStyleBackColor = true;
@@ -299,9 +309,9 @@
             // 
             this.groupBox3.Controls.Add(this.dataGridView1);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(26, 434);
+            this.groupBox3.Location = new System.Drawing.Point(339, 494);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1209, 290);
+            this.groupBox3.Size = new System.Drawing.Size(1159, 290);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Rental History";
@@ -318,11 +328,11 @@
             this.Year,
             this.DailyRate,
             this.Status});
-            this.dataGridView1.Location = new System.Drawing.Point(18, 41);
+            this.dataGridView1.Location = new System.Drawing.Point(41, 33);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1170, 243);
+            this.dataGridView1.Size = new System.Drawing.Size(1110, 243);
             this.dataGridView1.TabIndex = 0;
             // 
             // VehicleID
@@ -381,12 +391,146 @@
             this.Status.Name = "Status";
             this.Status.Width = 125;
             // 
+            // pnlReturnSidebar
+            // 
+            this.pnlReturnSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.pnlReturnSidebar.Controls.Add(this.btnCustomers);
+            this.pnlReturnSidebar.Controls.Add(this.btnLogout);
+            this.pnlReturnSidebar.Controls.Add(this.btnDashboard);
+            this.pnlReturnSidebar.Controls.Add(this.label11);
+            this.pnlReturnSidebar.Controls.Add(this.btnVehicles);
+            this.pnlReturnSidebar.Controls.Add(this.btnReturns);
+            this.pnlReturnSidebar.Controls.Add(this.btnRentals);
+            this.pnlReturnSidebar.Controls.Add(this.btnReports);
+            this.pnlReturnSidebar.Location = new System.Drawing.Point(2, 1);
+            this.pnlReturnSidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlReturnSidebar.Name = "pnlReturnSidebar";
+            this.pnlReturnSidebar.Size = new System.Drawing.Size(293, 808);
+            this.pnlReturnSidebar.TabIndex = 27;
+            // 
+            // btnCustomers
+            // 
+            this.btnCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnCustomers.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomers.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCustomers.Location = new System.Drawing.Point(16, 262);
+            this.btnCustomers.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCustomers.Name = "btnCustomers";
+            this.btnCustomers.Size = new System.Drawing.Size(261, 64);
+            this.btnCustomers.TabIndex = 31;
+            this.btnCustomers.Text = "Customers";
+            this.btnCustomers.UseVisualStyleBackColor = false;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnLogout.Location = new System.Drawing.Point(13, 719);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(261, 64);
+            this.btnLogout.TabIndex = 26;
+            this.btnLogout.Text = "LogOut";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnDashboard.Location = new System.Drawing.Point(13, 97);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(261, 64);
+            this.btnDashboard.TabIndex = 30;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(29, 15);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(239, 79);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "Vehicle Rental and Fleet Management";
+            // 
+            // btnVehicles
+            // 
+            this.btnVehicles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnVehicles.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnVehicles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVehicles.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVehicles.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnVehicles.Location = new System.Drawing.Point(16, 180);
+            this.btnVehicles.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVehicles.Name = "btnVehicles";
+            this.btnVehicles.Size = new System.Drawing.Size(261, 64);
+            this.btnVehicles.TabIndex = 29;
+            this.btnVehicles.Text = "Vehicles";
+            this.btnVehicles.UseVisualStyleBackColor = false;
+            // 
+            // btnReturns
+            // 
+            this.btnReturns.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.btnReturns.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnReturns.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnReturns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReturns.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturns.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnReturns.Location = new System.Drawing.Point(13, 433);
+            this.btnReturns.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReturns.Name = "btnReturns";
+            this.btnReturns.Size = new System.Drawing.Size(261, 64);
+            this.btnReturns.TabIndex = 28;
+            this.btnReturns.Text = "Returns";
+            this.btnReturns.UseVisualStyleBackColor = false;
+            // 
+            // btnRentals
+            // 
+            this.btnRentals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnRentals.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnRentals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRentals.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRentals.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnRentals.Location = new System.Drawing.Point(13, 347);
+            this.btnRentals.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRentals.Name = "btnRentals";
+            this.btnRentals.Size = new System.Drawing.Size(261, 64);
+            this.btnRentals.TabIndex = 27;
+            this.btnRentals.Text = "Rentals";
+            this.btnRentals.UseVisualStyleBackColor = false;
+            // 
+            // btnReports
+            // 
+            this.btnReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnReports.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReports.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnReports.Location = new System.Drawing.Point(16, 514);
+            this.btnReports.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReports.Name = "btnReports";
+            this.btnReports.Size = new System.Drawing.Size(261, 64);
+            this.btnReports.TabIndex = 17;
+            this.btnReports.Text = "Reports";
+            this.btnReports.UseVisualStyleBackColor = false;
+            // 
             // Form4ReturnManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1286, 736);
+            this.ClientSize = new System.Drawing.Size(1540, 818);
             this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.pnlReturnSidebar);
             this.Controls.Add(this.grbReturnDetails);
             this.Controls.Add(this.grbRentalInformation);
             this.Name = "Form4ReturnManagement";
@@ -397,6 +541,7 @@
             this.grbReturnDetails.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.pnlReturnSidebar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -436,5 +581,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Year;
         private System.Windows.Forms.DataGridViewTextBoxColumn DailyRate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        private System.Windows.Forms.Panel pnlReturnSidebar;
+        private System.Windows.Forms.Button btnCustomers;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnDashboard;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnVehicles;
+        private System.Windows.Forms.Button btnReturns;
+        private System.Windows.Forms.Button btnRentals;
+        private System.Windows.Forms.Button btnReports;
     }
 }

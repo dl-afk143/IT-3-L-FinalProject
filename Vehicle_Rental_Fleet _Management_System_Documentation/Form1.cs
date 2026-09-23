@@ -40,6 +40,7 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
 
             this.Hide();
         }
+       
 
         // If I click the Rentals button, open the Form3RentalManagement form
         private void btnRentals_Click(object sender, EventArgs e)
