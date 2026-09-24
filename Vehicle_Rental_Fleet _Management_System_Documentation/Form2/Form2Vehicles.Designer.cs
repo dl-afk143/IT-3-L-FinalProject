@@ -257,7 +257,7 @@
             this.grbActions.Controls.Add(this.btnUpdateVehicle);
             this.grbActions.Controls.Add(this.btnAddVehicle);
             this.grbActions.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbActions.Location = new System.Drawing.Point(1059, 54);
+            this.grbActions.Location = new System.Drawing.Point(1071, 54);
             this.grbActions.Name = "grbActions";
             this.grbActions.Size = new System.Drawing.Size(339, 457);
             this.grbActions.TabIndex = 1;
