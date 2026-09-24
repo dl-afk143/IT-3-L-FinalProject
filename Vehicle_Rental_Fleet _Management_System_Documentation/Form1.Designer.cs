@@ -101,7 +101,7 @@
             this.Vehicle,
             this.Status});
             this.dgvRecentRentals.Location = new System.Drawing.Point(333, 437);
-            this.dgvRecentRentals.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvRecentRentals.Margin = new System.Windows.Forms.Padding(4);
             this.dgvRecentRentals.Name = "dgvRecentRentals";
             this.dgvRecentRentals.RowHeadersWidth = 51;
             this.dgvRecentRentals.Size = new System.Drawing.Size(1184, 298);
@@ -172,7 +172,7 @@
             this.btnReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReports.ForeColor = System.Drawing.SystemColors.Control;
             this.btnReports.Location = new System.Drawing.Point(16, 514);
-            this.btnReports.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReports.Margin = new System.Windows.Forms.Padding(4);
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(261, 64);
             this.btnReports.TabIndex = 17;
@@ -205,12 +205,13 @@
             this.btnCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomers.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCustomers.Location = new System.Drawing.Point(16, 262);
-            this.btnCustomers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCustomers.Margin = new System.Windows.Forms.Padding(4);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.Size = new System.Drawing.Size(261, 64);
             this.btnCustomers.TabIndex = 31;
             this.btnCustomers.Text = "Customers";
             this.btnCustomers.UseVisualStyleBackColor = false;
+            this.btnCustomers.Click += new System.EventHandler(this.btnCustomerManagement_Click);
             // 
             // btnLogout
             // 
@@ -220,7 +221,7 @@
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.SystemColors.Control;
             this.btnLogout.Location = new System.Drawing.Point(13, 735);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(261, 68);
             this.btnLogout.TabIndex = 26;
@@ -235,7 +236,7 @@
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.SystemColors.Control;
             this.btnDashboard.Location = new System.Drawing.Point(13, 97);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(261, 64);
             this.btnDashboard.TabIndex = 30;
@@ -261,7 +262,7 @@
             this.btnVehicles.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVehicles.ForeColor = System.Drawing.SystemColors.Control;
             this.btnVehicles.Location = new System.Drawing.Point(16, 180);
-            this.btnVehicles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVehicles.Margin = new System.Windows.Forms.Padding(4);
             this.btnVehicles.Name = "btnVehicles";
             this.btnVehicles.Size = new System.Drawing.Size(261, 64);
             this.btnVehicles.TabIndex = 29;
@@ -278,7 +279,7 @@
             this.btnReturns.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturns.ForeColor = System.Drawing.SystemColors.Control;
             this.btnReturns.Location = new System.Drawing.Point(13, 433);
-            this.btnReturns.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReturns.Margin = new System.Windows.Forms.Padding(4);
             this.btnReturns.Name = "btnReturns";
             this.btnReturns.Size = new System.Drawing.Size(261, 64);
             this.btnReturns.TabIndex = 28;
@@ -294,7 +295,7 @@
             this.btnRentals.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRentals.ForeColor = System.Drawing.SystemColors.Control;
             this.btnRentals.Location = new System.Drawing.Point(13, 347);
-            this.btnRentals.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRentals.Margin = new System.Windows.Forms.Padding(4);
             this.btnRentals.Name = "btnRentals";
             this.btnRentals.Size = new System.Drawing.Size(261, 64);
             this.btnRentals.TabIndex = 27;
@@ -317,7 +318,7 @@
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Window;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(239, 85);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -439,7 +440,7 @@
             this.Controls.Add(this.dgvRecentRentals);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

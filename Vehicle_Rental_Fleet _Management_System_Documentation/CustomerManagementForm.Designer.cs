@@ -44,13 +44,13 @@
             this.btnCustomer = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbCustomerID = new System.Windows.Forms.TextBox();
-            this.tbFullName = new System.Windows.Forms.TextBox();
-            this.tbContactNumber = new System.Windows.Forms.TextBox();
             this.tbAddress = new System.Windows.Forms.TextBox();
+            this.tbContactNumber = new System.Windows.Forms.TextBox();
+            this.tbFullName = new System.Windows.Forms.TextBox();
+            this.tbCustomerID = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvCustomerList = new System.Windows.Forms.DataGridView();
             this.pnlCustomerMangementSidebar.SuspendLayout();
@@ -121,6 +121,7 @@
             this.btnDashboard.TabIndex = 30;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // label11
             // 
@@ -146,6 +147,7 @@
             this.btnVehicles.TabIndex = 29;
             this.btnVehicles.Text = "Vehicles";
             this.btnVehicles.UseVisualStyleBackColor = false;
+            this.btnVehicles.Click += new System.EventHandler(this.btnVehicles_Click);
             // 
             // btnReturns
             // 
@@ -162,6 +164,7 @@
             this.btnReturns.TabIndex = 28;
             this.btnReturns.Text = "Returns";
             this.btnReturns.UseVisualStyleBackColor = false;
+            this.btnReturns.Click += new System.EventHandler(this.btnReturns_Click);
             // 
             // btnRentals
             // 
@@ -177,6 +180,7 @@
             this.btnRentals.TabIndex = 27;
             this.btnRentals.Text = "Rentals";
             this.btnRentals.UseVisualStyleBackColor = false;
+            this.btnRentals.Click += new System.EventHandler(this.btnRentals_Click);
             // 
             // btnReports
             // 
@@ -192,6 +196,7 @@
             this.btnReports.TabIndex = 17;
             this.btnReports.Text = "Reports";
             this.btnReports.UseVisualStyleBackColor = false;
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
             // grbActions
             // 
@@ -277,27 +282,37 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Customer Info";
             // 
-            // label2
+            // tbAddress
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(79, 116);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 24);
-            this.label2.TabIndex = 31;
-            this.label2.Text = "Full Name:";
+            this.tbAddress.Location = new System.Drawing.Point(252, 242);
+            this.tbAddress.Multiline = true;
+            this.tbAddress.Name = "tbAddress";
+            this.tbAddress.Size = new System.Drawing.Size(396, 99);
+            this.tbAddress.TabIndex = 37;
             // 
-            // label3
+            // tbContactNumber
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Navy;
-            this.label3.Location = new System.Drawing.Point(79, 180);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(167, 24);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "Contact Number:";
+            this.tbContactNumber.Location = new System.Drawing.Point(252, 173);
+            this.tbContactNumber.Multiline = true;
+            this.tbContactNumber.Name = "tbContactNumber";
+            this.tbContactNumber.Size = new System.Drawing.Size(396, 38);
+            this.tbContactNumber.TabIndex = 36;
+            // 
+            // tbFullName
+            // 
+            this.tbFullName.Location = new System.Drawing.Point(252, 102);
+            this.tbFullName.Multiline = true;
+            this.tbFullName.Name = "tbFullName";
+            this.tbFullName.Size = new System.Drawing.Size(396, 38);
+            this.tbFullName.TabIndex = 35;
+            // 
+            // tbCustomerID
+            // 
+            this.tbCustomerID.Location = new System.Drawing.Point(252, 45);
+            this.tbCustomerID.Multiline = true;
+            this.tbCustomerID.Name = "tbCustomerID";
+            this.tbCustomerID.Size = new System.Drawing.Size(396, 38);
+            this.tbCustomerID.TabIndex = 34;
             // 
             // label4
             // 
@@ -310,37 +325,27 @@
             this.label4.TabIndex = 33;
             this.label4.Text = "Address:";
             // 
-            // tbCustomerID
+            // label3
             // 
-            this.tbCustomerID.Location = new System.Drawing.Point(252, 45);
-            this.tbCustomerID.Multiline = true;
-            this.tbCustomerID.Name = "tbCustomerID";
-            this.tbCustomerID.Size = new System.Drawing.Size(396, 38);
-            this.tbCustomerID.TabIndex = 34;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Navy;
+            this.label3.Location = new System.Drawing.Point(79, 180);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(167, 24);
+            this.label3.TabIndex = 32;
+            this.label3.Text = "Contact Number:";
             // 
-            // tbFullName
+            // label2
             // 
-            this.tbFullName.Location = new System.Drawing.Point(252, 102);
-            this.tbFullName.Multiline = true;
-            this.tbFullName.Name = "tbFullName";
-            this.tbFullName.Size = new System.Drawing.Size(396, 38);
-            this.tbFullName.TabIndex = 35;
-            // 
-            // tbContactNumber
-            // 
-            this.tbContactNumber.Location = new System.Drawing.Point(252, 173);
-            this.tbContactNumber.Multiline = true;
-            this.tbContactNumber.Name = "tbContactNumber";
-            this.tbContactNumber.Size = new System.Drawing.Size(396, 38);
-            this.tbContactNumber.TabIndex = 36;
-            // 
-            // tbAddress
-            // 
-            this.tbAddress.Location = new System.Drawing.Point(252, 242);
-            this.tbAddress.Multiline = true;
-            this.tbAddress.Name = "tbAddress";
-            this.tbAddress.Size = new System.Drawing.Size(396, 99);
-            this.tbAddress.TabIndex = 37;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Navy;
+            this.label2.Location = new System.Drawing.Point(79, 116);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 24);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "Full Name:";
             // 
             // groupBox2
             // 
@@ -374,6 +379,7 @@
             this.Controls.Add(this.pnlCustomerMangementSidebar);
             this.Name = "CustomerManagementForm";
             this.Text = "CustomerManagementForm";
+            this.Load += new System.EventHandler(this.CustomerManagementForm_Load);
             this.pnlCustomerMangementSidebar.ResumeLayout(false);
             this.grbActions.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

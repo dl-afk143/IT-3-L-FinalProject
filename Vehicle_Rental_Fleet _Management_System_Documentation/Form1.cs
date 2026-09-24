@@ -17,7 +17,7 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
         public Form1()
         {
             InitializeComponent();
-            //TestDatabaseConnection(); remove first since we forgot to include the sql file
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -40,7 +40,16 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
 
             this.Hide();
         }
-       
+
+
+        private void btnCustomerManagement_Click(object sender, EventArgs e)
+        {
+            CustomerManagementForm customerManagementForm = new CustomerManagementForm();
+            customerManagementForm.Show();
+
+            this.Hide();
+        }
+
 
         // If I click the Rentals button, open the Form3RentalManagement form
         private void btnRentals_Click(object sender, EventArgs e)
