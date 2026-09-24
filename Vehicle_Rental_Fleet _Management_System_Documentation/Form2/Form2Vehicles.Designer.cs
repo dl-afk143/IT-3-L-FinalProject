@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.grbVehicleInformation = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tbDailyRate = new System.Windows.Forms.TextBox();
+            this.tbYearModel = new System.Windows.Forms.TextBox();
+            this.tbModel = new System.Windows.Forms.TextBox();
+            this.tbBrand = new System.Windows.Forms.TextBox();
+            this.tbPlateNumber = new System.Windows.Forms.TextBox();
+            this.tbVehicleID = new System.Windows.Forms.TextBox();
+            this.cmbStatus = new System.Windows.Forms.ComboBox();
+            this.cmbVehicleType = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -46,11 +46,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.grbActions = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnDeleteVehicle = new System.Windows.Forms.Button();
+            this.btnUpdateVehicle = new System.Windows.Forms.Button();
+            this.btnAddVehicle = new System.Windows.Forms.Button();
+            this.dgvVehicles = new System.Windows.Forms.DataGridView();
             this.pnlVehiclesSidebar = new System.Windows.Forms.Panel();
             this.btnCustomers = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
@@ -62,20 +62,20 @@
             this.btnReports = new System.Windows.Forms.Button();
             this.grbVehicleInformation.SuspendLayout();
             this.grbActions.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVehicles)).BeginInit();
             this.pnlVehiclesSidebar.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbVehicleInformation
             // 
-            this.grbVehicleInformation.Controls.Add(this.textBox5);
-            this.grbVehicleInformation.Controls.Add(this.textBox4);
-            this.grbVehicleInformation.Controls.Add(this.textBox3);
-            this.grbVehicleInformation.Controls.Add(this.textBox2);
-            this.grbVehicleInformation.Controls.Add(this.textBox1);
-            this.grbVehicleInformation.Controls.Add(this.textBox6);
-            this.grbVehicleInformation.Controls.Add(this.comboBox2);
-            this.grbVehicleInformation.Controls.Add(this.comboBox1);
+            this.grbVehicleInformation.Controls.Add(this.tbDailyRate);
+            this.grbVehicleInformation.Controls.Add(this.tbYearModel);
+            this.grbVehicleInformation.Controls.Add(this.tbModel);
+            this.grbVehicleInformation.Controls.Add(this.tbBrand);
+            this.grbVehicleInformation.Controls.Add(this.tbPlateNumber);
+            this.grbVehicleInformation.Controls.Add(this.tbVehicleID);
+            this.grbVehicleInformation.Controls.Add(this.cmbStatus);
+            this.grbVehicleInformation.Controls.Add(this.cmbVehicleType);
             this.grbVehicleInformation.Controls.Add(this.label8);
             this.grbVehicleInformation.Controls.Add(this.label7);
             this.grbVehicleInformation.Controls.Add(this.label6);
@@ -92,75 +92,75 @@
             this.grbVehicleInformation.TabStop = false;
             this.grbVehicleInformation.Text = "Vehicle Information";
             // 
-            // textBox5
+            // tbDailyRate
             // 
-            this.textBox5.Location = new System.Drawing.Point(200, 336);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(396, 38);
-            this.textBox5.TabIndex = 21;
+            this.tbDailyRate.Location = new System.Drawing.Point(200, 336);
+            this.tbDailyRate.Multiline = true;
+            this.tbDailyRate.Name = "tbDailyRate";
+            this.tbDailyRate.Size = new System.Drawing.Size(396, 38);
+            this.tbDailyRate.TabIndex = 21;
             // 
-            // textBox4
+            // tbYearModel
             // 
-            this.textBox4.Location = new System.Drawing.Point(200, 287);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(396, 38);
-            this.textBox4.TabIndex = 20;
+            this.tbYearModel.Location = new System.Drawing.Point(200, 287);
+            this.tbYearModel.Multiline = true;
+            this.tbYearModel.Name = "tbYearModel";
+            this.tbYearModel.Size = new System.Drawing.Size(396, 38);
+            this.tbYearModel.TabIndex = 20;
             // 
-            // textBox3
+            // tbModel
             // 
-            this.textBox3.Location = new System.Drawing.Point(200, 242);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(396, 38);
-            this.textBox3.TabIndex = 19;
+            this.tbModel.Location = new System.Drawing.Point(200, 242);
+            this.tbModel.Multiline = true;
+            this.tbModel.Name = "tbModel";
+            this.tbModel.Size = new System.Drawing.Size(396, 38);
+            this.tbModel.TabIndex = 19;
             // 
-            // textBox2
+            // tbBrand
             // 
-            this.textBox2.Location = new System.Drawing.Point(200, 194);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(396, 38);
-            this.textBox2.TabIndex = 18;
+            this.tbBrand.Location = new System.Drawing.Point(200, 194);
+            this.tbBrand.Multiline = true;
+            this.tbBrand.Name = "tbBrand";
+            this.tbBrand.Size = new System.Drawing.Size(396, 38);
+            this.tbBrand.TabIndex = 18;
             // 
-            // textBox1
+            // tbPlateNumber
             // 
-            this.textBox1.Location = new System.Drawing.Point(200, 97);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(396, 38);
-            this.textBox1.TabIndex = 17;
+            this.tbPlateNumber.Location = new System.Drawing.Point(200, 97);
+            this.tbPlateNumber.Multiline = true;
+            this.tbPlateNumber.Name = "tbPlateNumber";
+            this.tbPlateNumber.Size = new System.Drawing.Size(396, 38);
+            this.tbPlateNumber.TabIndex = 17;
             // 
-            // textBox6
+            // tbVehicleID
             // 
-            this.textBox6.Location = new System.Drawing.Point(200, 46);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(396, 38);
-            this.textBox6.TabIndex = 16;
+            this.tbVehicleID.Location = new System.Drawing.Point(200, 46);
+            this.tbVehicleID.Multiline = true;
+            this.tbVehicleID.Name = "tbVehicleID";
+            this.tbVehicleID.Size = new System.Drawing.Size(396, 38);
+            this.tbVehicleID.TabIndex = 16;
             // 
-            // comboBox2
+            // cmbStatus
             // 
-            this.comboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.IntegralHeight = false;
-            this.comboBox2.ItemHeight = 30;
-            this.comboBox2.Location = new System.Drawing.Point(200, 385);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(396, 36);
-            this.comboBox2.TabIndex = 13;
+            this.cmbStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbStatus.FormattingEnabled = true;
+            this.cmbStatus.IntegralHeight = false;
+            this.cmbStatus.ItemHeight = 30;
+            this.cmbStatus.Location = new System.Drawing.Point(200, 385);
+            this.cmbStatus.Name = "cmbStatus";
+            this.cmbStatus.Size = new System.Drawing.Size(396, 36);
+            this.cmbStatus.TabIndex = 13;
             // 
-            // comboBox1
+            // cmbVehicleType
             // 
-            this.comboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.IntegralHeight = false;
-            this.comboBox1.ItemHeight = 30;
-            this.comboBox1.Location = new System.Drawing.Point(200, 148);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(396, 36);
-            this.comboBox1.TabIndex = 12;
+            this.cmbVehicleType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbVehicleType.FormattingEnabled = true;
+            this.cmbVehicleType.IntegralHeight = false;
+            this.cmbVehicleType.ItemHeight = 30;
+            this.cmbVehicleType.Location = new System.Drawing.Point(200, 148);
+            this.cmbVehicleType.Name = "cmbVehicleType";
+            this.cmbVehicleType.Size = new System.Drawing.Size(396, 36);
+            this.cmbVehicleType.TabIndex = 12;
             // 
             // label8
             // 
@@ -252,10 +252,10 @@
             // 
             // grbActions
             // 
-            this.grbActions.Controls.Add(this.button4);
-            this.grbActions.Controls.Add(this.button3);
-            this.grbActions.Controls.Add(this.button2);
-            this.grbActions.Controls.Add(this.button1);
+            this.grbActions.Controls.Add(this.btnClear);
+            this.grbActions.Controls.Add(this.btnDeleteVehicle);
+            this.grbActions.Controls.Add(this.btnUpdateVehicle);
+            this.grbActions.Controls.Add(this.btnAddVehicle);
             this.grbActions.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbActions.Location = new System.Drawing.Point(1059, 54);
             this.grbActions.Name = "grbActions";
@@ -264,57 +264,61 @@
             this.grbActions.TabStop = false;
             this.grbActions.Text = "Actions";
             // 
-            // button4
+            // btnClear
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(35, 297);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(264, 69);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Clear";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(35, 297);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(264, 69);
+            this.btnClear.TabIndex = 3;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // button3
+            // btnDeleteVehicle
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(35, 222);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(264, 69);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Delete Vehicle";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDeleteVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteVehicle.Location = new System.Drawing.Point(35, 222);
+            this.btnDeleteVehicle.Name = "btnDeleteVehicle";
+            this.btnDeleteVehicle.Size = new System.Drawing.Size(264, 69);
+            this.btnDeleteVehicle.TabIndex = 2;
+            this.btnDeleteVehicle.Text = "Delete Vehicle";
+            this.btnDeleteVehicle.UseVisualStyleBackColor = true;
+            this.btnDeleteVehicle.Click += new System.EventHandler(this.btnDeleteVehicle_Click);
             // 
-            // button2
+            // btnUpdateVehicle
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(35, 148);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(264, 69);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Update Vehicle";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnUpdateVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateVehicle.Location = new System.Drawing.Point(35, 148);
+            this.btnUpdateVehicle.Name = "btnUpdateVehicle";
+            this.btnUpdateVehicle.Size = new System.Drawing.Size(264, 69);
+            this.btnUpdateVehicle.TabIndex = 1;
+            this.btnUpdateVehicle.Text = "Update Vehicle";
+            this.btnUpdateVehicle.UseVisualStyleBackColor = true;
+            this.btnUpdateVehicle.Click += new System.EventHandler(this.btnUpdateVehicle_Click);
             // 
-            // button1
+            // btnAddVehicle
             // 
-            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(35, 60);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(264, 69);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Add Vehicle";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAddVehicle.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAddVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddVehicle.ForeColor = System.Drawing.Color.White;
+            this.btnAddVehicle.Location = new System.Drawing.Point(35, 60);
+            this.btnAddVehicle.Name = "btnAddVehicle";
+            this.btnAddVehicle.Size = new System.Drawing.Size(264, 69);
+            this.btnAddVehicle.TabIndex = 0;
+            this.btnAddVehicle.Text = "Add Vehicle";
+            this.btnAddVehicle.UseVisualStyleBackColor = false;
+            this.btnAddVehicle.Click += new System.EventHandler(this.btnAddVehicle_Click);
             // 
-            // dataGridView1
+            // dgvVehicles
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(385, 558);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1013, 224);
-            this.dataGridView1.TabIndex = 2;
+            this.dgvVehicles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvVehicles.Location = new System.Drawing.Point(385, 558);
+            this.dgvVehicles.Name = "dgvVehicles";
+            this.dgvVehicles.RowHeadersWidth = 51;
+            this.dgvVehicles.RowTemplate.Height = 24;
+            this.dgvVehicles.Size = new System.Drawing.Size(1013, 224);
+            this.dgvVehicles.TabIndex = 2;
             // 
             // pnlVehiclesSidebar
             // 
@@ -377,6 +381,7 @@
             this.btnDashboard.TabIndex = 30;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // label9
             // 
@@ -402,6 +407,7 @@
             this.btnVehicles.TabIndex = 29;
             this.btnVehicles.Text = "Vehicles";
             this.btnVehicles.UseVisualStyleBackColor = false;
+            this.btnVehicles.Click += new System.EventHandler(this.Form2Vehicles_Load);
             // 
             // btnReturns
             // 
@@ -418,6 +424,7 @@
             this.btnReturns.TabIndex = 28;
             this.btnReturns.Text = "Returns";
             this.btnReturns.UseVisualStyleBackColor = false;
+            this.btnReturns.Click += new System.EventHandler(this.btnReturns_Click);
             // 
             // btnRentals
             // 
@@ -433,6 +440,7 @@
             this.btnRentals.TabIndex = 27;
             this.btnRentals.Text = "Rentals";
             this.btnRentals.UseVisualStyleBackColor = false;
+            this.btnRentals.Click += new System.EventHandler(this.btnRentals_Click);
             // 
             // btnReports
             // 
@@ -448,6 +456,7 @@
             this.btnReports.TabIndex = 17;
             this.btnReports.Text = "Reports";
             this.btnReports.UseVisualStyleBackColor = false;
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
             // Form2Vehicles
             // 
@@ -455,16 +464,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1540, 818);
             this.Controls.Add(this.pnlVehiclesSidebar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvVehicles);
             this.Controls.Add(this.grbActions);
             this.Controls.Add(this.grbVehicleInformation);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form2Vehicles";
             this.Text = "Form2Vehicles";
+            this.Load += new System.EventHandler(this.Form2Vehicles_Load_1);
             this.grbVehicleInformation.ResumeLayout(false);
             this.grbVehicleInformation.PerformLayout();
             this.grbActions.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVehicles)).EndInit();
             this.pnlVehiclesSidebar.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -474,7 +484,7 @@
 
         private System.Windows.Forms.GroupBox grbVehicleInformation;
         private System.Windows.Forms.GroupBox grbActions;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvVehicles;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -483,18 +493,18 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cmbStatus;
+        private System.Windows.Forms.ComboBox cmbVehicleType;
+        private System.Windows.Forms.TextBox tbDailyRate;
+        private System.Windows.Forms.TextBox tbYearModel;
+        private System.Windows.Forms.TextBox tbModel;
+        private System.Windows.Forms.TextBox tbBrand;
+        private System.Windows.Forms.TextBox tbPlateNumber;
+        private System.Windows.Forms.TextBox tbVehicleID;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnDeleteVehicle;
+        private System.Windows.Forms.Button btnUpdateVehicle;
+        private System.Windows.Forms.Button btnAddVehicle;
         private System.Windows.Forms.Panel pnlVehiclesSidebar;
         private System.Windows.Forms.Button btnCustomers;
         private System.Windows.Forms.Button btnLogout;

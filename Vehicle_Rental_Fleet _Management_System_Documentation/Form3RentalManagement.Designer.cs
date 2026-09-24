@@ -331,6 +331,7 @@
             this.pnlRentalInformation.Name = "pnlRentalInformation";
             this.pnlRentalInformation.Size = new System.Drawing.Size(706, 328);
             this.pnlRentalInformation.TabIndex = 7;
+            this.pnlRentalInformation.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlRentalInformation_Paint);
             // 
             // pnlRentalManagementSidebar
             // 
@@ -393,6 +394,7 @@
             this.btnDashboard.TabIndex = 30;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // label9
             // 
@@ -418,6 +420,7 @@
             this.btnVehicles.TabIndex = 29;
             this.btnVehicles.Text = "Vehicles";
             this.btnVehicles.UseVisualStyleBackColor = false;
+            this.btnVehicles.Click += new System.EventHandler(this.btnVehicles_Click);
             // 
             // btnReturns
             // 
@@ -434,6 +437,7 @@
             this.btnReturns.TabIndex = 28;
             this.btnReturns.Text = "Returns";
             this.btnReturns.UseVisualStyleBackColor = false;
+            this.btnReturns.Click += new System.EventHandler(this.btnReturns_Click);
             // 
             // btnRentals
             // 
@@ -449,6 +453,7 @@
             this.btnRentals.TabIndex = 27;
             this.btnRentals.Text = "Rentals";
             this.btnRentals.UseVisualStyleBackColor = false;
+            this.btnRentals.Click += new System.EventHandler(this.btnRentals_Click);
             // 
             // btnReports
             // 
@@ -464,6 +469,7 @@
             this.btnReports.TabIndex = 17;
             this.btnReports.Text = "Reports";
             this.btnReports.UseVisualStyleBackColor = false;
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
             // Form3RentalManagement
             // 
@@ -477,6 +483,7 @@
             this.Controls.Add(this.pnlRentalDetails);
             this.Name = "Form3RentalManagement";
             this.Text = "Form3RentalManagement";
+            this.Load += new System.EventHandler(this.Form3RentalManagement_Load);
             this.pnlRentalDetails.ResumeLayout(false);
             this.pnlRentalDetails.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvActiveRentals)).EndInit();

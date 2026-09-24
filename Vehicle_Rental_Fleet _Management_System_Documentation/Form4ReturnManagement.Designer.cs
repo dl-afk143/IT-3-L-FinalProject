@@ -99,6 +99,7 @@
             this.grbRentalInformation.TabIndex = 3;
             this.grbRentalInformation.TabStop = false;
             this.grbRentalInformation.Text = "Rental Information";
+            this.grbRentalInformation.Enter += new System.EventHandler(this.grbRentalInformation_Enter);
             // 
             // dateTimePicker3
             // 
@@ -452,6 +453,7 @@
             this.btnDashboard.TabIndex = 30;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // label11
             // 
@@ -477,6 +479,7 @@
             this.btnVehicles.TabIndex = 29;
             this.btnVehicles.Text = "Vehicles";
             this.btnVehicles.UseVisualStyleBackColor = false;
+            this.btnVehicles.Click += new System.EventHandler(this.btnVehicles_Click);
             // 
             // btnReturns
             // 
@@ -493,6 +496,7 @@
             this.btnReturns.TabIndex = 28;
             this.btnReturns.Text = "Returns";
             this.btnReturns.UseVisualStyleBackColor = false;
+            this.btnReturns.Click += new System.EventHandler(this.btnReturns_Click);
             // 
             // btnRentals
             // 
@@ -508,6 +512,7 @@
             this.btnRentals.TabIndex = 27;
             this.btnRentals.Text = "Rentals";
             this.btnRentals.UseVisualStyleBackColor = false;
+            this.btnRentals.Click += new System.EventHandler(this.btnRentals_Click);
             // 
             // btnReports
             // 
@@ -523,6 +528,7 @@
             this.btnReports.TabIndex = 17;
             this.btnReports.Text = "Reports";
             this.btnReports.UseVisualStyleBackColor = false;
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
             // Form4ReturnManagement
             // 
@@ -535,6 +541,7 @@
             this.Controls.Add(this.grbRentalInformation);
             this.Name = "Form4ReturnManagement";
             this.Text = "Form4ReturnManagement";
+            this.Load += new System.EventHandler(this.Form4ReturnManagement_Load);
             this.grbRentalInformation.ResumeLayout(false);
             this.grbRentalInformation.PerformLayout();
             this.grbReturnDetails.ResumeLayout(false);

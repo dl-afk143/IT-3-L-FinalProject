@@ -91,6 +91,7 @@
             this.tbVehicleBrand.Name = "tbVehicleBrand";
             this.tbVehicleBrand.Size = new System.Drawing.Size(353, 31);
             this.tbVehicleBrand.TabIndex = 4;
+            this.tbVehicleBrand.TextChanged += new System.EventHandler(this.tbVehicleBrand_TextChanged);
             // 
             // label4
             // 
@@ -148,6 +149,7 @@
             this.btnSave.TabIndex = 11;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
@@ -160,6 +162,7 @@
             this.btnCancel.TabIndex = 12;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // label2
             // 
