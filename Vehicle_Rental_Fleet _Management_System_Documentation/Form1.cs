@@ -17,7 +17,7 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
         public Form1()
         {
             InitializeComponent();
-            TestDatabaseConnection();
+            //TestDatabaseConnection(); remove first since we forgot to include the sql file
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -535,6 +535,7 @@
             this.Controls.Add(this.grbRentalInformation);
             this.Name = "Form4ReturnManagement";
             this.Text = "Form4ReturnManagement";
+            this.Load += new System.EventHandler(this.Form4ReturnManagement_Load);
             this.grbRentalInformation.ResumeLayout(false);
             this.grbRentalInformation.PerformLayout();
             this.grbReturnDetails.ResumeLayout(false);

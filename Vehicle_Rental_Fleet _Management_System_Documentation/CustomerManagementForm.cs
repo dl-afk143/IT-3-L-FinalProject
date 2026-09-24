@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Vehicle_Rental_Fleet__Management_System_Documentation
 {
-    public partial class Form4ReturnManagement : Form
+    public partial class CustomerManagementForm : Form
     {
-        public Form4ReturnManagement()
+        public CustomerManagementForm()
         {
             InitializeComponent();
-        }
-
-        private void Form4ReturnManagement_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

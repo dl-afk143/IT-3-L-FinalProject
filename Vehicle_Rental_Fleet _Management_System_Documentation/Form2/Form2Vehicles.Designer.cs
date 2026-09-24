@@ -257,7 +257,7 @@
             this.grbActions.Controls.Add(this.button2);
             this.grbActions.Controls.Add(this.button1);
             this.grbActions.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbActions.Location = new System.Drawing.Point(1059, 54);
+            this.grbActions.Location = new System.Drawing.Point(1071, 54);
             this.grbActions.Name = "grbActions";
             this.grbActions.Size = new System.Drawing.Size(339, 457);
             this.grbActions.TabIndex = 1;
@@ -313,7 +313,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1013, 224);
+            this.dataGridView1.Size = new System.Drawing.Size(1025, 224);
             this.dataGridView1.TabIndex = 2;
             // 
             // pnlVehiclesSidebar
