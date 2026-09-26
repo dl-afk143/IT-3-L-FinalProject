@@ -66,10 +66,8 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
             this.Hide();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-        }
-
+        
+        
         private void dgvRecentRentals_CellContentClick(
             object sender,
             DataGridViewCellEventArgs e)
@@ -177,6 +175,11 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
         }
 
         private void Form2Vehicles_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grbVehicleInformation_Enter(object sender, EventArgs e)
         {
 
         }

@@ -19,9 +19,18 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
             InitializeComponent();
         }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Form1 form1Form = new Form1();
+            form1Form.Show();
+
+            this.Hide();
+        }
+
+
         private void btnSave_Click(object sender, EventArgs e)
         {
-            // Get information from the form
+            // kuhaon ang info sa form
 
             string vehicleBrand = tbVehicleBrand.Text;
             string vehicleModel = tbVehicleModel.Text;

@@ -77,9 +77,10 @@
             this.pnlRentalDetails.Controls.Add(this.label7);
             this.pnlRentalDetails.Controls.Add(this.label6);
             this.pnlRentalDetails.Controls.Add(this.label1);
-            this.pnlRentalDetails.Location = new System.Drawing.Point(1092, 29);
+            this.pnlRentalDetails.Location = new System.Drawing.Point(1228, 36);
+            this.pnlRentalDetails.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlRentalDetails.Name = "pnlRentalDetails";
-            this.pnlRentalDetails.Size = new System.Drawing.Size(418, 328);
+            this.pnlRentalDetails.Size = new System.Drawing.Size(470, 410);
             this.pnlRentalDetails.TabIndex = 8;
             // 
             // btnCreateRental
@@ -87,27 +88,30 @@
             this.btnCreateRental.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnCreateRental.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateRental.ForeColor = System.Drawing.Color.White;
-            this.btnCreateRental.Location = new System.Drawing.Point(36, 243);
+            this.btnCreateRental.Location = new System.Drawing.Point(40, 304);
+            this.btnCreateRental.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCreateRental.Name = "btnCreateRental";
-            this.btnCreateRental.Size = new System.Drawing.Size(351, 55);
+            this.btnCreateRental.Size = new System.Drawing.Size(395, 69);
             this.btnCreateRental.TabIndex = 15;
             this.btnCreateRental.Text = "Create Rental";
             this.btnCreateRental.UseVisualStyleBackColor = false;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(166, 169);
+            this.textBox2.Location = new System.Drawing.Point(187, 211);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(221, 45);
+            this.textBox2.Size = new System.Drawing.Size(248, 55);
             this.textBox2.TabIndex = 14;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(166, 92);
+            this.textBox1.Location = new System.Drawing.Point(187, 115);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(221, 45);
+            this.textBox1.Size = new System.Drawing.Size(248, 55);
             this.textBox1.TabIndex = 13;
             // 
             // label7
@@ -115,9 +119,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Navy;
-            this.label7.Location = new System.Drawing.Point(25, 179);
+            this.label7.Location = new System.Drawing.Point(28, 224);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(135, 25);
+            this.label7.Size = new System.Drawing.Size(161, 29);
             this.label7.TabIndex = 12;
             this.label7.Text = "Total Amount:";
             // 
@@ -126,9 +130,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Navy;
-            this.label6.Location = new System.Drawing.Point(29, 99);
+            this.label6.Location = new System.Drawing.Point(33, 124);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 25);
+            this.label6.Size = new System.Drawing.Size(128, 29);
             this.label6.TabIndex = 11;
             this.label6.Text = "Daily Rate:";
             // 
@@ -137,9 +141,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(17, 19);
+            this.label1.Location = new System.Drawing.Point(19, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 29);
+            this.label1.Size = new System.Drawing.Size(213, 36);
             this.label1.TabIndex = 11;
             this.label1.Text = "Rental Details";
             // 
@@ -154,11 +158,12 @@
             this.ReturnDate,
             this.TotalAmount,
             this.Status});
-            this.dgvActiveRentals.Location = new System.Drawing.Point(327, 435);
+            this.dgvActiveRentals.Location = new System.Drawing.Point(368, 544);
+            this.dgvActiveRentals.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvActiveRentals.Name = "dgvActiveRentals";
             this.dgvActiveRentals.RowHeadersWidth = 51;
             this.dgvActiveRentals.RowTemplate.Height = 24;
-            this.dgvActiveRentals.Size = new System.Drawing.Size(1183, 288);
+            this.dgvActiveRentals.Size = new System.Drawing.Size(1331, 360);
             this.dgvActiveRentals.TabIndex = 9;
             // 
             // RentalID
@@ -215,9 +220,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Navy;
-            this.label8.Location = new System.Drawing.Point(333, 403);
+            this.label8.Location = new System.Drawing.Point(375, 504);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(190, 29);
+            this.label8.Size = new System.Drawing.Size(220, 36);
             this.label8.TabIndex = 14;
             this.label8.Text = "Active Rentals";
             // 
@@ -226,9 +231,9 @@
             this.lblRentalInfo.AutoSize = true;
             this.lblRentalInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRentalInfo.ForeColor = System.Drawing.Color.Navy;
-            this.lblRentalInfo.Location = new System.Drawing.Point(18, 35);
+            this.lblRentalInfo.Location = new System.Drawing.Point(20, 44);
             this.lblRentalInfo.Name = "lblRentalInfo";
-            this.lblRentalInfo.Size = new System.Drawing.Size(237, 29);
+            this.lblRentalInfo.Size = new System.Drawing.Size(275, 36);
             this.lblRentalInfo.TabIndex = 0;
             this.lblRentalInfo.Text = "Rental Information";
             // 
@@ -237,9 +242,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(55, 108);
+            this.label2.Location = new System.Drawing.Point(62, 135);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 25);
+            this.label2.Size = new System.Drawing.Size(123, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Customer:";
             // 
@@ -248,9 +253,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Navy;
-            this.label3.Location = new System.Drawing.Point(55, 214);
+            this.label3.Location = new System.Drawing.Point(62, 268);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 25);
+            this.label3.Size = new System.Drawing.Size(144, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "Rental Date:";
             // 
@@ -259,9 +264,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Navy;
-            this.label4.Location = new System.Drawing.Point(55, 163);
+            this.label4.Location = new System.Drawing.Point(62, 204);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 25);
+            this.label4.Size = new System.Drawing.Size(99, 29);
             this.label4.TabIndex = 3;
             this.label4.Text = "Vehicle:";
             // 
@@ -270,18 +275,19 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Navy;
-            this.label5.Location = new System.Drawing.Point(55, 259);
+            this.label5.Location = new System.Drawing.Point(62, 324);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 25);
+            this.label5.Size = new System.Drawing.Size(146, 29);
             this.label5.TabIndex = 4;
             this.label5.Text = "Return Date:";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(211, 208);
+            this.dateTimePicker1.Location = new System.Drawing.Point(237, 260);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(463, 32);
+            this.dateTimePicker1.Size = new System.Drawing.Size(520, 37);
             this.dateTimePicker1.TabIndex = 9;
             this.dateTimePicker1.Value = new System.DateTime(2026, 9, 20, 0, 0, 0, 0);
             // 
@@ -291,9 +297,10 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.IntegralHeight = false;
             this.comboBox1.ItemHeight = 30;
-            this.comboBox1.Location = new System.Drawing.Point(211, 103);
+            this.comboBox1.Location = new System.Drawing.Point(237, 129);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(463, 36);
+            this.comboBox1.Size = new System.Drawing.Size(520, 36);
             this.comboBox1.TabIndex = 11;
             // 
             // comboBox2
@@ -302,17 +309,19 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.IntegralHeight = false;
             this.comboBox2.ItemHeight = 30;
-            this.comboBox2.Location = new System.Drawing.Point(211, 155);
+            this.comboBox2.Location = new System.Drawing.Point(237, 194);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(463, 36);
+            this.comboBox2.Size = new System.Drawing.Size(520, 36);
             this.comboBox2.TabIndex = 12;
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(211, 255);
+            this.dateTimePicker2.Location = new System.Drawing.Point(237, 319);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(463, 32);
+            this.dateTimePicker2.Size = new System.Drawing.Size(520, 37);
             this.dateTimePicker2.TabIndex = 13;
             this.dateTimePicker2.Value = new System.DateTime(2026, 9, 20, 0, 0, 0, 0);
             // 
@@ -327,9 +336,10 @@
             this.pnlRentalInformation.Controls.Add(this.label3);
             this.pnlRentalInformation.Controls.Add(this.label2);
             this.pnlRentalInformation.Controls.Add(this.lblRentalInfo);
-            this.pnlRentalInformation.Location = new System.Drawing.Point(327, 29);
+            this.pnlRentalInformation.Location = new System.Drawing.Point(368, 36);
+            this.pnlRentalInformation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlRentalInformation.Name = "pnlRentalInformation";
-            this.pnlRentalInformation.Size = new System.Drawing.Size(706, 328);
+            this.pnlRentalInformation.Size = new System.Drawing.Size(794, 410);
             this.pnlRentalInformation.TabIndex = 7;
             this.pnlRentalInformation.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlRentalInformation_Paint);
             // 
@@ -347,7 +357,7 @@
             this.pnlRentalManagementSidebar.Location = new System.Drawing.Point(1, -1);
             this.pnlRentalManagementSidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlRentalManagementSidebar.Name = "pnlRentalManagementSidebar";
-            this.pnlRentalManagementSidebar.Size = new System.Drawing.Size(293, 808);
+            this.pnlRentalManagementSidebar.Size = new System.Drawing.Size(330, 1010);
             this.pnlRentalManagementSidebar.TabIndex = 26;
             // 
             // btnCustomers
@@ -357,10 +367,10 @@
             this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomers.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCustomers.Location = new System.Drawing.Point(16, 262);
-            this.btnCustomers.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCustomers.Location = new System.Drawing.Point(18, 328);
+            this.btnCustomers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCustomers.Name = "btnCustomers";
-            this.btnCustomers.Size = new System.Drawing.Size(261, 64);
+            this.btnCustomers.Size = new System.Drawing.Size(294, 80);
             this.btnCustomers.TabIndex = 31;
             this.btnCustomers.Text = "Customers";
             this.btnCustomers.UseVisualStyleBackColor = false;
@@ -372,10 +382,10 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnLogout.Location = new System.Drawing.Point(13, 719);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogout.Location = new System.Drawing.Point(15, 899);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(261, 64);
+            this.btnLogout.Size = new System.Drawing.Size(294, 80);
             this.btnLogout.TabIndex = 26;
             this.btnLogout.Text = "LogOut";
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -387,10 +397,10 @@
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnDashboard.Location = new System.Drawing.Point(13, 97);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDashboard.Location = new System.Drawing.Point(15, 121);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(261, 64);
+            this.btnDashboard.Size = new System.Drawing.Size(294, 80);
             this.btnDashboard.TabIndex = 30;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
@@ -400,9 +410,9 @@
             // 
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(29, 15);
+            this.label9.Location = new System.Drawing.Point(33, 19);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(239, 79);
+            this.label9.Size = new System.Drawing.Size(269, 99);
             this.label9.TabIndex = 25;
             this.label9.Text = "Vehicle Rental and Fleet Management";
             // 
@@ -413,10 +423,10 @@
             this.btnVehicles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVehicles.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVehicles.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnVehicles.Location = new System.Drawing.Point(16, 180);
-            this.btnVehicles.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVehicles.Location = new System.Drawing.Point(18, 225);
+            this.btnVehicles.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnVehicles.Name = "btnVehicles";
-            this.btnVehicles.Size = new System.Drawing.Size(261, 64);
+            this.btnVehicles.Size = new System.Drawing.Size(294, 80);
             this.btnVehicles.TabIndex = 29;
             this.btnVehicles.Text = "Vehicles";
             this.btnVehicles.UseVisualStyleBackColor = false;
@@ -430,10 +440,10 @@
             this.btnReturns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturns.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturns.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnReturns.Location = new System.Drawing.Point(13, 433);
-            this.btnReturns.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReturns.Location = new System.Drawing.Point(15, 541);
+            this.btnReturns.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReturns.Name = "btnReturns";
-            this.btnReturns.Size = new System.Drawing.Size(261, 64);
+            this.btnReturns.Size = new System.Drawing.Size(294, 80);
             this.btnReturns.TabIndex = 28;
             this.btnReturns.Text = "Returns";
             this.btnReturns.UseVisualStyleBackColor = false;
@@ -446,10 +456,10 @@
             this.btnRentals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRentals.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRentals.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRentals.Location = new System.Drawing.Point(13, 347);
-            this.btnRentals.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRentals.Location = new System.Drawing.Point(15, 434);
+            this.btnRentals.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRentals.Name = "btnRentals";
-            this.btnRentals.Size = new System.Drawing.Size(261, 64);
+            this.btnRentals.Size = new System.Drawing.Size(294, 80);
             this.btnRentals.TabIndex = 27;
             this.btnRentals.Text = "Rentals";
             this.btnRentals.UseVisualStyleBackColor = false;
@@ -462,10 +472,10 @@
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReports.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnReports.Location = new System.Drawing.Point(16, 514);
-            this.btnReports.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReports.Location = new System.Drawing.Point(18, 642);
+            this.btnReports.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(261, 64);
+            this.btnReports.Size = new System.Drawing.Size(294, 80);
             this.btnReports.TabIndex = 17;
             this.btnReports.Text = "Reports";
             this.btnReports.UseVisualStyleBackColor = false;
@@ -473,14 +483,15 @@
             // 
             // Form3RentalManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1540, 818);
+            this.ClientSize = new System.Drawing.Size(1732, 1022);
             this.Controls.Add(this.pnlRentalManagementSidebar);
             this.Controls.Add(this.pnlRentalInformation);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dgvActiveRentals);
             this.Controls.Add(this.pnlRentalDetails);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form3RentalManagement";
             this.Text = "Form3RentalManagement";
             this.Load += new System.EventHandler(this.Form3RentalManagement_Load);

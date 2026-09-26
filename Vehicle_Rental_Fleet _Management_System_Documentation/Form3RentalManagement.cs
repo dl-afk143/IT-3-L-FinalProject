@@ -13,6 +13,7 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
 {
     public partial class Form3RentalManagement : Form
     {
+        
         public Form3RentalManagement()
         {
             InitializeComponent();
@@ -22,6 +23,9 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
         {
 
         }
+
+
+        private void btnCreateRental_Click(object sender, EventArgs e) {}
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {

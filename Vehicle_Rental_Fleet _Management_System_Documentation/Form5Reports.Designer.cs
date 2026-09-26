@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCustomerRecords = new System.Windows.Forms.Button();
+            this.btnVehicleStatus = new System.Windows.Forms.Button();
+            this.btnRentalHistory = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.gbReport = new System.Windows.Forms.GroupBox();
@@ -41,62 +41,59 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.gbReport.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnCustomerRecords);
+            this.panel1.Controls.Add(this.btnVehicleStatus);
+            this.panel1.Controls.Add(this.btnRentalHistory);
             this.panel1.Controls.Add(this.btnReports);
-            this.panel1.Location = new System.Drawing.Point(-1, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(-2, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(210, 301);
+            this.panel1.Size = new System.Drawing.Size(315, 463);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button4
+            // btnCustomerRecords
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(2, 176);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(206, 54);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Customer Records";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnCustomerRecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomerRecords.Location = new System.Drawing.Point(3, 271);
+            this.btnCustomerRecords.Name = "btnCustomerRecords";
+            this.btnCustomerRecords.Size = new System.Drawing.Size(309, 83);
+            this.btnCustomerRecords.TabIndex = 1;
+            this.btnCustomerRecords.Text = "Customer Records";
+            this.btnCustomerRecords.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnVehicleStatus
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(2, 119);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(206, 54);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Vehicle Status";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnVehicleStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVehicleStatus.Location = new System.Drawing.Point(3, 183);
+            this.btnVehicleStatus.Name = "btnVehicleStatus";
+            this.btnVehicleStatus.Size = new System.Drawing.Size(309, 83);
+            this.btnVehicleStatus.TabIndex = 2;
+            this.btnVehicleStatus.Text = "Vehicle Status";
+            this.btnVehicleStatus.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnRentalHistory
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(2, 61);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(206, 54);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Rental History";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRentalHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRentalHistory.Location = new System.Drawing.Point(3, 94);
+            this.btnRentalHistory.Name = "btnRentalHistory";
+            this.btnRentalHistory.Size = new System.Drawing.Size(309, 83);
+            this.btnRentalHistory.TabIndex = 1;
+            this.btnRentalHistory.Text = "Rental History";
+            this.btnRentalHistory.UseVisualStyleBackColor = true;
             // 
             // btnReports
             // 
             this.btnReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReports.Location = new System.Drawing.Point(2, 5);
-            this.btnReports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReports.Location = new System.Drawing.Point(3, 8);
             this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(206, 54);
+            this.btnReports.Size = new System.Drawing.Size(309, 83);
             this.btnReports.TabIndex = 0;
             this.btnReports.Text = "Reports";
             this.btnReports.UseVisualStyleBackColor = true;
@@ -104,10 +101,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 33);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(32, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 18);
+            this.label1.Size = new System.Drawing.Size(136, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "Report Type:";
             // 
@@ -121,11 +117,9 @@
             this.gbReport.Controls.Add(this.comboBox1);
             this.gbReport.Controls.Add(this.label1);
             this.gbReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbReport.Location = new System.Drawing.Point(233, 20);
-            this.gbReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbReport.Location = new System.Drawing.Point(350, 31);
             this.gbReport.Name = "gbReport";
-            this.gbReport.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.gbReport.Size = new System.Drawing.Size(876, 269);
+            this.gbReport.Size = new System.Drawing.Size(1314, 414);
             this.gbReport.TabIndex = 2;
             this.gbReport.TabStop = false;
             this.gbReport.Text = "Report";
@@ -133,47 +127,42 @@
             // btnGenerateReport
             // 
             this.btnGenerateReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerateReport.Location = new System.Drawing.Point(10, 73);
-            this.btnGenerateReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGenerateReport.Location = new System.Drawing.Point(15, 112);
             this.btnGenerateReport.Name = "btnGenerateReport";
-            this.btnGenerateReport.Size = new System.Drawing.Size(100, 33);
+            this.btnGenerateReport.Size = new System.Drawing.Size(150, 51);
             this.btnGenerateReport.TabIndex = 18;
             this.btnGenerateReport.Text = "Generate Report";
             this.btnGenerateReport.UseVisualStyleBackColor = true;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(686, 31);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker2.Location = new System.Drawing.Point(1029, 48);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(167, 24);
+            this.dateTimePicker2.Size = new System.Drawing.Size(248, 32);
             this.dateTimePicker2.TabIndex = 17;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(432, 31);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Location = new System.Drawing.Point(648, 48);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(167, 24);
+            this.dateTimePicker1.Size = new System.Drawing.Size(248, 32);
             this.dateTimePicker1.TabIndex = 16;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(617, 32);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(926, 49);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 18);
+            this.label3.Size = new System.Drawing.Size(94, 26);
             this.label3.TabIndex = 15;
             this.label3.Text = "To Date:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(350, 33);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(525, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 18);
+            this.label2.Size = new System.Drawing.Size(121, 26);
             this.label2.TabIndex = 14;
             this.label2.Text = "From Date:";
             // 
@@ -183,20 +172,30 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.IntegralHeight = false;
             this.comboBox1.ItemHeight = 30;
-            this.comboBox1.Location = new System.Drawing.Point(113, 30);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Location = new System.Drawing.Point(170, 46);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(202, 36);
+            this.comboBox1.Size = new System.Drawing.Size(301, 36);
             this.comboBox1.TabIndex = 13;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(350, 451);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(181, 64);
+            this.btnBack.TabIndex = 19;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // Form5Reports
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1118, 365);
+            this.ClientSize = new System.Drawing.Size(1677, 562);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.gbReport);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form5Reports";
             this.Text = "Form5Reports";
             this.panel1.ResumeLayout(false);
@@ -209,9 +208,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCustomerRecords;
+        private System.Windows.Forms.Button btnVehicleStatus;
+        private System.Windows.Forms.Button btnRentalHistory;
         private System.Windows.Forms.Button btnReports;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox gbReport;
@@ -221,5 +220,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btnGenerateReport;
+        private System.Windows.Forms.Button btnBack;
     }
 }
