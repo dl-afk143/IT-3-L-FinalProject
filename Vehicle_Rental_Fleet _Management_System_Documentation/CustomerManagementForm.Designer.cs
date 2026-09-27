@@ -41,7 +41,7 @@
             this.btnClearCustomer = new System.Windows.Forms.Button();
             this.btnDeleteCustomer = new System.Windows.Forms.Button();
             this.btnUpdateCustomer = new System.Windows.Forms.Button();
-            this.btnCustomer = new System.Windows.Forms.Button();
+            this.btnAddCustomer = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tbAddress = new System.Windows.Forms.TextBox();
@@ -74,7 +74,7 @@
             this.pnlCustomerMangementSidebar.Location = new System.Drawing.Point(1, -1);
             this.pnlCustomerMangementSidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlCustomerMangementSidebar.Name = "pnlCustomerMangementSidebar";
-            this.pnlCustomerMangementSidebar.Size = new System.Drawing.Size(293, 808);
+            this.pnlCustomerMangementSidebar.Size = new System.Drawing.Size(330, 1010);
             this.pnlCustomerMangementSidebar.TabIndex = 28;
             // 
             // btnCustomers
@@ -84,10 +84,10 @@
             this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomers.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCustomers.Location = new System.Drawing.Point(16, 262);
-            this.btnCustomers.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCustomers.Location = new System.Drawing.Point(18, 328);
+            this.btnCustomers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCustomers.Name = "btnCustomers";
-            this.btnCustomers.Size = new System.Drawing.Size(261, 64);
+            this.btnCustomers.Size = new System.Drawing.Size(294, 80);
             this.btnCustomers.TabIndex = 31;
             this.btnCustomers.Text = "Customers";
             this.btnCustomers.UseVisualStyleBackColor = false;
@@ -99,10 +99,10 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnLogout.Location = new System.Drawing.Point(13, 719);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogout.Location = new System.Drawing.Point(15, 899);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(261, 64);
+            this.btnLogout.Size = new System.Drawing.Size(294, 80);
             this.btnLogout.TabIndex = 26;
             this.btnLogout.Text = "LogOut";
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -114,10 +114,10 @@
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnDashboard.Location = new System.Drawing.Point(13, 97);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDashboard.Location = new System.Drawing.Point(15, 121);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(261, 64);
+            this.btnDashboard.Size = new System.Drawing.Size(294, 80);
             this.btnDashboard.TabIndex = 30;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
@@ -127,9 +127,9 @@
             // 
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(29, 15);
+            this.label11.Location = new System.Drawing.Point(33, 19);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(239, 79);
+            this.label11.Size = new System.Drawing.Size(269, 99);
             this.label11.TabIndex = 25;
             this.label11.Text = "Vehicle Rental and Fleet Management";
             // 
@@ -140,10 +140,10 @@
             this.btnVehicles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVehicles.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVehicles.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnVehicles.Location = new System.Drawing.Point(16, 180);
-            this.btnVehicles.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVehicles.Location = new System.Drawing.Point(18, 225);
+            this.btnVehicles.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnVehicles.Name = "btnVehicles";
-            this.btnVehicles.Size = new System.Drawing.Size(261, 64);
+            this.btnVehicles.Size = new System.Drawing.Size(294, 80);
             this.btnVehicles.TabIndex = 29;
             this.btnVehicles.Text = "Vehicles";
             this.btnVehicles.UseVisualStyleBackColor = false;
@@ -157,10 +157,10 @@
             this.btnReturns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturns.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturns.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnReturns.Location = new System.Drawing.Point(13, 433);
-            this.btnReturns.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReturns.Location = new System.Drawing.Point(15, 541);
+            this.btnReturns.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReturns.Name = "btnReturns";
-            this.btnReturns.Size = new System.Drawing.Size(261, 64);
+            this.btnReturns.Size = new System.Drawing.Size(294, 80);
             this.btnReturns.TabIndex = 28;
             this.btnReturns.Text = "Returns";
             this.btnReturns.UseVisualStyleBackColor = false;
@@ -173,10 +173,10 @@
             this.btnRentals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRentals.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRentals.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRentals.Location = new System.Drawing.Point(13, 347);
-            this.btnRentals.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRentals.Location = new System.Drawing.Point(15, 434);
+            this.btnRentals.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRentals.Name = "btnRentals";
-            this.btnRentals.Size = new System.Drawing.Size(261, 64);
+            this.btnRentals.Size = new System.Drawing.Size(294, 80);
             this.btnRentals.TabIndex = 27;
             this.btnRentals.Text = "Rentals";
             this.btnRentals.UseVisualStyleBackColor = false;
@@ -189,10 +189,10 @@
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReports.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnReports.Location = new System.Drawing.Point(16, 514);
-            this.btnReports.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReports.Location = new System.Drawing.Point(18, 642);
+            this.btnReports.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(261, 64);
+            this.btnReports.Size = new System.Drawing.Size(294, 80);
             this.btnReports.TabIndex = 17;
             this.btnReports.Text = "Reports";
             this.btnReports.UseVisualStyleBackColor = false;
@@ -203,11 +203,13 @@
             this.grbActions.Controls.Add(this.btnClearCustomer);
             this.grbActions.Controls.Add(this.btnDeleteCustomer);
             this.grbActions.Controls.Add(this.btnUpdateCustomer);
-            this.grbActions.Controls.Add(this.btnCustomer);
+            this.grbActions.Controls.Add(this.btnAddCustomer);
             this.grbActions.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbActions.Location = new System.Drawing.Point(1125, 39);
+            this.grbActions.Location = new System.Drawing.Point(1266, 49);
+            this.grbActions.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grbActions.Name = "grbActions";
-            this.grbActions.Size = new System.Drawing.Size(339, 435);
+            this.grbActions.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grbActions.Size = new System.Drawing.Size(381, 544);
             this.grbActions.TabIndex = 29;
             this.grbActions.TabStop = false;
             this.grbActions.Text = "Actions";
@@ -215,53 +217,61 @@
             // btnClearCustomer
             // 
             this.btnClearCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearCustomer.Location = new System.Drawing.Point(35, 297);
+            this.btnClearCustomer.Location = new System.Drawing.Point(39, 371);
+            this.btnClearCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClearCustomer.Name = "btnClearCustomer";
-            this.btnClearCustomer.Size = new System.Drawing.Size(264, 69);
+            this.btnClearCustomer.Size = new System.Drawing.Size(297, 86);
             this.btnClearCustomer.TabIndex = 3;
             this.btnClearCustomer.Text = "Clear";
             this.btnClearCustomer.UseVisualStyleBackColor = true;
+            this.btnClearCustomer.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnDeleteCustomer
             // 
             this.btnDeleteCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteCustomer.Location = new System.Drawing.Point(35, 222);
+            this.btnDeleteCustomer.Location = new System.Drawing.Point(39, 278);
+            this.btnDeleteCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteCustomer.Name = "btnDeleteCustomer";
-            this.btnDeleteCustomer.Size = new System.Drawing.Size(264, 69);
+            this.btnDeleteCustomer.Size = new System.Drawing.Size(297, 86);
             this.btnDeleteCustomer.TabIndex = 2;
             this.btnDeleteCustomer.Text = "Delete Customer";
             this.btnDeleteCustomer.UseVisualStyleBackColor = true;
+            this.btnDeleteCustomer.Click += new System.EventHandler(this.btnDeleteCustomer_Click);
             // 
             // btnUpdateCustomer
             // 
             this.btnUpdateCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateCustomer.Location = new System.Drawing.Point(35, 148);
+            this.btnUpdateCustomer.Location = new System.Drawing.Point(39, 185);
+            this.btnUpdateCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUpdateCustomer.Name = "btnUpdateCustomer";
-            this.btnUpdateCustomer.Size = new System.Drawing.Size(264, 69);
+            this.btnUpdateCustomer.Size = new System.Drawing.Size(297, 86);
             this.btnUpdateCustomer.TabIndex = 1;
             this.btnUpdateCustomer.Text = "Update Customer";
             this.btnUpdateCustomer.UseVisualStyleBackColor = true;
+            this.btnUpdateCustomer.Click += new System.EventHandler(this.btnUpdateCustomer_Click);
             // 
-            // btnCustomer
+            // btnAddCustomer
             // 
-            this.btnCustomer.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomer.ForeColor = System.Drawing.Color.White;
-            this.btnCustomer.Location = new System.Drawing.Point(35, 60);
-            this.btnCustomer.Name = "btnCustomer";
-            this.btnCustomer.Size = new System.Drawing.Size(264, 69);
-            this.btnCustomer.TabIndex = 0;
-            this.btnCustomer.Text = "Add Customer";
-            this.btnCustomer.UseVisualStyleBackColor = false;
+            this.btnAddCustomer.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAddCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCustomer.ForeColor = System.Drawing.Color.White;
+            this.btnAddCustomer.Location = new System.Drawing.Point(39, 75);
+            this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAddCustomer.Name = "btnAddCustomer";
+            this.btnAddCustomer.Size = new System.Drawing.Size(297, 86);
+            this.btnAddCustomer.TabIndex = 0;
+            this.btnAddCustomer.Text = "Add Customer";
+            this.btnAddCustomer.UseVisualStyleBackColor = false;
+            this.btnAddCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(79, 55);
+            this.label1.Location = new System.Drawing.Point(89, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 24);
+            this.label1.Size = new System.Drawing.Size(146, 26);
             this.label1.TabIndex = 30;
             this.label1.Text = "CustomerID:";
             // 
@@ -275,43 +285,49 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(371, 39);
+            this.groupBox1.Location = new System.Drawing.Point(417, 49);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(729, 435);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(820, 544);
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Customer Info";
             // 
             // tbAddress
             // 
-            this.tbAddress.Location = new System.Drawing.Point(252, 242);
+            this.tbAddress.Location = new System.Drawing.Point(284, 302);
+            this.tbAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbAddress.Multiline = true;
             this.tbAddress.Name = "tbAddress";
-            this.tbAddress.Size = new System.Drawing.Size(396, 99);
+            this.tbAddress.Size = new System.Drawing.Size(445, 123);
             this.tbAddress.TabIndex = 37;
             // 
             // tbContactNumber
             // 
-            this.tbContactNumber.Location = new System.Drawing.Point(252, 173);
+            this.tbContactNumber.Location = new System.Drawing.Point(284, 216);
+            this.tbContactNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbContactNumber.Multiline = true;
             this.tbContactNumber.Name = "tbContactNumber";
-            this.tbContactNumber.Size = new System.Drawing.Size(396, 38);
+            this.tbContactNumber.Size = new System.Drawing.Size(445, 46);
             this.tbContactNumber.TabIndex = 36;
             // 
             // tbFullName
             // 
-            this.tbFullName.Location = new System.Drawing.Point(252, 102);
+            this.tbFullName.Location = new System.Drawing.Point(284, 128);
+            this.tbFullName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbFullName.Multiline = true;
             this.tbFullName.Name = "tbFullName";
-            this.tbFullName.Size = new System.Drawing.Size(396, 38);
+            this.tbFullName.Size = new System.Drawing.Size(445, 46);
             this.tbFullName.TabIndex = 35;
             // 
             // tbCustomerID
             // 
-            this.tbCustomerID.Location = new System.Drawing.Point(252, 45);
+            this.tbCustomerID.Location = new System.Drawing.Point(284, 56);
+            this.tbCustomerID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbCustomerID.Multiline = true;
             this.tbCustomerID.Name = "tbCustomerID";
-            this.tbCustomerID.Size = new System.Drawing.Size(396, 38);
+            this.tbCustomerID.Size = new System.Drawing.Size(445, 46);
             this.tbCustomerID.TabIndex = 34;
             // 
             // label4
@@ -319,9 +335,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Navy;
-            this.label4.Location = new System.Drawing.Point(79, 243);
+            this.label4.Location = new System.Drawing.Point(89, 304);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 24);
+            this.label4.Size = new System.Drawing.Size(106, 26);
             this.label4.TabIndex = 33;
             this.label4.Text = "Address:";
             // 
@@ -330,9 +346,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Navy;
-            this.label3.Location = new System.Drawing.Point(79, 180);
+            this.label3.Location = new System.Drawing.Point(89, 225);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(167, 24);
+            this.label3.Size = new System.Drawing.Size(192, 26);
             this.label3.TabIndex = 32;
             this.label3.Text = "Contact Number:";
             // 
@@ -341,9 +357,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(79, 116);
+            this.label2.Location = new System.Drawing.Point(89, 145);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 24);
+            this.label2.Size = new System.Drawing.Size(128, 26);
             this.label2.TabIndex = 31;
             this.label2.Text = "Full Name:";
             // 
@@ -351,9 +367,11 @@
             // 
             this.groupBox2.Controls.Add(this.dgvCustomerList);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(371, 513);
+            this.groupBox2.Location = new System.Drawing.Point(417, 641);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1094, 274);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Size = new System.Drawing.Size(1231, 342);
             this.groupBox2.TabIndex = 32;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Customer List";
@@ -361,22 +379,24 @@
             // dgvCustomerList
             // 
             this.dgvCustomerList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCustomerList.Location = new System.Drawing.Point(21, 31);
+            this.dgvCustomerList.Location = new System.Drawing.Point(24, 39);
+            this.dgvCustomerList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvCustomerList.Name = "dgvCustomerList";
             this.dgvCustomerList.RowHeadersWidth = 51;
             this.dgvCustomerList.RowTemplate.Height = 24;
-            this.dgvCustomerList.Size = new System.Drawing.Size(1050, 237);
+            this.dgvCustomerList.Size = new System.Drawing.Size(1181, 296);
             this.dgvCustomerList.TabIndex = 0;
             // 
             // CustomerManagementForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1540, 818);
+            this.ClientSize = new System.Drawing.Size(1732, 1022);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grbActions);
             this.Controls.Add(this.pnlCustomerMangementSidebar);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CustomerManagementForm";
             this.Text = "CustomerManagementForm";
             this.Load += new System.EventHandler(this.CustomerManagementForm_Load);
@@ -405,7 +425,7 @@
         private System.Windows.Forms.Button btnClearCustomer;
         private System.Windows.Forms.Button btnDeleteCustomer;
         private System.Windows.Forms.Button btnUpdateCustomer;
-        private System.Windows.Forms.Button btnCustomer;
+        private System.Windows.Forms.Button btnAddCustomer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;

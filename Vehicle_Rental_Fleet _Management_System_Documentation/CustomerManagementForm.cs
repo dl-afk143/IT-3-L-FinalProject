@@ -73,6 +73,96 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
             this.Hide();
         }
 
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            string customerID = tbCustomerID.Text;
+            string fullName = tbFullName.Text;
+            string contactNumber = tbContactNumber.Text;
+            string address = tbAddress.Text;
+
+            // Check if fields are empty
+            if (customerID == "" ||
+                fullName == "" ||
+                contactNumber == "" ||
+                address == "")
+            {
+                MessageBox.Show("Please fill in all fields.");
+                return;
+            }
+
+            // Show the entered information
+            MessageBox.Show(
+                "Customer Added!\n\n" +
+                "Customer ID: " + customerID + "\n" +
+                "Full Name: " + fullName + "\n" +
+                "Contact Number: " + contactNumber + "\n" +
+                "Address: " + address,
+                "Success",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+
+            // Clear the fields after adding
+            tbCustomerID.Clear();
+            tbFullName.Clear();
+            tbContactNumber.Clear();
+            tbAddress.Clear();
+        }
+
+        private void btnUpdateCustomer_Click(object sender, EventArgs e)
+        {
+            string customerID = tbCustomerID.Text;
+            string fullName = tbFullName.Text;
+            string contactNumber = tbContactNumber.Text;
+            string address = tbAddress.Text;
+
+            if (customerID == "" || fullName == "" || contactNumber == "" || address == "")
+            {
+                MessageBox.Show("Please fill in all fields.");
+                return;
+            }
+
+            MessageBox.Show("Customer information is ready to update.");
+        }
+
+        private void btnDeleteCustomer_Click(object sender, EventArgs e)
+        {
+            string customerID = tbCustomerID.Text;
+
+            if (customerID == "")
+            {
+                MessageBox.Show("Please enter Customer ID.");
+                return;
+            }
+
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to delete this customer?",
+                "Delete Customer",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("Customer is ready to be deleted.");
+            }
+        }
+
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            ClearCustomerFields();
+        }
+
+        private void ClearCustomerFields()
+        {
+            tbCustomerID.Clear();
+            tbFullName.Clear();
+            tbContactNumber.Clear();
+            tbAddress.Clear();
+        }
+
         private void label3_Click(object sender, EventArgs e)
         {
         }
