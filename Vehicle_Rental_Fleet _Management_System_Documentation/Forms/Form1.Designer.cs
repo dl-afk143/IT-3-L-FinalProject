@@ -32,9 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvRecentRentals = new System.Windows.Forms.DataGridView();
-            this.Customer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Vehicle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -96,10 +93,6 @@
             // 
             this.dgvRecentRentals.BackgroundColor = System.Drawing.SystemColors.Menu;
             this.dgvRecentRentals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRecentRentals.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Customer,
-            this.Vehicle,
-            this.Status});
             this.dgvRecentRentals.Location = new System.Drawing.Point(333, 437);
             this.dgvRecentRentals.Margin = new System.Windows.Forms.Padding(4);
             this.dgvRecentRentals.Name = "dgvRecentRentals";
@@ -107,27 +100,6 @@
             this.dgvRecentRentals.Size = new System.Drawing.Size(1184, 298);
             this.dgvRecentRentals.TabIndex = 12;
             this.dgvRecentRentals.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRecentRentals_CellContentClick);
-            // 
-            // Customer
-            // 
-            this.Customer.HeaderText = "Customer";
-            this.Customer.MinimumWidth = 6;
-            this.Customer.Name = "Customer";
-            this.Customer.Width = 150;
-            // 
-            // Vehicle
-            // 
-            this.Vehicle.HeaderText = "Vehicle";
-            this.Vehicle.MinimumWidth = 6;
-            this.Vehicle.Name = "Vehicle";
-            this.Vehicle.Width = 150;
-            // 
-            // Status
-            // 
-            this.Status.HeaderText = "Status";
-            this.Status.MinimumWidth = 6;
-            this.Status.Name = "Status";
-            this.Status.Width = 150;
             // 
             // label13
             // 
@@ -467,9 +439,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvRecentRentals;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Customer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Vehicle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;

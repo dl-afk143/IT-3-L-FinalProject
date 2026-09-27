@@ -17,7 +17,9 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
         public Form1()
         {
             InitializeComponent();
-            
+            //TestDatabaseConnection();
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
