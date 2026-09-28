@@ -36,6 +36,14 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvActiveRentals = new System.Windows.Forms.DataGridView();
+            this.RentalID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CustomerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VehicleID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RentalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReturnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Created_at = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.lblRentalInfo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,14 +64,6 @@
             this.btnReturns = new System.Windows.Forms.Button();
             this.btnRentals = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
-            this.RentalID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CustomerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VehicleID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RentalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReturnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Created_at = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlRentalDetails.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvActiveRentals)).BeginInit();
             this.pnlRentalInformation.SuspendLayout();
@@ -162,6 +162,62 @@
             this.dgvActiveRentals.RowTemplate.Height = 24;
             this.dgvActiveRentals.Size = new System.Drawing.Size(1183, 288);
             this.dgvActiveRentals.TabIndex = 9;
+            // 
+            // RentalID
+            // 
+            this.RentalID.HeaderText = "Rental ID";
+            this.RentalID.MinimumWidth = 6;
+            this.RentalID.Name = "RentalID";
+            this.RentalID.Width = 125;
+            // 
+            // CustomerID
+            // 
+            this.CustomerID.HeaderText = "Customer ID";
+            this.CustomerID.MinimumWidth = 6;
+            this.CustomerID.Name = "CustomerID";
+            this.CustomerID.Width = 125;
+            // 
+            // VehicleID
+            // 
+            this.VehicleID.HeaderText = "Vehicle ID";
+            this.VehicleID.MinimumWidth = 6;
+            this.VehicleID.Name = "VehicleID";
+            this.VehicleID.Width = 125;
+            // 
+            // RentalDate
+            // 
+            this.RentalDate.HeaderText = "Rental Date";
+            this.RentalDate.MinimumWidth = 6;
+            this.RentalDate.Name = "RentalDate";
+            this.RentalDate.Width = 125;
+            // 
+            // ReturnDate
+            // 
+            this.ReturnDate.HeaderText = "Return Date";
+            this.ReturnDate.MinimumWidth = 6;
+            this.ReturnDate.Name = "ReturnDate";
+            this.ReturnDate.Width = 125;
+            // 
+            // TotalAmount
+            // 
+            this.TotalAmount.HeaderText = "Total Amount";
+            this.TotalAmount.MinimumWidth = 6;
+            this.TotalAmount.Name = "TotalAmount";
+            this.TotalAmount.Width = 125;
+            // 
+            // Status
+            // 
+            this.Status.HeaderText = "Status";
+            this.Status.MinimumWidth = 6;
+            this.Status.Name = "Status";
+            this.Status.Width = 125;
+            // 
+            // Created_at
+            // 
+            this.Created_at.HeaderText = "Date Created";
+            this.Created_at.MinimumWidth = 6;
+            this.Created_at.Name = "Created_at";
+            this.Created_at.Width = 125;
             // 
             // label8
             // 
@@ -311,7 +367,7 @@
             this.btnCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomers.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCustomers.Location = new System.Drawing.Point(16, 262);
-            this.btnCustomers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCustomers.Margin = new System.Windows.Forms.Padding(4);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.Size = new System.Drawing.Size(261, 64);
             this.btnCustomers.TabIndex = 31;
@@ -326,7 +382,7 @@
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.SystemColors.Control;
             this.btnLogout.Location = new System.Drawing.Point(13, 719);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(261, 64);
             this.btnLogout.TabIndex = 26;
@@ -341,7 +397,7 @@
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.SystemColors.Control;
             this.btnDashboard.Location = new System.Drawing.Point(13, 97);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(261, 64);
             this.btnDashboard.TabIndex = 30;
@@ -367,7 +423,7 @@
             this.btnVehicles.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVehicles.ForeColor = System.Drawing.SystemColors.Control;
             this.btnVehicles.Location = new System.Drawing.Point(16, 180);
-            this.btnVehicles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVehicles.Margin = new System.Windows.Forms.Padding(4);
             this.btnVehicles.Name = "btnVehicles";
             this.btnVehicles.Size = new System.Drawing.Size(261, 64);
             this.btnVehicles.TabIndex = 29;
@@ -384,7 +440,7 @@
             this.btnReturns.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturns.ForeColor = System.Drawing.SystemColors.Control;
             this.btnReturns.Location = new System.Drawing.Point(13, 433);
-            this.btnReturns.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReturns.Margin = new System.Windows.Forms.Padding(4);
             this.btnReturns.Name = "btnReturns";
             this.btnReturns.Size = new System.Drawing.Size(261, 64);
             this.btnReturns.TabIndex = 28;
@@ -400,7 +456,7 @@
             this.btnRentals.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRentals.ForeColor = System.Drawing.SystemColors.Control;
             this.btnRentals.Location = new System.Drawing.Point(13, 347);
-            this.btnRentals.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRentals.Margin = new System.Windows.Forms.Padding(4);
             this.btnRentals.Name = "btnRentals";
             this.btnRentals.Size = new System.Drawing.Size(261, 64);
             this.btnRentals.TabIndex = 27;
@@ -416,69 +472,13 @@
             this.btnReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReports.ForeColor = System.Drawing.SystemColors.Control;
             this.btnReports.Location = new System.Drawing.Point(16, 514);
-            this.btnReports.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReports.Margin = new System.Windows.Forms.Padding(4);
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(261, 64);
             this.btnReports.TabIndex = 17;
             this.btnReports.Text = "Reports";
             this.btnReports.UseVisualStyleBackColor = false;
             this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
-            // 
-            // RentalID
-            // 
-            this.RentalID.HeaderText = "Rental ID";
-            this.RentalID.MinimumWidth = 6;
-            this.RentalID.Name = "RentalID";
-            this.RentalID.Width = 125;
-            // 
-            // CustomerID
-            // 
-            this.CustomerID.HeaderText = "Customer ID";
-            this.CustomerID.MinimumWidth = 6;
-            this.CustomerID.Name = "CustomerID";
-            this.CustomerID.Width = 125;
-            // 
-            // VehicleID
-            // 
-            this.VehicleID.HeaderText = "Vehicle ID";
-            this.VehicleID.MinimumWidth = 6;
-            this.VehicleID.Name = "VehicleID";
-            this.VehicleID.Width = 125;
-            // 
-            // RentalDate
-            // 
-            this.RentalDate.HeaderText = "Rental Date";
-            this.RentalDate.MinimumWidth = 6;
-            this.RentalDate.Name = "RentalDate";
-            this.RentalDate.Width = 125;
-            // 
-            // ReturnDate
-            // 
-            this.ReturnDate.HeaderText = "Return Date";
-            this.ReturnDate.MinimumWidth = 6;
-            this.ReturnDate.Name = "ReturnDate";
-            this.ReturnDate.Width = 125;
-            // 
-            // TotalAmount
-            // 
-            this.TotalAmount.HeaderText = "Total Amount";
-            this.TotalAmount.MinimumWidth = 6;
-            this.TotalAmount.Name = "TotalAmount";
-            this.TotalAmount.Width = 125;
-            // 
-            // Status
-            // 
-            this.Status.HeaderText = "Status";
-            this.Status.MinimumWidth = 6;
-            this.Status.Name = "Status";
-            this.Status.Width = 125;
-            // 
-            // Created_at
-            // 
-            this.Created_at.HeaderText = "Date Created";
-            this.Created_at.MinimumWidth = 6;
-            this.Created_at.Name = "Created_at";
-            this.Created_at.Width = 125;
             // 
             // Form3RentalManagement
             // 
@@ -491,6 +491,7 @@
             this.Controls.Add(this.dgvActiveRentals);
             this.Controls.Add(this.pnlRentalDetails);
             this.Name = "Form3RentalManagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3RentalManagement";
             this.Load += new System.EventHandler(this.Form3RentalManagement_Load);
             this.pnlRentalDetails.ResumeLayout(false);

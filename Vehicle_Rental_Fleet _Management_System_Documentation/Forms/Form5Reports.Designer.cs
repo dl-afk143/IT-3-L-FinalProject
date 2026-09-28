@@ -55,17 +55,17 @@
             this.panel1.Location = new System.Drawing.Point(-2, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(280, 370);
+            this.panel1.Size = new System.Drawing.Size(293, 808);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnCustomerRecords
             // 
             this.btnCustomerRecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomerRecords.Location = new System.Drawing.Point(3, 217);
+            this.btnCustomerRecords.Location = new System.Drawing.Point(3, 288);
             this.btnCustomerRecords.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCustomerRecords.Name = "btnCustomerRecords";
-            this.btnCustomerRecords.Size = new System.Drawing.Size(275, 66);
+            this.btnCustomerRecords.Size = new System.Drawing.Size(287, 66);
             this.btnCustomerRecords.TabIndex = 1;
             this.btnCustomerRecords.Text = "Customer Records";
             this.btnCustomerRecords.UseVisualStyleBackColor = true;
@@ -73,10 +73,10 @@
             // btnVehicleStatus
             // 
             this.btnVehicleStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVehicleStatus.Location = new System.Drawing.Point(3, 146);
+            this.btnVehicleStatus.Location = new System.Drawing.Point(0, 218);
             this.btnVehicleStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVehicleStatus.Name = "btnVehicleStatus";
-            this.btnVehicleStatus.Size = new System.Drawing.Size(275, 66);
+            this.btnVehicleStatus.Size = new System.Drawing.Size(290, 66);
             this.btnVehicleStatus.TabIndex = 2;
             this.btnVehicleStatus.Text = "Vehicle Status";
             this.btnVehicleStatus.UseVisualStyleBackColor = true;
@@ -84,10 +84,10 @@
             // btnRentalHistory
             // 
             this.btnRentalHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRentalHistory.Location = new System.Drawing.Point(3, 75);
+            this.btnRentalHistory.Location = new System.Drawing.Point(0, 148);
             this.btnRentalHistory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRentalHistory.Name = "btnRentalHistory";
-            this.btnRentalHistory.Size = new System.Drawing.Size(275, 66);
+            this.btnRentalHistory.Size = new System.Drawing.Size(290, 66);
             this.btnRentalHistory.TabIndex = 1;
             this.btnRentalHistory.Text = "Rental History";
             this.btnRentalHistory.UseVisualStyleBackColor = true;
@@ -95,10 +95,10 @@
             // btnReports
             // 
             this.btnReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReports.Location = new System.Drawing.Point(3, 6);
+            this.btnReports.Location = new System.Drawing.Point(0, 78);
             this.btnReports.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(275, 66);
+            this.btnReports.Size = new System.Drawing.Size(287, 66);
             this.btnReports.TabIndex = 0;
             this.btnReports.Text = "Reports";
             this.btnReports.UseVisualStyleBackColor = true;
@@ -122,11 +122,11 @@
             this.gbReport.Controls.Add(this.comboBox1);
             this.gbReport.Controls.Add(this.label1);
             this.gbReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbReport.Location = new System.Drawing.Point(311, 25);
+            this.gbReport.Location = new System.Drawing.Point(311, 118);
             this.gbReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbReport.Name = "gbReport";
             this.gbReport.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbReport.Size = new System.Drawing.Size(1168, 331);
+            this.gbReport.Size = new System.Drawing.Size(1168, 554);
             this.gbReport.TabIndex = 2;
             this.gbReport.TabStop = false;
             this.gbReport.Text = "Report";
@@ -191,10 +191,10 @@
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(311, 361);
+            this.btnBack.Location = new System.Drawing.Point(311, 34);
             this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(161, 51);
+            this.btnBack.Size = new System.Drawing.Size(147, 49);
             this.btnBack.TabIndex = 19;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -204,12 +204,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1491, 450);
+            this.ClientSize = new System.Drawing.Size(1540, 818);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.gbReport);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form5Reports";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form5Reports";
             this.panel1.ResumeLayout(false);
             this.gbReport.ResumeLayout(false);

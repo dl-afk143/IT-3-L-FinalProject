@@ -1,134 +1,65 @@
 ﻿using System;
-using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-
 using Vehicle_Rental_Fleet__Management_System_Documentation;
 
 namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
 {
     public partial class Form2Vehicles : Form
     {
-        // Database connection
-        private DatabaseConnection db = new DatabaseConnection();
-
-
-        // =========================================================
-        // CONSTRUCTOR
-        // =========================================================
+        private readonly DatabaseConnection db = new DatabaseConnection();
 
         public Form2Vehicles()
         {
             InitializeComponent();
         }
 
-
-        // =========================================================
-        // DASHBOARD BUTTON
-        // =========================================================
-
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            Form1 form1Form = new Form1();
-            form1Form.Show();
-
+            new Form1().Show();
             this.Hide();
         }
-
-
-        // =========================================================
-        // VEHICLES BUTTON
-        // =========================================================
 
         private void btnVehicles_Click(object sender, EventArgs e)
         {
-            Form2Vehicles form2VehiclesForm = new Form2Vehicles();
-            form2VehiclesForm.Show();
-
+            new Form2Vehicles().Show();
             this.Hide();
         }
-
-
-        // =========================================================
-        // RENTALS BUTTON
-        // =========================================================
 
         private void btnRentals_Click(object sender, EventArgs e)
         {
-            Form3RentalManagement form3RentalManagementForm =
-                new Form3RentalManagement();
-
-            form3RentalManagementForm.Show();
-
+            new Form3RentalManagement().Show();
             this.Hide();
         }
-
-
-        // =========================================================
-        // RETURNS BUTTON
-        // =========================================================
 
         private void btnReturns_Click(object sender, EventArgs e)
         {
-            Form4ReturnManagement form4ReturnManagementForm =
-                new Form4ReturnManagement();
-
-            form4ReturnManagementForm.Show();
-
+            new Form4ReturnManagement().Show();
             this.Hide();
         }
-
-
-        // =========================================================
-        // REPORTS BUTTON
-        // =========================================================
 
         private void btnReports_Click(object sender, EventArgs e)
         {
-            Form5Reports form5ReportsForm =
-                new Form5Reports();
-
-            form5ReportsForm.Show();
-
+            new Form5Reports().Show();
             this.Hide();
         }
-
-
-        // =========================================================
-        // ADD VEHICLE BUTTON
-        // =========================================================
 
         private void btnAddVehicle_Click(object sender, EventArgs e)
         {
-            AddVehicle addVehicleForm = new AddVehicle();
-
-            addVehicleForm.Show();
-
+            AddVehicle addForm = new AddVehicle();
+            addForm.FormClosed += (s, args) =>
+            {
+                LoadVehicles();
+                this.Show();
+            };
+            addForm.Show();
             this.Hide();
         }
-
-
-        // =========================================================
-        // FORM LOAD
-        // =========================================================
 
         private void Form2Vehicles_Load(object sender, EventArgs e)
         {
             LoadVehicles();
         }
-
-
-        // This is included because your Designer may be connected
-        // to Form2Vehicles_Load_1 instead of Form2Vehicles_Load.
-        private void Form2Vehicles_Load_1(object sender, EventArgs e)
-        {
-            LoadVehicles();
-        }
-
-
-        // =========================================================
-        // LOAD VEHICLES FROM DATABASE
-        // =========================================================
 
         private void LoadVehicles()
         {
@@ -152,32 +83,25 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
                         FROM vehicles
                         ORDER BY vehicle_id ASC";
 
-
-                    using (MySqlCommand command =
-                        new MySqlCommand(query, connection))
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    using (MySqlDataReader reader = command.ExecuteReader())
                     {
-                        using (MySqlDataReader reader =
-                            command.ExecuteReader())
-                        {
-                            // Remove existing rows
-                            dgvVehicles.Rows.Clear();
+                        dgvVehicles.Rows.Clear();
 
-                            while (reader.Read())
-                            {
-                                dgvVehicles.Rows.Add(
-                                    reader["vehicle_id"].ToString(),
-                                    reader["plate_number"].ToString(),
-                                    reader["vehicle_type"].ToString(),
-                                    reader["brand"].ToString(),
-                                    reader["model"].ToString(),
-                                    reader["year_model"].ToString(),
-                                    reader["daily_rate"].ToString(),
-                                    reader["status"].ToString(),
-                                    Convert.ToDateTime(
-                                        reader["created_at"]
-                                    ).ToString("yyyy-MM-dd HH:mm")
-                                );
-                            }
+                        while (reader.Read())
+                        {
+                            dgvVehicles.Rows.Add(
+                                reader["vehicle_id"].ToString(),
+                                reader["plate_number"].ToString(),
+                                reader["vehicle_type"].ToString(),
+                                reader["brand"].ToString(),
+                                reader["model"].ToString(),
+                                reader["year_model"].ToString(),
+                                reader["daily_rate"].ToString(),
+                                reader["status"].ToString(),
+                                Convert.ToDateTime(reader["created_at"])
+                                    .ToString("yyyy-MM-dd HH:mm")
+                            );
                         }
                     }
                 }
@@ -193,92 +117,35 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
             }
         }
 
-
-        // =========================================================
-        // VEHICLE LIST - CLICK ROW
-        // =========================================================
-
-        private void dgvRecentRentals_CellContentClick(
-            object sender,
-            DataGridViewCellEventArgs e)
+        private void dgvVehicle_SelectionChanged(object sender, EventArgs e)
         {
-            if (e.RowIndex < 0)
-                return;
-
-            DataGridViewRow row =
-                dgvVehicles.Rows[e.RowIndex];
-
-            // Ignore the empty "new row"
-            if (row.IsNewRow)
-                return;
-
-
-            try
+            if (dgvVehicles.CurrentRow == null ||
+        dgvVehicles.CurrentRow.IsNewRow)
             {
-                // Column 0 = Vehicle ID
-                tbVehicleID.Text =
-                    row.Cells[0].Value?.ToString() ?? "";
-
-
-                // Column 1 = Plate Number
-                tbPlateNumber.Text =
-                    row.Cells[1].Value?.ToString() ?? "";
-
-
-                // Column 2 = Vehicle Type
-                cmbVehicleType.Text =
-                    row.Cells[2].Value?.ToString() ?? "";
-
-
-                // Column 3 = Brand
-                tbBrand.Text =
-                    row.Cells[3].Value?.ToString() ?? "";
-
-
-                // Column 4 = Model
-                tbModel.Text =
-                    row.Cells[4].Value?.ToString() ?? "";
-
-
-                // Column 5 = Year Model
-                tbYearModel.Text =
-                    row.Cells[5].Value?.ToString() ?? "";
-
-
-                // Column 6 = Daily Rate
-                tbDailyRate.Text =
-                    row.Cells[6].Value?.ToString() ?? "";
-
-
-                // Column 7 = Status
-                cmbStatus.Text =
-                    row.Cells[7].Value?.ToString() ?? "";
+                return;
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(
-                    "Unable to select vehicle.\n\n" + ex.Message,
-                    "Error",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
-                );
-            }
+
+            DataGridViewRow row = dgvVehicles.CurrentRow;
+
+            tbVehicleID.Text = row.Cells[0].Value?.ToString() ?? "";
+            tbPlateNumber.Text = row.Cells[1].Value?.ToString() ?? "";
+
+            cmbVehicleType.SelectedItem =
+                row.Cells[2].Value?.ToString();
+
+            tbBrand.Text = row.Cells[3].Value?.ToString() ?? "";
+            tbModel.Text = row.Cells[4].Value?.ToString() ?? "";
+            tbYearModel.Text = row.Cells[5].Value?.ToString() ?? "";
+            tbDailyRate.Text = row.Cells[6].Value?.ToString() ?? "";
+
+            cmbStatus.SelectedItem =
+                row.Cells[7].Value?.ToString();
         }
-
-
-        // =========================================================
-        // CLEAR BUTTON
-        // =========================================================
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             ClearFields();
         }
-
-
-        // =========================================================
-        // CLEAR FIELDS METHOD
-        // =========================================================
 
         private void ClearFields()
         {
@@ -293,17 +160,8 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
             cmbStatus.SelectedIndex = -1;
         }
 
-
-        // =========================================================
-        // UPDATE VEHICLE
-        // =========================================================
-
         private void btnUpdateVehicle_Click(object sender, EventArgs e)
         {
-            // -----------------------------------------------------
-            // Check Vehicle ID
-            // -----------------------------------------------------
-
             if (string.IsNullOrWhiteSpace(tbVehicleID.Text))
             {
                 MessageBox.Show(
@@ -312,14 +170,8 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning
                 );
-
                 return;
             }
-
-
-            // -----------------------------------------------------
-            // Check required fields
-            // -----------------------------------------------------
 
             if (string.IsNullOrWhiteSpace(tbPlateNumber.Text) ||
                 string.IsNullOrWhiteSpace(cmbVehicleType.Text) ||
@@ -335,18 +187,10 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning
                 );
-
                 return;
             }
 
-
-            // -----------------------------------------------------
-            // Validate Vehicle ID
-            // -----------------------------------------------------
-
-            if (!int.TryParse(
-                tbVehicleID.Text.Trim(),
-                out int vehicleID))
+            if (!int.TryParse(tbVehicleID.Text.Trim(), out int vehicleID))
             {
                 MessageBox.Show(
                     "Vehicle ID must be a valid number.",
@@ -354,18 +198,10 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning
                 );
-
                 return;
             }
 
-
-            // -----------------------------------------------------
-            // Validate Year Model
-            // -----------------------------------------------------
-
-            if (!int.TryParse(
-                tbYearModel.Text.Trim(),
-                out int yearModel))
+            if (!int.TryParse(tbYearModel.Text.Trim(), out int yearModel))
             {
                 MessageBox.Show(
                     "Year Model must be a valid number.",
@@ -373,18 +209,10 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning
                 );
-
                 return;
             }
 
-
-            // -----------------------------------------------------
-            // Validate Daily Rate
-            // -----------------------------------------------------
-
-            if (!decimal.TryParse(
-                tbDailyRate.Text.Trim(),
-                out decimal dailyRate))
+            if (!decimal.TryParse(tbDailyRate.Text.Trim(), out decimal dailyRate))
             {
                 MessageBox.Show(
                     "Daily Rate must be a valid number.",
@@ -392,18 +220,14 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning
                 );
-
                 return;
             }
 
-
             try
             {
-                using (MySqlConnection connection =
-                    db.GetConnection())
+                using (MySqlConnection connection = db.GetConnection())
                 {
                     connection.Open();
-
 
                     string query = @"
                         UPDATE vehicles
@@ -417,9 +241,7 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
                             status = @status
                         WHERE vehicle_id = @vehicleID";
 
-
-                    using (MySqlCommand command =
-                        new MySqlCommand(query, connection))
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue(
                             "@plateNumber",
@@ -461,14 +283,7 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
                             vehicleID
                         );
 
-
-                        int rowsAffected =
-                            command.ExecuteNonQuery();
-
-
-                        // -------------------------------------------------
-                        // Update successful
-                        // -------------------------------------------------
+                        int rowsAffected = command.ExecuteNonQuery();
 
                         if (rowsAffected > 0)
                         {
@@ -479,10 +294,7 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
                                 MessageBoxIcon.Information
                             );
 
-                            // Refresh vehicle list
                             LoadVehicles();
-
-                            // Clear fields
                             ClearFields();
                         }
                         else
@@ -499,7 +311,6 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
             }
             catch (MySqlException ex)
             {
-                // Duplicate plate number
                 if (ex.Number == 1062)
                 {
                     MessageBox.Show(
@@ -530,17 +341,8 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
             }
         }
 
-
-        // =========================================================
-        // DELETE VEHICLE
-        // =========================================================
-
         private void btnDeleteVehicle_Click(object sender, EventArgs e)
         {
-            // -----------------------------------------------------
-            // Check Vehicle ID
-            // -----------------------------------------------------
-
             if (string.IsNullOrWhiteSpace(tbVehicleID.Text))
             {
                 MessageBox.Show(
@@ -549,18 +351,10 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning
                 );
-
                 return;
             }
 
-
-            // -----------------------------------------------------
-            // Validate Vehicle ID
-            // -----------------------------------------------------
-
-            if (!int.TryParse(
-                tbVehicleID.Text.Trim(),
-                out int vehicleID))
+            if (!int.TryParse(tbVehicleID.Text.Trim(), out int vehicleID))
             {
                 MessageBox.Show(
                     "Invalid Vehicle ID.",
@@ -568,14 +362,8 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning
                 );
-
                 return;
             }
-
-
-            // -----------------------------------------------------
-            // Confirmation
-            // -----------------------------------------------------
 
             DialogResult result = MessageBox.Show(
                 "Are you sure you want to delete this vehicle?",
@@ -584,38 +372,27 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
                 MessageBoxIcon.Question
             );
 
-
             if (result != DialogResult.Yes)
-            {
                 return;
-            }
-
 
             try
             {
-                using (MySqlConnection connection =
-                    db.GetConnection())
+                using (MySqlConnection connection = db.GetConnection())
                 {
                     connection.Open();
-
 
                     string query = @"
                         DELETE FROM vehicles
                         WHERE vehicle_id = @vehicleID";
 
-
-                    using (MySqlCommand command =
-                        new MySqlCommand(query, connection))
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue(
                             "@vehicleID",
                             vehicleID
                         );
 
-
-                        int rowsAffected =
-                            command.ExecuteNonQuery();
-
+                        int rowsAffected = command.ExecuteNonQuery();
 
                         if (rowsAffected > 0)
                         {
@@ -626,12 +403,7 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
                                 MessageBoxIcon.Information
                             );
 
-
-                            // Refresh list
                             LoadVehicles();
-
-
-                            // Clear form
                             ClearFields();
                         }
                         else
@@ -648,7 +420,6 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
             }
             catch (MySqlException ex)
             {
-                // Foreign key constraint
                 if (ex.Number == 1451)
                 {
                     MessageBox.Show(
@@ -679,14 +450,7 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
             }
         }
 
-
-        // =========================================================
-        // GROUP BOX EVENT
-        // =========================================================
-
-        private void grbVehicleInformation_Enter(
-            object sender,
-            EventArgs e)
+        private void grbVehicleInformation_Enter(object sender, EventArgs e)
         {
         }
     }
