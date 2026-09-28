@@ -73,9 +73,9 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Screenshot_2026_09_27_121017_removebg_preview {
+        internal static System.Drawing.Bitmap Screenshot_2026_09_27_121017_removebg_preview2 {
             get {
-                object obj = ResourceManager.GetObject("Screenshot_2026-09-27_121017-removebg-preview", resourceCulture);
+                object obj = ResourceManager.GetObject("Screenshot_2026-09-27_121017-removebg-preview2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
