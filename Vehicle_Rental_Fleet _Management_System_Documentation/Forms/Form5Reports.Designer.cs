@@ -28,212 +28,383 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCustomerRecords = new System.Windows.Forms.Button();
-            this.btnVehicleStatus = new System.Windows.Forms.Button();
-            this.btnRentalHistory = new System.Windows.Forms.Button();
+            this.pnlReturnSidebar = new System.Windows.Forms.Panel();
+            this.btnCustomers = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnVehicles = new System.Windows.Forms.Button();
+            this.btnReturns = new System.Windows.Forms.Button();
+            this.btnRentals = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.gbReport = new System.Windows.Forms.GroupBox();
-            this.btnGenerateReport = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.grpReportInformation = new System.Windows.Forms.GroupBox();
+            this.lblReportType = new System.Windows.Forms.Label();
+            this.cmbReportType = new System.Windows.Forms.ComboBox();
+            this.lblFromDate = new System.Windows.Forms.Label();
+            this.dtpFromDate = new System.Windows.Forms.DateTimePicker();
+            this.lblToDate = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            this.gbReport.SuspendLayout();
+            this.btnGenerate = new System.Windows.Forms.Button();
+            this.grpReportResults = new System.Windows.Forms.GroupBox();
+            this.dgvReportResults = new System.Windows.Forms.DataGridView();
+            this.colRentalID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCustomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colVehicle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colRentalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colReturnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTotalAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnlReturnSidebar.SuspendLayout();
+            this.grpReportInformation.SuspendLayout();
+            this.grpReportResults.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReportResults)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlReturnSidebar
             // 
-            this.panel1.Controls.Add(this.btnCustomerRecords);
-            this.panel1.Controls.Add(this.btnVehicleStatus);
-            this.panel1.Controls.Add(this.btnRentalHistory);
-            this.panel1.Controls.Add(this.btnReports);
-            this.panel1.Location = new System.Drawing.Point(-2, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(293, 808);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.pnlReturnSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.pnlReturnSidebar.Controls.Add(this.btnCustomers);
+            this.pnlReturnSidebar.Controls.Add(this.btnLogout);
+            this.pnlReturnSidebar.Controls.Add(this.btnDashboard);
+            this.pnlReturnSidebar.Controls.Add(this.label11);
+            this.pnlReturnSidebar.Controls.Add(this.btnVehicles);
+            this.pnlReturnSidebar.Controls.Add(this.btnReturns);
+            this.pnlReturnSidebar.Controls.Add(this.btnRentals);
+            this.pnlReturnSidebar.Controls.Add(this.btnReports);
+            this.pnlReturnSidebar.Location = new System.Drawing.Point(1, -2);
+            this.pnlReturnSidebar.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlReturnSidebar.Name = "pnlReturnSidebar";
+            this.pnlReturnSidebar.Size = new System.Drawing.Size(220, 656);
+            this.pnlReturnSidebar.TabIndex = 28;
+            this.pnlReturnSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlReturnSidebar_Paint);
             // 
-            // btnCustomerRecords
+            // btnCustomers
             // 
-            this.btnCustomerRecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomerRecords.Location = new System.Drawing.Point(3, 288);
-            this.btnCustomerRecords.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCustomerRecords.Name = "btnCustomerRecords";
-            this.btnCustomerRecords.Size = new System.Drawing.Size(287, 66);
-            this.btnCustomerRecords.TabIndex = 1;
-            this.btnCustomerRecords.Text = "Customer Records";
-            this.btnCustomerRecords.UseVisualStyleBackColor = true;
+            this.btnCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnCustomers.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomers.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCustomers.Location = new System.Drawing.Point(12, 213);
+            this.btnCustomers.Name = "btnCustomers";
+            this.btnCustomers.Size = new System.Drawing.Size(196, 52);
+            this.btnCustomers.TabIndex = 31;
+            this.btnCustomers.Text = "Customers";
+            this.btnCustomers.UseVisualStyleBackColor = false;
             // 
-            // btnVehicleStatus
+            // btnLogout
             // 
-            this.btnVehicleStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVehicleStatus.Location = new System.Drawing.Point(0, 218);
-            this.btnVehicleStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnVehicleStatus.Name = "btnVehicleStatus";
-            this.btnVehicleStatus.Size = new System.Drawing.Size(290, 66);
-            this.btnVehicleStatus.TabIndex = 2;
-            this.btnVehicleStatus.Text = "Vehicle Status";
-            this.btnVehicleStatus.UseVisualStyleBackColor = true;
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnLogout.Location = new System.Drawing.Point(10, 584);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(196, 52);
+            this.btnLogout.TabIndex = 26;
+            this.btnLogout.Text = "LogOut";
+            this.btnLogout.UseVisualStyleBackColor = false;
             // 
-            // btnRentalHistory
+            // btnDashboard
             // 
-            this.btnRentalHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRentalHistory.Location = new System.Drawing.Point(0, 148);
-            this.btnRentalHistory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnRentalHistory.Name = "btnRentalHistory";
-            this.btnRentalHistory.Size = new System.Drawing.Size(290, 66);
-            this.btnRentalHistory.TabIndex = 1;
-            this.btnRentalHistory.Text = "Rental History";
-            this.btnRentalHistory.UseVisualStyleBackColor = true;
+            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnDashboard.Location = new System.Drawing.Point(10, 79);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(196, 52);
+            this.btnDashboard.TabIndex = 30;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(22, 12);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(179, 64);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "Vehicle Rental and Fleet Management";
+            // 
+            // btnVehicles
+            // 
+            this.btnVehicles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnVehicles.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnVehicles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVehicles.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVehicles.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnVehicles.Location = new System.Drawing.Point(12, 146);
+            this.btnVehicles.Name = "btnVehicles";
+            this.btnVehicles.Size = new System.Drawing.Size(196, 52);
+            this.btnVehicles.TabIndex = 29;
+            this.btnVehicles.Text = "Vehicles";
+            this.btnVehicles.UseVisualStyleBackColor = false;
+            // 
+            // btnReturns
+            // 
+            this.btnReturns.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.btnReturns.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnReturns.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnReturns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReturns.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturns.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnReturns.Location = new System.Drawing.Point(10, 352);
+            this.btnReturns.Name = "btnReturns";
+            this.btnReturns.Size = new System.Drawing.Size(196, 52);
+            this.btnReturns.TabIndex = 28;
+            this.btnReturns.Text = "Returns";
+            this.btnReturns.UseVisualStyleBackColor = false;
+            // 
+            // btnRentals
+            // 
+            this.btnRentals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnRentals.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnRentals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRentals.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRentals.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnRentals.Location = new System.Drawing.Point(10, 282);
+            this.btnRentals.Name = "btnRentals";
+            this.btnRentals.Size = new System.Drawing.Size(196, 52);
+            this.btnRentals.TabIndex = 27;
+            this.btnRentals.Text = "Rentals";
+            this.btnRentals.UseVisualStyleBackColor = false;
             // 
             // btnReports
             // 
-            this.btnReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReports.Location = new System.Drawing.Point(0, 78);
-            this.btnReports.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnReports.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReports.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnReports.Location = new System.Drawing.Point(12, 418);
             this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(287, 66);
-            this.btnReports.TabIndex = 0;
+            this.btnReports.Size = new System.Drawing.Size(196, 52);
+            this.btnReports.TabIndex = 17;
             this.btnReports.Text = "Reports";
-            this.btnReports.UseVisualStyleBackColor = true;
+            this.btnReports.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // grpReportInformation
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Report Type:";
+            this.grpReportInformation.BackColor = System.Drawing.Color.Transparent;
+            this.grpReportInformation.Controls.Add(this.btnGenerate);
+            this.grpReportInformation.Controls.Add(this.dateTimePicker1);
+            this.grpReportInformation.Controls.Add(this.lblToDate);
+            this.grpReportInformation.Controls.Add(this.dtpFromDate);
+            this.grpReportInformation.Controls.Add(this.lblFromDate);
+            this.grpReportInformation.Controls.Add(this.cmbReportType);
+            this.grpReportInformation.Controls.Add(this.lblReportType);
+            this.grpReportInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpReportInformation.ForeColor = System.Drawing.Color.Navy;
+            this.grpReportInformation.Location = new System.Drawing.Point(254, 12);
+            this.grpReportInformation.Name = "grpReportInformation";
+            this.grpReportInformation.Size = new System.Drawing.Size(534, 308);
+            this.grpReportInformation.TabIndex = 29;
+            this.grpReportInformation.TabStop = false;
+            this.grpReportInformation.Text = "Report Information";
+            this.grpReportInformation.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // gbReport
+            // lblReportType
             // 
-            this.gbReport.Controls.Add(this.btnGenerateReport);
-            this.gbReport.Controls.Add(this.dateTimePicker2);
-            this.gbReport.Controls.Add(this.dateTimePicker1);
-            this.gbReport.Controls.Add(this.label3);
-            this.gbReport.Controls.Add(this.label2);
-            this.gbReport.Controls.Add(this.comboBox1);
-            this.gbReport.Controls.Add(this.label1);
-            this.gbReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbReport.Location = new System.Drawing.Point(311, 118);
-            this.gbReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbReport.Name = "gbReport";
-            this.gbReport.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbReport.Size = new System.Drawing.Size(1168, 554);
-            this.gbReport.TabIndex = 2;
-            this.gbReport.TabStop = false;
-            this.gbReport.Text = "Report";
+            this.lblReportType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReportType.Location = new System.Drawing.Point(6, 53);
+            this.lblReportType.Name = "lblReportType";
+            this.lblReportType.Size = new System.Drawing.Size(135, 30);
+            this.lblReportType.TabIndex = 0;
+            this.lblReportType.Text = "Report Type:";
             // 
-            // btnGenerateReport
+            // cmbReportType
             // 
-            this.btnGenerateReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerateReport.Location = new System.Drawing.Point(13, 90);
-            this.btnGenerateReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnGenerateReport.Name = "btnGenerateReport";
-            this.btnGenerateReport.Size = new System.Drawing.Size(133, 41);
-            this.btnGenerateReport.TabIndex = 18;
-            this.btnGenerateReport.Text = "Generate Report";
-            this.btnGenerateReport.UseVisualStyleBackColor = true;
+            this.cmbReportType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbReportType.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbReportType.FormattingEnabled = true;
+            this.cmbReportType.Items.AddRange(new object[] {
+            "Rental History",
+            "Vehicle Status",
+            "Customer Records",
+            "Returned Vehicles"});
+            this.cmbReportType.Location = new System.Drawing.Point(126, 53);
+            this.cmbReportType.Name = "cmbReportType";
+            this.cmbReportType.Size = new System.Drawing.Size(340, 26);
+            this.cmbReportType.TabIndex = 1;
             // 
-            // dateTimePicker2
+            // lblFromDate
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(915, 38);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(221, 28);
-            this.dateTimePicker2.TabIndex = 17;
+            this.lblFromDate.AutoSize = true;
+            this.lblFromDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFromDate.Location = new System.Drawing.Point(21, 103);
+            this.lblFromDate.Name = "lblFromDate";
+            this.lblFromDate.Size = new System.Drawing.Size(99, 20);
+            this.lblFromDate.TabIndex = 2;
+            this.lblFromDate.Text = "From Date:";
+            this.lblFromDate.Click += new System.EventHandler(this.lblFromDate_Click);
+            // 
+            // dtpFromDate
+            // 
+            this.dtpFromDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFromDate.Location = new System.Drawing.Point(126, 103);
+            this.dtpFromDate.Name = "dtpFromDate";
+            this.dtpFromDate.Size = new System.Drawing.Size(340, 29);
+            this.dtpFromDate.TabIndex = 3;
+            // 
+            // lblToDate
+            // 
+            this.lblToDate.AutoSize = true;
+            this.lblToDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblToDate.Location = new System.Drawing.Point(42, 164);
+            this.lblToDate.Name = "lblToDate";
+            this.lblToDate.Size = new System.Drawing.Size(78, 20);
+            this.lblToDate.TabIndex = 4;
+            this.lblToDate.Text = "To Date:";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(576, 38);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(126, 164);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(221, 28);
-            this.dateTimePicker1.TabIndex = 16;
+            this.dateTimePicker1.Size = new System.Drawing.Size(340, 29);
+            this.dateTimePicker1.TabIndex = 5;
             // 
-            // label3
+            // btnGenerate
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(823, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 24);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "To Date:";
+            this.btnGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(145)))), ((int)(((byte)(225)))));
+            this.btnGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerate.ForeColor = System.Drawing.Color.White;
+            this.btnGenerate.Location = new System.Drawing.Point(25, 231);
+            this.btnGenerate.Name = "btnGenerate";
+            this.btnGenerate.Size = new System.Drawing.Size(496, 50);
+            this.btnGenerate.TabIndex = 6;
+            this.btnGenerate.Text = "Generate Report";
+            this.btnGenerate.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // grpReportResults
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(467, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 24);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "From Date:";
+            this.grpReportResults.Controls.Add(this.dgvReportResults);
+            this.grpReportResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpReportResults.ForeColor = System.Drawing.Color.Navy;
+            this.grpReportResults.Location = new System.Drawing.Point(243, 338);
+            this.grpReportResults.Name = "grpReportResults";
+            this.grpReportResults.Size = new System.Drawing.Size(900, 296);
+            this.grpReportResults.TabIndex = 30;
+            this.grpReportResults.TabStop = false;
+            this.grpReportResults.Text = "Report Results";
             // 
-            // comboBox1
+            // dgvReportResults
             // 
-            this.comboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.IntegralHeight = false;
-            this.comboBox1.ItemHeight = 30;
-            this.comboBox1.Location = new System.Drawing.Point(151, 37);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(268, 36);
-            this.comboBox1.TabIndex = 13;
+            this.dgvReportResults.AllowUserToDeleteRows = false;
+            this.dgvReportResults.AllowUserToResizeColumns = false;
+            this.dgvReportResults.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvReportResults.ColumnHeadersHeight = 35;
+            this.dgvReportResults.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colRentalID,
+            this.colCustomer,
+            this.colVehicle,
+            this.colRentalDate,
+            this.colReturnDate,
+            this.colTotalAmount,
+            this.colStatus});
+            this.dgvReportResults.Location = new System.Drawing.Point(0, 22);
+            this.dgvReportResults.Name = "dgvReportResults";
+            this.dgvReportResults.ReadOnly = true;
+            this.dgvReportResults.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvReportResults.Size = new System.Drawing.Size(900, 268);
+            this.dgvReportResults.TabIndex = 0;
             // 
-            // btnBack
+            // colRentalID
             // 
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(311, 34);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(147, 49);
-            this.btnBack.TabIndex = 19;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.colRentalID.HeaderText = "Rental ID";
+            this.colRentalID.Name = "colRentalID";
+            this.colRentalID.ReadOnly = true;
+            // 
+            // colCustomer
+            // 
+            this.colCustomer.HeaderText = "Customer";
+            this.colCustomer.Name = "colCustomer";
+            this.colCustomer.ReadOnly = true;
+            // 
+            // colVehicle
+            // 
+            this.colVehicle.HeaderText = "Vehicle";
+            this.colVehicle.Name = "colVehicle";
+            this.colVehicle.ReadOnly = true;
+            // 
+            // colRentalDate
+            // 
+            this.colRentalDate.HeaderText = "Rental Date";
+            this.colRentalDate.Name = "colRentalDate";
+            this.colRentalDate.ReadOnly = true;
+            // 
+            // colReturnDate
+            // 
+            this.colReturnDate.HeaderText = "Return Date";
+            this.colReturnDate.Name = "colReturnDate";
+            this.colReturnDate.ReadOnly = true;
+            // 
+            // colTotalAmount
+            // 
+            this.colTotalAmount.HeaderText = "Total Amount";
+            this.colTotalAmount.Name = "colTotalAmount";
+            this.colTotalAmount.ReadOnly = true;
+            // 
+            // colStatus
+            // 
+            this.colStatus.HeaderText = "Status";
+            this.colStatus.Name = "colStatus";
+            this.colStatus.ReadOnly = true;
             // 
             // Form5Reports
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1540, 818);
-            this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.gbReport);
-            this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ClientSize = new System.Drawing.Size(1155, 665);
+            this.Controls.Add(this.grpReportResults);
+            this.Controls.Add(this.grpReportInformation);
+            this.Controls.Add(this.pnlReturnSidebar);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form5Reports";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form5Reports";
-            this.panel1.ResumeLayout(false);
-            this.gbReport.ResumeLayout(false);
-            this.gbReport.PerformLayout();
+            this.pnlReturnSidebar.ResumeLayout(false);
+            this.grpReportInformation.ResumeLayout(false);
+            this.grpReportInformation.PerformLayout();
+            this.grpReportResults.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReportResults)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnCustomerRecords;
-        private System.Windows.Forms.Button btnVehicleStatus;
-        private System.Windows.Forms.Button btnRentalHistory;
+        private System.Windows.Forms.Panel pnlReturnSidebar;
+        private System.Windows.Forms.Button btnCustomers;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnDashboard;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnVehicles;
+        private System.Windows.Forms.Button btnReturns;
+        private System.Windows.Forms.Button btnRentals;
         private System.Windows.Forms.Button btnReports;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox gbReport;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.GroupBox grpReportInformation;
+        private System.Windows.Forms.ComboBox cmbReportType;
+        private System.Windows.Forms.Label lblReportType;
+        private System.Windows.Forms.Label lblFromDate;
+        private System.Windows.Forms.DateTimePicker dtpFromDate;
+        private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button btnGenerateReport;
-        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label lblToDate;
+        private System.Windows.Forms.GroupBox grpReportResults;
+        private System.Windows.Forms.DataGridView dgvReportResults;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colRentalID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCustomer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colVehicle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colRentalDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colReturnDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTotalAmount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colStatus;
     }
 }
