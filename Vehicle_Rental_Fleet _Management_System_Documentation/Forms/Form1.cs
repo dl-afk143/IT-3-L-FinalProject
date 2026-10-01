@@ -24,6 +24,54 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // NEW: sample values (replace with database calls later)
+            lblTotalCount.Text = "24";
+            lblAvailableCount.Text = "13";
+            lblMaintenanceCount.Text = "3";
+            lblRentedCount.Text = "8";
+            lblActiveCount.Text = "8";
+
+            dgvRecentRentals.Rows.Clear();
+            dgvRecentRentals.Rows.Add();
+            dgvRecentRentals.Rows.Add();
+            dgvRecentRentals.Rows.Add();
+        }
+
+        // NEW: grid styling
+        private void StyleGrid(DataGridView dgv)
+        {
+            dgv.BorderStyle = BorderStyle.None;
+            dgv.BackgroundColor = Color.White;
+            dgv.GridColor = Color.FromArgb(226, 231, 239);
+            dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgv.EnableHeadersVisualStyles = false;
+
+            dgv.RowHeadersVisible = false;
+            dgv.AllowUserToAddRows = false;
+            dgv.AllowUserToDeleteRows = false;
+            dgv.AllowUserToResizeRows = false;
+            dgv.ReadOnly = true;
+            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgv.MultiSelect = false;
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dgv.ColumnHeadersHeight = 38;
+            dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(11, 58, 107);
+            dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10f, FontStyle.Bold);
+            dgv.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.FromArgb(11, 58, 107);
+            dgv.ColumnHeadersDefaultCellStyle.Padding = new Padding(8, 0, 0, 0);
+
+            dgv.RowTemplate.Height = 34;
+            dgv.DefaultCellStyle.Font = new Font("Segoe UI", 10f);
+            dgv.DefaultCellStyle.ForeColor = Color.FromArgb(20, 32, 47);
+            dgv.DefaultCellStyle.BackColor = Color.White;
+            dgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(219, 231, 246);
+            dgv.DefaultCellStyle.SelectionForeColor = Color.FromArgb(20, 32, 47);
+            dgv.DefaultCellStyle.Padding = new Padding(8, 0, 0, 0);
+            dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(244, 246, 250);
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
@@ -87,6 +135,9 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
         private void dgvRecentRentals_CellContentClick(
             object sender,
             DataGridViewCellEventArgs e)
+
+
+
         {
         }
 
