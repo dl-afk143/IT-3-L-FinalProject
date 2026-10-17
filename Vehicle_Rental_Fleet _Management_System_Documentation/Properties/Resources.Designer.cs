@@ -63,6 +63,26 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ant_design__car_filled_white {
+            get {
+                object obj = ResourceManager.GetObject("ant-design--car-filled_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bi__house_white {
+            get {
+                object obj = ResourceManager.GetObject("bi--house_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dscx {
             get {
                 object obj = ResourceManager.GetObject("dscx", resourceCulture);
@@ -73,9 +93,59 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap glyphs__users_1_white {
+            get {
+                object obj = ResourceManager.GetObject("glyphs--users-1_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap guidance__car_rental_white {
+            get {
+                object obj = ResourceManager.GetObject("guidance--car-rental_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_navy {
+            get {
+                object obj = ResourceManager.GetObject("logo-navy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap oui__nav_reports_white {
+            get {
+                object obj = ResourceManager.GetObject("oui--nav-reports_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2026_09_27_121017_removebg_preview2 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_2026-09-27_121017-removebg-preview2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap streamline_flex__investing_and_banking_white {
+            get {
+                object obj = ResourceManager.GetObject("streamline-flex--investing-and-banking_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

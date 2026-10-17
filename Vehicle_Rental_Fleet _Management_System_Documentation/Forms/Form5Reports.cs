@@ -30,11 +30,6 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
 
         }
 
-        private void btnReports_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
 

@@ -10,7 +10,7 @@
     <AssemblyName>Vehicle_Rental_Fleet _Management_System_Documentation</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -31,6 +31,10 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
@@ -144,8 +148,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundedComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="RoundedPanel.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RoundedTextBox.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <EmbeddedResource Include="Forms\AddVehicle.resx">
       <DependentUpon>AddVehicle.cs</DependentUpon>
@@ -176,6 +186,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="RoundedTextBox.resx">
+      <DependentUpon>RoundedTextBox.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -201,6 +214,14 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Database\VehicleRentalDB.sql" />
+    <Content Include="logo-navy.ico" />
+    <None Include="Resources\streamline-flex--investing-and-banking_white.png" />
+    <None Include="Resources\oui--nav-reports_white.png" />
+    <None Include="Resources\guidance--car-rental_white.png" />
+    <None Include="Resources\glyphs--users-1_white.png" />
+    <None Include="Resources\bi--house_white.png" />
+    <None Include="Resources\ant-design--car-filled_white.png" />
+    <None Include="Resources\logo-navy.png" />
     <None Include="Resources\Screenshot_2026-09-27_121017-removebg-preview2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

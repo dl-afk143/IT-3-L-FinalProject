@@ -43,26 +43,34 @@
             this.btnVehicles = new System.Windows.Forms.Button();
             this.btnReturns = new System.Windows.Forms.Button();
             this.btnRentals = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.roundedPanel9 = new Vehicle_Rental_Fleet__Management_System_Documentation.RoundedPanel();
             this.roundedPanel10 = new Vehicle_Rental_Fleet__Management_System_Documentation.RoundedPanel();
+            this.lblActiveCount = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.roundedPanel7 = new Vehicle_Rental_Fleet__Management_System_Documentation.RoundedPanel();
             this.roundedPanel8 = new Vehicle_Rental_Fleet__Management_System_Documentation.RoundedPanel();
+            this.lblRentedCount = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.roundedPanel5 = new Vehicle_Rental_Fleet__Management_System_Documentation.RoundedPanel();
             this.roundedPanel6 = new Vehicle_Rental_Fleet__Management_System_Documentation.RoundedPanel();
+            this.lblMaintenanceCount = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.roundedPanel3 = new Vehicle_Rental_Fleet__Management_System_Documentation.RoundedPanel();
             this.roundedPanel4 = new Vehicle_Rental_Fleet__Management_System_Documentation.RoundedPanel();
+            this.lblAvailableCount = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.roundedPanel1 = new Vehicle_Rental_Fleet__Management_System_Documentation.RoundedPanel();
             this.roundedPanel2 = new Vehicle_Rental_Fleet__Management_System_Documentation.RoundedPanel();
-            this.label3 = new System.Windows.Forms.Label();
             this.lblTotalCount = new System.Windows.Forms.Label();
-            this.lblAvailableCount = new System.Windows.Forms.Label();
-            this.lblMaintenanceCount = new System.Windows.Forms.Label();
-            this.lblRentedCount = new System.Windows.Forms.Label();
-            this.lblActiveCount = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecentRentals)).BeginInit();
             this.pnlDashboardSidebar.SuspendLayout();
             this.roundedPanel9.SuspendLayout();
@@ -75,6 +83,13 @@
             this.roundedPanel4.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -123,7 +138,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(237, 600);
+            this.label14.Location = new System.Drawing.Point(245, 612);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(205, 25);
             this.label14.TabIndex = 14;
@@ -134,7 +149,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(441, 603);
+            this.label15.Location = new System.Drawing.Point(456, 616);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(122, 22);
             this.label15.TabIndex = 15;
@@ -148,9 +163,9 @@
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReports.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnReports.Location = new System.Drawing.Point(12, 418);
+            this.btnReports.Location = new System.Drawing.Point(68, 528);
             this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(196, 52);
+            this.btnReports.Size = new System.Drawing.Size(112, 39);
             this.btnReports.TabIndex = 17;
             this.btnReports.Text = "Reports";
             this.btnReports.UseVisualStyleBackColor = false;
@@ -159,6 +174,14 @@
             // pnlDashboardSidebar
             // 
             this.pnlDashboardSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.pnlDashboardSidebar.Controls.Add(this.pictureBox7);
+            this.pnlDashboardSidebar.Controls.Add(this.pictureBox6);
+            this.pnlDashboardSidebar.Controls.Add(this.pictureBox5);
+            this.pnlDashboardSidebar.Controls.Add(this.pictureBox4);
+            this.pnlDashboardSidebar.Controls.Add(this.pictureBox3);
+            this.pnlDashboardSidebar.Controls.Add(this.pictureBox2);
+            this.pnlDashboardSidebar.Controls.Add(this.pictureBox1);
+            this.pnlDashboardSidebar.Controls.Add(this.label9);
             this.pnlDashboardSidebar.Controls.Add(this.btnCustomers);
             this.pnlDashboardSidebar.Controls.Add(this.btnLogout);
             this.pnlDashboardSidebar.Controls.Add(this.btnDashboard);
@@ -167,8 +190,8 @@
             this.pnlDashboardSidebar.Controls.Add(this.btnReturns);
             this.pnlDashboardSidebar.Controls.Add(this.btnRentals);
             this.pnlDashboardSidebar.Controls.Add(this.btnReports);
-            this.pnlDashboardSidebar.Location = new System.Drawing.Point(0, 2);
-            this.pnlDashboardSidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlDashboardSidebar.Location = new System.Drawing.Point(0, 0);
+            this.pnlDashboardSidebar.Margin = new System.Windows.Forms.Padding(2);
             this.pnlDashboardSidebar.Name = "pnlDashboardSidebar";
             this.pnlDashboardSidebar.Size = new System.Drawing.Size(220, 672);
             this.pnlDashboardSidebar.TabIndex = 24;
@@ -180,9 +203,9 @@
             this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomers.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCustomers.Location = new System.Drawing.Point(12, 213);
+            this.btnCustomers.Location = new System.Drawing.Point(68, 283);
             this.btnCustomers.Name = "btnCustomers";
-            this.btnCustomers.Size = new System.Drawing.Size(196, 52);
+            this.btnCustomers.Size = new System.Drawing.Size(112, 39);
             this.btnCustomers.TabIndex = 31;
             this.btnCustomers.Text = "Customers";
             this.btnCustomers.UseVisualStyleBackColor = false;
@@ -195,7 +218,7 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnLogout.Location = new System.Drawing.Point(10, 597);
+            this.btnLogout.Location = new System.Drawing.Point(12, 654);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(196, 55);
             this.btnLogout.TabIndex = 26;
@@ -209,9 +232,9 @@
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnDashboard.Location = new System.Drawing.Point(10, 79);
+            this.btnDashboard.Location = new System.Drawing.Point(68, 133);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(196, 52);
+            this.btnDashboard.Size = new System.Drawing.Size(112, 39);
             this.btnDashboard.TabIndex = 30;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
@@ -219,14 +242,15 @@
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(22, 12);
+            this.label7.Location = new System.Drawing.Point(70, 24);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(179, 64);
+            this.label7.Size = new System.Drawing.Size(118, 37);
             this.label7.TabIndex = 25;
-            this.label7.Text = "Vehicle Rental and Fleet Management";
+            this.label7.Text = "Broom";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // btnVehicles
             // 
@@ -235,9 +259,9 @@
             this.btnVehicles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVehicles.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVehicles.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnVehicles.Location = new System.Drawing.Point(12, 146);
+            this.btnVehicles.Location = new System.Drawing.Point(68, 204);
             this.btnVehicles.Name = "btnVehicles";
-            this.btnVehicles.Size = new System.Drawing.Size(196, 52);
+            this.btnVehicles.Size = new System.Drawing.Size(112, 39);
             this.btnVehicles.TabIndex = 29;
             this.btnVehicles.Text = "Vehicles";
             this.btnVehicles.UseVisualStyleBackColor = false;
@@ -251,9 +275,9 @@
             this.btnReturns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturns.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturns.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnReturns.Location = new System.Drawing.Point(10, 352);
+            this.btnReturns.Location = new System.Drawing.Point(68, 447);
             this.btnReturns.Name = "btnReturns";
-            this.btnReturns.Size = new System.Drawing.Size(196, 52);
+            this.btnReturns.Size = new System.Drawing.Size(112, 39);
             this.btnReturns.TabIndex = 28;
             this.btnReturns.Text = "Returns";
             this.btnReturns.UseVisualStyleBackColor = false;
@@ -266,13 +290,24 @@
             this.btnRentals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRentals.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRentals.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRentals.Location = new System.Drawing.Point(10, 282);
+            this.btnRentals.Location = new System.Drawing.Point(68, 364);
             this.btnRentals.Name = "btnRentals";
-            this.btnRentals.Size = new System.Drawing.Size(196, 52);
+            this.btnRentals.Size = new System.Drawing.Size(112, 39);
             this.btnRentals.TabIndex = 27;
             this.btnRentals.Text = "Rentals";
             this.btnRentals.UseVisualStyleBackColor = false;
             this.btnRentals.Click += new System.EventHandler(this.btnRentals_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label9.Location = new System.Drawing.Point(72, 61);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(120, 20);
+            this.label9.TabIndex = 31;
+            this.label9.Text = "Vehicles Rental";
             // 
             // roundedPanel9
             // 
@@ -294,6 +329,16 @@
             this.roundedPanel10.Name = "roundedPanel10";
             this.roundedPanel10.Size = new System.Drawing.Size(200, 143);
             this.roundedPanel10.TabIndex = 26;
+            // 
+            // lblActiveCount
+            // 
+            this.lblActiveCount.AutoSize = true;
+            this.lblActiveCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActiveCount.Location = new System.Drawing.Point(102, 101);
+            this.lblActiveCount.Name = "lblActiveCount";
+            this.lblActiveCount.Size = new System.Drawing.Size(21, 24);
+            this.lblActiveCount.TabIndex = 33;
+            this.lblActiveCount.Text = "8";
             // 
             // label8
             // 
@@ -326,6 +371,16 @@
             this.roundedPanel8.Size = new System.Drawing.Size(200, 143);
             this.roundedPanel8.TabIndex = 26;
             // 
+            // lblRentedCount
+            // 
+            this.lblRentedCount.AutoSize = true;
+            this.lblRentedCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRentedCount.Location = new System.Drawing.Point(84, 101);
+            this.lblRentedCount.Name = "lblRentedCount";
+            this.lblRentedCount.Size = new System.Drawing.Size(21, 24);
+            this.lblRentedCount.TabIndex = 32;
+            this.lblRentedCount.Text = "8";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -356,6 +411,16 @@
             this.roundedPanel6.Name = "roundedPanel6";
             this.roundedPanel6.Size = new System.Drawing.Size(209, 143);
             this.roundedPanel6.TabIndex = 26;
+            // 
+            // lblMaintenanceCount
+            // 
+            this.lblMaintenanceCount.AutoSize = true;
+            this.lblMaintenanceCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaintenanceCount.Location = new System.Drawing.Point(93, 101);
+            this.lblMaintenanceCount.Name = "lblMaintenanceCount";
+            this.lblMaintenanceCount.Size = new System.Drawing.Size(21, 24);
+            this.lblMaintenanceCount.TabIndex = 3;
+            this.lblMaintenanceCount.Text = "3";
             // 
             // label6
             // 
@@ -390,6 +455,16 @@
             this.roundedPanel4.Size = new System.Drawing.Size(200, 143);
             this.roundedPanel4.TabIndex = 26;
             // 
+            // lblAvailableCount
+            // 
+            this.lblAvailableCount.AutoSize = true;
+            this.lblAvailableCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAvailableCount.Location = new System.Drawing.Point(84, 101);
+            this.lblAvailableCount.Name = "lblAvailableCount";
+            this.lblAvailableCount.Size = new System.Drawing.Size(32, 24);
+            this.lblAvailableCount.TabIndex = 2;
+            this.lblAvailableCount.Text = "13";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -421,16 +496,6 @@
             this.roundedPanel2.Size = new System.Drawing.Size(200, 143);
             this.roundedPanel2.TabIndex = 26;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 52);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 24);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Total Vehicle";
-            // 
             // lblTotalCount
             // 
             this.lblTotalCount.AutoSize = true;
@@ -441,45 +506,87 @@
             this.lblTotalCount.TabIndex = 1;
             this.lblTotalCount.Text = "24";
             // 
-            // lblAvailableCount
+            // label3
             // 
-            this.lblAvailableCount.AutoSize = true;
-            this.lblAvailableCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAvailableCount.Location = new System.Drawing.Point(84, 101);
-            this.lblAvailableCount.Name = "lblAvailableCount";
-            this.lblAvailableCount.Size = new System.Drawing.Size(32, 24);
-            this.lblAvailableCount.TabIndex = 2;
-            this.lblAvailableCount.Text = "13";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(30, 52);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(133, 24);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Total Vehicle";
             // 
-            // lblMaintenanceCount
+            // pictureBox7
             // 
-            this.lblMaintenanceCount.AutoSize = true;
-            this.lblMaintenanceCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaintenanceCount.Location = new System.Drawing.Point(93, 101);
-            this.lblMaintenanceCount.Name = "lblMaintenanceCount";
-            this.lblMaintenanceCount.Size = new System.Drawing.Size(21, 24);
-            this.lblMaintenanceCount.TabIndex = 3;
-            this.lblMaintenanceCount.Text = "3";
+            this.pictureBox7.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.streamline_flex__investing_and_banking_white;
+            this.pictureBox7.Location = new System.Drawing.Point(20, 528);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 31;
+            this.pictureBox7.TabStop = false;
             // 
-            // lblRentedCount
+            // pictureBox6
             // 
-            this.lblRentedCount.AutoSize = true;
-            this.lblRentedCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRentedCount.Location = new System.Drawing.Point(84, 101);
-            this.lblRentedCount.Name = "lblRentedCount";
-            this.lblRentedCount.Size = new System.Drawing.Size(21, 24);
-            this.lblRentedCount.TabIndex = 32;
-            this.lblRentedCount.Text = "8";
+            this.pictureBox6.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.oui__nav_reports_white;
+            this.pictureBox6.Location = new System.Drawing.Point(20, 447);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 31;
+            this.pictureBox6.TabStop = false;
             // 
-            // lblActiveCount
+            // pictureBox5
             // 
-            this.lblActiveCount.AutoSize = true;
-            this.lblActiveCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActiveCount.Location = new System.Drawing.Point(102, 101);
-            this.lblActiveCount.Name = "lblActiveCount";
-            this.lblActiveCount.Size = new System.Drawing.Size(21, 24);
-            this.lblActiveCount.TabIndex = 33;
-            this.lblActiveCount.Text = "8";
+            this.pictureBox5.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.guidance__car_rental_white;
+            this.pictureBox5.Location = new System.Drawing.Point(20, 364);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 31;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.glyphs__users_1_white;
+            this.pictureBox4.Location = new System.Drawing.Point(20, 283);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 31;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.bi__house_white;
+            this.pictureBox3.Location = new System.Drawing.Point(20, 133);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 31;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.ant_design__car_filled_white;
+            this.pictureBox2.Location = new System.Drawing.Point(20, 204);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 31;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.logo_navy;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(55, 57);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 31;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -501,10 +608,12 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dashboard";
+            this.Text = "v";
+            this.TransparencyKey = System.Drawing.Color.Transparent;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecentRentals)).EndInit();
             this.pnlDashboardSidebar.ResumeLayout(false);
+            this.pnlDashboardSidebar.PerformLayout();
             this.roundedPanel9.ResumeLayout(false);
             this.roundedPanel10.ResumeLayout(false);
             this.roundedPanel10.PerformLayout();
@@ -520,6 +629,13 @@
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel2.ResumeLayout(false);
             this.roundedPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -562,6 +678,14 @@
         private System.Windows.Forms.Label lblRentedCount;
         private System.Windows.Forms.Label lblMaintenanceCount;
         private System.Windows.Forms.Label lblAvailableCount;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }
 

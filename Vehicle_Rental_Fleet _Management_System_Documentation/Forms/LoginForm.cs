@@ -89,5 +89,15 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
         {
             this.DialogResult = DialogResult.Cancel;
         }
+
+        private void lblUsername_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPassword_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

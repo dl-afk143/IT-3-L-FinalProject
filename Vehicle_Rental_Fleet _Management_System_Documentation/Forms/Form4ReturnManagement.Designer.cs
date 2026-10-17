@@ -34,7 +34,6 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,12 +42,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.grbReturnDetails = new System.Windows.Forms.GroupBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnProcessReturn = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -61,7 +56,18 @@
             this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DailyRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pnlReturnSidebar = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pnlDashboardSidebar = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.btnCustomers = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
@@ -74,17 +80,24 @@
             this.grbReturnDetails.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.pnlReturnSidebar.SuspendLayout();
+            this.pnlDashboardSidebar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // grbRentalInformation
             // 
+            this.grbRentalInformation.Controls.Add(this.comboBox1);
             this.grbRentalInformation.Controls.Add(this.dateTimePicker3);
             this.grbRentalInformation.Controls.Add(this.dateTimePicker2);
             this.grbRentalInformation.Controls.Add(this.dateTimePicker1);
             this.grbRentalInformation.Controls.Add(this.textBox6);
             this.grbRentalInformation.Controls.Add(this.textBox5);
-            this.grbRentalInformation.Controls.Add(this.comboBox1);
             this.grbRentalInformation.Controls.Add(this.label6);
             this.grbRentalInformation.Controls.Add(this.label5);
             this.grbRentalInformation.Controls.Add(this.label4);
@@ -93,11 +106,11 @@
             this.grbRentalInformation.Controls.Add(this.label1);
             this.grbRentalInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbRentalInformation.ForeColor = System.Drawing.Color.Navy;
-            this.grbRentalInformation.Location = new System.Drawing.Point(254, 46);
-            this.grbRentalInformation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbRentalInformation.Location = new System.Drawing.Point(254, 25);
+            this.grbRentalInformation.Margin = new System.Windows.Forms.Padding(2);
             this.grbRentalInformation.Name = "grbRentalInformation";
-            this.grbRentalInformation.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grbRentalInformation.Size = new System.Drawing.Size(527, 307);
+            this.grbRentalInformation.Padding = new System.Windows.Forms.Padding(2);
+            this.grbRentalInformation.Size = new System.Drawing.Size(527, 328);
             this.grbRentalInformation.TabIndex = 3;
             this.grbRentalInformation.TabStop = false;
             this.grbRentalInformation.Text = "Rental Information";
@@ -106,8 +119,8 @@
             // dateTimePicker3
             // 
             this.dateTimePicker3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker3.Location = new System.Drawing.Point(176, 259);
-            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker3.Location = new System.Drawing.Point(176, 283);
+            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(320, 27);
             this.dateTimePicker3.TabIndex = 18;
@@ -116,8 +129,8 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(176, 221);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker2.Location = new System.Drawing.Point(176, 230);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(320, 27);
             this.dateTimePicker2.TabIndex = 17;
@@ -126,8 +139,8 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(176, 187);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Location = new System.Drawing.Point(176, 181);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(320, 27);
             this.dateTimePicker1.TabIndex = 16;
@@ -136,37 +149,25 @@
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(176, 135);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(320, 35);
+            this.textBox6.Size = new System.Drawing.Size(320, 28);
             this.textBox6.TabIndex = 15;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(176, 89);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Location = new System.Drawing.Point(176, 93);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(320, 35);
+            this.textBox5.Size = new System.Drawing.Size(320, 28);
             this.textBox5.TabIndex = 14;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.IntegralHeight = false;
-            this.comboBox1.ItemHeight = 30;
-            this.comboBox1.Location = new System.Drawing.Point(176, 51);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(320, 36);
-            this.comboBox1.TabIndex = 12;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(38, 266);
+            this.label6.Location = new System.Drawing.Point(27, 290);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(125, 20);
@@ -176,7 +177,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(38, 226);
+            this.label5.Location = new System.Drawing.Point(27, 237);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(149, 20);
@@ -186,7 +187,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(38, 181);
+            this.label4.Location = new System.Drawing.Point(27, 186);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 20);
@@ -196,7 +197,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(38, 141);
+            this.label3.Location = new System.Drawing.Point(27, 138);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 20);
@@ -206,7 +207,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 97);
+            this.label2.Location = new System.Drawing.Point(27, 96);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 20);
@@ -216,7 +217,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 54);
+            this.label1.Location = new System.Drawing.Point(27, 55);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 20);
@@ -226,56 +227,36 @@
             // grbReturnDetails
             // 
             this.grbReturnDetails.Controls.Add(this.textBox4);
-            this.grbReturnDetails.Controls.Add(this.textBox3);
             this.grbReturnDetails.Controls.Add(this.textBox2);
             this.grbReturnDetails.Controls.Add(this.textBox1);
             this.grbReturnDetails.Controls.Add(this.label10);
-            this.grbReturnDetails.Controls.Add(this.label9);
             this.grbReturnDetails.Controls.Add(this.label8);
             this.grbReturnDetails.Controls.Add(this.label7);
             this.grbReturnDetails.Controls.Add(this.btnProcessReturn);
             this.grbReturnDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbReturnDetails.ForeColor = System.Drawing.Color.Navy;
-            this.grbReturnDetails.Location = new System.Drawing.Point(798, 48);
-            this.grbReturnDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbReturnDetails.Location = new System.Drawing.Point(798, 25);
+            this.grbReturnDetails.Margin = new System.Windows.Forms.Padding(2);
             this.grbReturnDetails.Name = "grbReturnDetails";
-            this.grbReturnDetails.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grbReturnDetails.Size = new System.Drawing.Size(326, 306);
+            this.grbReturnDetails.Padding = new System.Windows.Forms.Padding(2);
+            this.grbReturnDetails.Size = new System.Drawing.Size(326, 329);
             this.grbReturnDetails.TabIndex = 4;
             this.grbReturnDetails.TabStop = false;
             this.grbReturnDetails.Text = "Return Details";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(154, 180);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Location = new System.Drawing.Point(154, 151);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(152, 35);
             this.textBox4.TabIndex = 13;
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(154, 137);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(152, 35);
-            this.textBox3.TabIndex = 12;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(154, 93);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 35);
-            this.textBox2.TabIndex = 11;
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(154, 48);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(152, 35);
@@ -284,37 +265,17 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(32, 186);
+            this.label10.Location = new System.Drawing.Point(15, 166);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(120, 20);
             this.label10.TabIndex = 9;
             this.label10.Text = "Final Amount:";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(32, 145);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(86, 20);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Late Fee:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(33, 99);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(101, 20);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Days Used:";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(32, 53);
+            this.label7.Location = new System.Drawing.Point(15, 52);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(121, 20);
@@ -323,8 +284,8 @@
             // 
             // btnProcessReturn
             // 
-            this.btnProcessReturn.Location = new System.Drawing.Point(19, 241);
-            this.btnProcessReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProcessReturn.Location = new System.Drawing.Point(19, 224);
+            this.btnProcessReturn.Margin = new System.Windows.Forms.Padding(2);
             this.btnProcessReturn.Name = "btnProcessReturn";
             this.btnProcessReturn.Size = new System.Drawing.Size(286, 43);
             this.btnProcessReturn.TabIndex = 0;
@@ -336,13 +297,13 @@
             this.groupBox3.Controls.Add(this.dataGridView1);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(254, 401);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(869, 236);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Rental History";
+            this.groupBox3.Text = "v";
             // 
             // dataGridView1
             // 
@@ -357,7 +318,7 @@
             this.DailyRate,
             this.Status});
             this.dataGridView1.Location = new System.Drawing.Point(31, 27);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -420,22 +381,140 @@
             this.Status.Name = "Status";
             this.Status.Width = 125;
             // 
-            // pnlReturnSidebar
+            // comboBox1
             // 
-            this.pnlReturnSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
-            this.pnlReturnSidebar.Controls.Add(this.btnCustomers);
-            this.pnlReturnSidebar.Controls.Add(this.btnLogout);
-            this.pnlReturnSidebar.Controls.Add(this.btnDashboard);
-            this.pnlReturnSidebar.Controls.Add(this.label11);
-            this.pnlReturnSidebar.Controls.Add(this.btnVehicles);
-            this.pnlReturnSidebar.Controls.Add(this.btnReturns);
-            this.pnlReturnSidebar.Controls.Add(this.btnRentals);
-            this.pnlReturnSidebar.Controls.Add(this.btnReports);
-            this.pnlReturnSidebar.Location = new System.Drawing.Point(2, 1);
-            this.pnlReturnSidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pnlReturnSidebar.Name = "pnlReturnSidebar";
-            this.pnlReturnSidebar.Size = new System.Drawing.Size(220, 656);
-            this.pnlReturnSidebar.TabIndex = 27;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(176, 52);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(320, 28);
+            this.comboBox1.TabIndex = 19;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(15, 99);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(101, 20);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Days Used:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(154, 93);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(152, 35);
+            this.textBox2.TabIndex = 11;
+            // 
+            // pnlDashboardSidebar
+            // 
+            this.pnlDashboardSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
+            this.pnlDashboardSidebar.Controls.Add(this.pictureBox7);
+            this.pnlDashboardSidebar.Controls.Add(this.pictureBox6);
+            this.pnlDashboardSidebar.Controls.Add(this.pictureBox5);
+            this.pnlDashboardSidebar.Controls.Add(this.pictureBox4);
+            this.pnlDashboardSidebar.Controls.Add(this.pictureBox3);
+            this.pnlDashboardSidebar.Controls.Add(this.pictureBox2);
+            this.pnlDashboardSidebar.Controls.Add(this.pictureBox1);
+            this.pnlDashboardSidebar.Controls.Add(this.label9);
+            this.pnlDashboardSidebar.Controls.Add(this.btnCustomers);
+            this.pnlDashboardSidebar.Controls.Add(this.btnLogout);
+            this.pnlDashboardSidebar.Controls.Add(this.btnDashboard);
+            this.pnlDashboardSidebar.Controls.Add(this.label11);
+            this.pnlDashboardSidebar.Controls.Add(this.btnVehicles);
+            this.pnlDashboardSidebar.Controls.Add(this.btnReturns);
+            this.pnlDashboardSidebar.Controls.Add(this.btnRentals);
+            this.pnlDashboardSidebar.Controls.Add(this.btnReports);
+            this.pnlDashboardSidebar.Location = new System.Drawing.Point(0, 0);
+            this.pnlDashboardSidebar.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlDashboardSidebar.Name = "pnlDashboardSidebar";
+            this.pnlDashboardSidebar.Size = new System.Drawing.Size(220, 672);
+            this.pnlDashboardSidebar.TabIndex = 25;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.streamline_flex__investing_and_banking_white;
+            this.pictureBox7.Location = new System.Drawing.Point(20, 528);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 31;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.oui__nav_reports_white;
+            this.pictureBox6.Location = new System.Drawing.Point(20, 447);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 31;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.guidance__car_rental_white;
+            this.pictureBox5.Location = new System.Drawing.Point(20, 364);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 31;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.glyphs__users_1_white;
+            this.pictureBox4.Location = new System.Drawing.Point(20, 283);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 31;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.bi__house_white;
+            this.pictureBox3.Location = new System.Drawing.Point(20, 133);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 31;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.ant_design__car_filled_white;
+            this.pictureBox2.Location = new System.Drawing.Point(20, 204);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 31;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.logo_navy;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(55, 57);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 31;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label9.Location = new System.Drawing.Point(72, 61);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(120, 20);
+            this.label9.TabIndex = 31;
+            this.label9.Text = "Vehicles Rental";
             // 
             // btnCustomers
             // 
@@ -444,9 +523,9 @@
             this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomers.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCustomers.Location = new System.Drawing.Point(12, 213);
+            this.btnCustomers.Location = new System.Drawing.Point(68, 283);
             this.btnCustomers.Name = "btnCustomers";
-            this.btnCustomers.Size = new System.Drawing.Size(196, 52);
+            this.btnCustomers.Size = new System.Drawing.Size(112, 39);
             this.btnCustomers.TabIndex = 31;
             this.btnCustomers.Text = "Customers";
             this.btnCustomers.UseVisualStyleBackColor = false;
@@ -458,9 +537,9 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnLogout.Location = new System.Drawing.Point(10, 584);
+            this.btnLogout.Location = new System.Drawing.Point(12, 654);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(196, 52);
+            this.btnLogout.Size = new System.Drawing.Size(196, 55);
             this.btnLogout.TabIndex = 26;
             this.btnLogout.Text = "LogOut";
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -472,24 +551,23 @@
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnDashboard.Location = new System.Drawing.Point(10, 79);
+            this.btnDashboard.Location = new System.Drawing.Point(68, 133);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(196, 52);
+            this.btnDashboard.Size = new System.Drawing.Size(112, 39);
             this.btnDashboard.TabIndex = 30;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // label11
             // 
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(22, 12);
+            this.label11.Location = new System.Drawing.Point(70, 24);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(179, 64);
+            this.label11.Size = new System.Drawing.Size(118, 37);
             this.label11.TabIndex = 25;
-            this.label11.Text = "Vehicle Rental and Fleet Management";
+            this.label11.Text = "Broom";
             // 
             // btnVehicles
             // 
@@ -498,13 +576,12 @@
             this.btnVehicles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVehicles.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVehicles.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnVehicles.Location = new System.Drawing.Point(12, 146);
+            this.btnVehicles.Location = new System.Drawing.Point(68, 204);
             this.btnVehicles.Name = "btnVehicles";
-            this.btnVehicles.Size = new System.Drawing.Size(196, 52);
+            this.btnVehicles.Size = new System.Drawing.Size(112, 39);
             this.btnVehicles.TabIndex = 29;
             this.btnVehicles.Text = "Vehicles";
             this.btnVehicles.UseVisualStyleBackColor = false;
-            this.btnVehicles.Click += new System.EventHandler(this.btnVehicles_Click);
             // 
             // btnReturns
             // 
@@ -514,13 +591,12 @@
             this.btnReturns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturns.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturns.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnReturns.Location = new System.Drawing.Point(10, 352);
+            this.btnReturns.Location = new System.Drawing.Point(68, 447);
             this.btnReturns.Name = "btnReturns";
-            this.btnReturns.Size = new System.Drawing.Size(196, 52);
+            this.btnReturns.Size = new System.Drawing.Size(112, 39);
             this.btnReturns.TabIndex = 28;
             this.btnReturns.Text = "Returns";
             this.btnReturns.UseVisualStyleBackColor = false;
-            this.btnReturns.Click += new System.EventHandler(this.btnReturns_Click);
             // 
             // btnRentals
             // 
@@ -529,13 +605,12 @@
             this.btnRentals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRentals.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRentals.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRentals.Location = new System.Drawing.Point(10, 282);
+            this.btnRentals.Location = new System.Drawing.Point(68, 364);
             this.btnRentals.Name = "btnRentals";
-            this.btnRentals.Size = new System.Drawing.Size(196, 52);
+            this.btnRentals.Size = new System.Drawing.Size(112, 39);
             this.btnRentals.TabIndex = 27;
             this.btnRentals.Text = "Rentals";
             this.btnRentals.UseVisualStyleBackColor = false;
-            this.btnRentals.Click += new System.EventHandler(this.btnRentals_Click);
             // 
             // btnReports
             // 
@@ -544,27 +619,25 @@
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReports.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnReports.Location = new System.Drawing.Point(12, 418);
+            this.btnReports.Location = new System.Drawing.Point(68, 528);
             this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(196, 52);
+            this.btnReports.Size = new System.Drawing.Size(112, 39);
             this.btnReports.TabIndex = 17;
             this.btnReports.Text = "Reports";
             this.btnReports.UseVisualStyleBackColor = false;
-            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
             // Form4ReturnManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1155, 665);
+            this.Controls.Add(this.pnlDashboardSidebar);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.pnlReturnSidebar);
             this.Controls.Add(this.grbReturnDetails);
             this.Controls.Add(this.grbRentalInformation);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form4ReturnManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form4ReturnManagement";
             this.Load += new System.EventHandler(this.Form4ReturnManagement_Load);
             this.grbRentalInformation.ResumeLayout(false);
             this.grbRentalInformation.PerformLayout();
@@ -572,7 +645,15 @@
             this.grbReturnDetails.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.pnlReturnSidebar.ResumeLayout(false);
+            this.pnlDashboardSidebar.ResumeLayout(false);
+            this.pnlDashboardSidebar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -591,16 +672,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnProcessReturn;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -612,7 +688,18 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Year;
         private System.Windows.Forms.DataGridViewTextBoxColumn DailyRate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
-        private System.Windows.Forms.Panel pnlReturnSidebar;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel pnlDashboardSidebar;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnCustomers;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnDashboard;

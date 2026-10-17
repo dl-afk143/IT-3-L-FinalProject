@@ -30,17 +30,17 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
             string type = cmbVehicleType.Text;
             string year = tbYearModel.Text;
             string plate = tbPlateNumber.Text;
-            string dailyRate = tbDailyRate.Text;
+            //string dailyRate = tbDailyRate.Text;
             string status = cmbStatus.Text;
 
-            // Check if required fields are empty
+            //Check if required fields are empty
 
             if (string.IsNullOrWhiteSpace(vehicleBrand) ||
                 string.IsNullOrWhiteSpace(vehicleModel) ||
                 string.IsNullOrWhiteSpace(type) ||
                 string.IsNullOrWhiteSpace(year) ||
-                string.IsNullOrWhiteSpace(plate) ||
-                string.IsNullOrWhiteSpace(dailyRate))
+                string.IsNullOrWhiteSpace(plate))
+                //string.IsNullOrWhiteSpace(dailyRate))
             {
                 MessageBox.Show(
                     "Please fill in all the required fields.",
@@ -66,7 +66,7 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
                 return;
             }
 
-            if (!decimal.TryParse(dailyRate.Trim(), out decimal rate))
+                    //if (!decimal.TryParse(dailyRate.Trim(), out decimal rate))
             {
                 MessageBox.Show(
                     "Daily rate must be a valid number.",
@@ -106,7 +106,7 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
                         cmd.Parameters.AddWithValue("@brand", vehicleBrand.Trim());
                         cmd.Parameters.AddWithValue("@model", vehicleModel.Trim());
                         cmd.Parameters.AddWithValue("@year", yearModel);
-                        cmd.Parameters.AddWithValue("@rate", rate);
+                       //cmd.Parameters.AddWithValue("@rate", rate);
                         cmd.Parameters.AddWithValue("@status", status.Trim());
 
                         cmd.ExecuteNonQuery();
@@ -122,7 +122,7 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
                     "Type: " + type + "\n" +
                     "Year: " + year + "\n" +
                     "Plate Number: " + plate + "\n" +
-                    "Daily Rate: " + dailyRate + "\n" +
+                    //"Daily Rate: " + dailyRate + "\n" +
                     "Status: " + status,
                     "Success",
                     MessageBoxButtons.OK,
@@ -153,22 +153,23 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
                 }
             }
         }
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            // Clear textboxes
+            private void btnCancel_Click(object sender, EventArgs e)
+            {
+                //Clear textboxes
 
-            tbVehicleBrand.Clear();
-            tbVehicleModel.Clear();
-            tbYearModel.Clear();
-            tbPlateNumber.Clear();
-            tbDailyRate.Clear();
+                tbVehicleBrand.Clear();
+                tbVehicleModel.Clear();
+                tbYearModel.Clear();
+                tbPlateNumber.Clear();  
+        
+                            //tbDailyRate.Clear();
 
-            // Clear ComboBoxes
+                // Clear ComboBoxes
 
-            cmbVehicleType.SelectedIndex = -1;
-            cmbStatus.SelectedIndex = -1;
-            this.Close();
-        }
+                cmbVehicleType. SelectedIndex = -1;
+                cmbStatus.SelectedIndex = -1;
+                this.Close();
+            }
 
         private void AddVehicle_Load(object sender, EventArgs e)
         {
@@ -176,6 +177,11 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
 
         private void tbVehicleBrand_TextChanged(object sender, EventArgs e)
         {
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
