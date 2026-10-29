@@ -9,9 +9,20 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public string LoggedInFullName { get; private set; }
+        public string LoggedInRole { get; private set; }
+
+        public Form1() : this("", "Staff")
+        {
+        }
+
+        public Form1(string loggedInFullName, string loggedInRole)
         {
             InitializeComponent();
+            btnManageUsers.Visible = loggedInRole == "Admin";
+
+            LoggedInFullName = loggedInFullName;
+            LoggedInRole = loggedInRole;
 
             // Make the dashboard fit the available screen.
             this.AutoScaleMode = AutoScaleMode.Dpi;

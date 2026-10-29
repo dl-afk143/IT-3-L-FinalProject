@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.object_f58bb33f_3c3f_4971_a179_326fa1357341 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
@@ -138,9 +138,10 @@
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.pictureBox12);
-            this.panel1.Location = new System.Drawing.Point(244, 0);
+            this.panel1.Location = new System.Drawing.Point(325, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1682, 127);
+            this.panel1.Size = new System.Drawing.Size(2243, 156);
             this.panel1.TabIndex = 62;
             // 
             // label14
@@ -149,10 +150,9 @@
             this.label14.BackColor = System.Drawing.SystemColors.Info;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(1134, 61);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(1512, 75);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(162, 25);
+            this.label14.Size = new System.Drawing.Size(209, 32);
             this.label14.TabIndex = 59;
             this.label14.Text = "Welcome, Admin";
             // 
@@ -160,9 +160,10 @@
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.White;
             this.pictureBox13.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.emojione_monotone__letter_a__2_;
-            this.pictureBox13.Location = new System.Drawing.Point(1081, 48);
+            this.pictureBox13.Location = new System.Drawing.Point(1441, 59);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(47, 53);
+            this.pictureBox13.Size = new System.Drawing.Size(63, 65);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox13.TabIndex = 58;
             this.pictureBox13.TabStop = false;
@@ -170,12 +171,13 @@
             // roundedTextBox2
             // 
             this.roundedTextBox2.BackColor = System.Drawing.Color.White;
-            this.roundedTextBox2.Location = new System.Drawing.Point(1068, 48);
+            this.roundedTextBox2.Location = new System.Drawing.Point(1424, 59);
+            this.roundedTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.roundedTextBox2.MaxLength = 32767;
-            this.roundedTextBox2.MinimumSize = new System.Drawing.Size(80, 32);
+            this.roundedTextBox2.MinimumSize = new System.Drawing.Size(107, 39);
             this.roundedTextBox2.Name = "roundedTextBox2";
-            this.roundedTextBox2.Padding = new System.Windows.Forms.Padding(10, 9, 10, 5);
-            this.roundedTextBox2.Size = new System.Drawing.Size(240, 53);
+            this.roundedTextBox2.Padding = new System.Windows.Forms.Padding(13, 11, 13, 6);
+            this.roundedTextBox2.Size = new System.Drawing.Size(320, 65);
             this.roundedTextBox2.TabIndex = 37;
             this.roundedTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.roundedTextBox2.UseSystemPasswordChar = false;
@@ -186,10 +188,9 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label12.Location = new System.Drawing.Point(166, 67);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(221, 82);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(205, 17);
+            this.label12.Size = new System.Drawing.Size(269, 23);
             this.label12.TabIndex = 34;
             this.label12.Text = " Add, edit and deactivate the fleet";
             // 
@@ -199,10 +200,9 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(166, 24);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(221, 30);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(286, 37);
+            this.label13.Size = new System.Drawing.Size(354, 46);
             this.label13.TabIndex = 33;
             this.label13.Text = "Vehicle Management";
             this.label13.Click += new System.EventHandler(this.label13_Click);
@@ -210,9 +210,10 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.famicons__person_sharp;
-            this.pictureBox12.Location = new System.Drawing.Point(29, 12);
+            this.pictureBox12.Location = new System.Drawing.Point(39, 15);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(132, 99);
+            this.pictureBox12.Size = new System.Drawing.Size(176, 122);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 32;
             this.pictureBox12.TabStop = false;
@@ -225,11 +226,11 @@
             this.roundedGroupBox2.Controls.Add(this.dgvVehicle);
             this.roundedGroupBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.roundedGroupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(49)))), ((int)(((byte)(78)))));
-            this.roundedGroupBox2.Location = new System.Drawing.Point(316, 583);
-            this.roundedGroupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedGroupBox2.Location = new System.Drawing.Point(421, 718);
+            this.roundedGroupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedGroupBox2.Name = "roundedGroupBox2";
-            this.roundedGroupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.roundedGroupBox2.Size = new System.Drawing.Size(1146, 467);
+            this.roundedGroupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedGroupBox2.Size = new System.Drawing.Size(1528, 575);
             this.roundedGroupBox2.TabIndex = 63;
             this.roundedGroupBox2.TabStop = false;
             // 
@@ -239,10 +240,9 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(12, 16);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(16, 20);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(109, 25);
+            this.label10.Size = new System.Drawing.Size(140, 32);
             this.label10.TabIndex = 55;
             this.label10.Text = "Vehicle List";
             // 
@@ -252,14 +252,14 @@
             this.dgvVehicle.AllowUserToDeleteRows = false;
             this.dgvVehicle.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvVehicle.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvVehicle.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVehicle.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvVehicle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVehicle.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.VehicledID,
@@ -272,15 +272,15 @@
             this.Status,
             this.DateCreated});
             this.dgvVehicle.EnableHeadersVisualStyles = false;
-            this.dgvVehicle.Location = new System.Drawing.Point(11, 44);
-            this.dgvVehicle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvVehicle.Location = new System.Drawing.Point(15, 54);
+            this.dgvVehicle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvVehicle.MultiSelect = false;
             this.dgvVehicle.Name = "dgvVehicle";
             this.dgvVehicle.RowHeadersVisible = false;
             this.dgvVehicle.RowHeadersWidth = 51;
             this.dgvVehicle.RowTemplate.Height = 24;
             this.dgvVehicle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvVehicle.Size = new System.Drawing.Size(1107, 324);
+            this.dgvVehicle.Size = new System.Drawing.Size(1476, 399);
             this.dgvVehicle.TabIndex = 9;
             // 
             // VehicledID
@@ -351,11 +351,11 @@
             this.grbActions.Controls.Add(this.btnDeactivateVehicle);
             this.grbActions.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.grbActions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(49)))), ((int)(((byte)(78)))));
-            this.grbActions.Location = new System.Drawing.Point(1203, 132);
-            this.grbActions.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbActions.Location = new System.Drawing.Point(1604, 162);
+            this.grbActions.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbActions.Name = "grbActions";
-            this.grbActions.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grbActions.Size = new System.Drawing.Size(302, 448);
+            this.grbActions.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbActions.Size = new System.Drawing.Size(403, 551);
             this.grbActions.TabIndex = 61;
             this.grbActions.TabStop = false;
             // 
@@ -363,9 +363,10 @@
             // 
             this.pictureBox11.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pictureBox11.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.iconoir__erase__1_;
-            this.pictureBox11.Location = new System.Drawing.Point(89, 283);
+            this.pictureBox11.Location = new System.Drawing.Point(119, 348);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(41, 48);
+            this.pictureBox11.Size = new System.Drawing.Size(55, 59);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 60;
             this.pictureBox11.TabStop = false;
@@ -374,9 +375,10 @@
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Blue;
             this.pictureBox9.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.akar_icons__plus;
-            this.pictureBox9.Location = new System.Drawing.Point(75, 36);
+            this.pictureBox9.Location = new System.Drawing.Point(100, 44);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(41, 48);
+            this.pictureBox9.Size = new System.Drawing.Size(55, 59);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 57;
             this.pictureBox9.TabStop = false;
@@ -390,10 +392,10 @@
             this.btnAddVehicle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnAddVehicle.ForeColor = System.Drawing.Color.White;
-            this.btnAddVehicle.Location = new System.Drawing.Point(51, 31);
-            this.btnAddVehicle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddVehicle.Location = new System.Drawing.Point(68, 38);
+            this.btnAddVehicle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddVehicle.Name = "btnAddVehicle";
-            this.btnAddVehicle.Size = new System.Drawing.Size(243, 57);
+            this.btnAddVehicle.Size = new System.Drawing.Size(324, 70);
             this.btnAddVehicle.TabIndex = 34;
             this.btnAddVehicle.Text = "       Add Vehicle";
             this.btnAddVehicle.UseVisualStyleBackColor = false;
@@ -407,10 +409,10 @@
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnClear.ForeColor = System.Drawing.Color.Black;
-            this.btnClear.Location = new System.Drawing.Point(51, 279);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClear.Location = new System.Drawing.Point(68, 343);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(243, 57);
+            this.btnClear.Size = new System.Drawing.Size(324, 70);
             this.btnClear.TabIndex = 37;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -419,9 +421,10 @@
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Red;
             this.pictureBox8.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.lsicon__disable_outline2;
-            this.pictureBox8.Location = new System.Drawing.Point(75, 197);
+            this.pictureBox8.Location = new System.Drawing.Point(100, 242);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(41, 48);
+            this.pictureBox8.Size = new System.Drawing.Size(55, 59);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 59;
             this.pictureBox8.TabStop = false;
@@ -430,9 +433,10 @@
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Green;
             this.pictureBox10.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.dashicons__update_alt;
-            this.pictureBox10.Location = new System.Drawing.Point(75, 114);
+            this.pictureBox10.Location = new System.Drawing.Point(100, 140);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(41, 48);
+            this.pictureBox10.Size = new System.Drawing.Size(55, 59);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 58;
             this.pictureBox10.TabStop = false;
@@ -446,10 +450,10 @@
             this.btnUpdateVehicle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnUpdateVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnUpdateVehicle.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateVehicle.Location = new System.Drawing.Point(51, 109);
-            this.btnUpdateVehicle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUpdateVehicle.Location = new System.Drawing.Point(68, 134);
+            this.btnUpdateVehicle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdateVehicle.Name = "btnUpdateVehicle";
-            this.btnUpdateVehicle.Size = new System.Drawing.Size(243, 57);
+            this.btnUpdateVehicle.Size = new System.Drawing.Size(324, 70);
             this.btnUpdateVehicle.TabIndex = 35;
             this.btnUpdateVehicle.Text = "       Update Vehicle";
             this.btnUpdateVehicle.UseVisualStyleBackColor = false;
@@ -463,10 +467,10 @@
             this.btnDeactivateVehicle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDeactivateVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnDeactivateVehicle.ForeColor = System.Drawing.Color.White;
-            this.btnDeactivateVehicle.Location = new System.Drawing.Point(51, 192);
-            this.btnDeactivateVehicle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDeactivateVehicle.Location = new System.Drawing.Point(68, 236);
+            this.btnDeactivateVehicle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeactivateVehicle.Name = "btnDeactivateVehicle";
-            this.btnDeactivateVehicle.Size = new System.Drawing.Size(243, 57);
+            this.btnDeactivateVehicle.Size = new System.Drawing.Size(324, 70);
             this.btnDeactivateVehicle.TabIndex = 36;
             this.btnDeactivateVehicle.Text = "          Deactivate Vehicle";
             this.btnDeactivateVehicle.UseVisualStyleBackColor = false;
@@ -493,24 +497,24 @@
             this.roundedGroupBox1.Controls.Add(this.label5);
             this.roundedGroupBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.roundedGroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(49)))), ((int)(((byte)(78)))));
-            this.roundedGroupBox1.Location = new System.Drawing.Point(316, 133);
-            this.roundedGroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedGroupBox1.Location = new System.Drawing.Point(421, 164);
+            this.roundedGroupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedGroupBox1.Name = "roundedGroupBox1";
-            this.roundedGroupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.roundedGroupBox1.Size = new System.Drawing.Size(842, 448);
+            this.roundedGroupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedGroupBox1.Size = new System.Drawing.Size(1123, 551);
             this.roundedGroupBox1.TabIndex = 4;
             this.roundedGroupBox1.TabStop = false;
             // 
             // tbVehicleID
             // 
             this.tbVehicleID.BackColor = System.Drawing.Color.White;
-            this.tbVehicleID.Location = new System.Drawing.Point(107, 63);
-            this.tbVehicleID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbVehicleID.Location = new System.Drawing.Point(143, 78);
+            this.tbVehicleID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbVehicleID.MaxLength = 32767;
-            this.tbVehicleID.MinimumSize = new System.Drawing.Size(60, 26);
+            this.tbVehicleID.MinimumSize = new System.Drawing.Size(80, 32);
             this.tbVehicleID.Name = "tbVehicleID";
-            this.tbVehicleID.Padding = new System.Windows.Forms.Padding(8, 7, 8, 4);
-            this.tbVehicleID.Size = new System.Drawing.Size(286, 28);
+            this.tbVehicleID.Padding = new System.Windows.Forms.Padding(11, 9, 11, 5);
+            this.tbVehicleID.Size = new System.Drawing.Size(381, 34);
             this.tbVehicleID.TabIndex = 21;
             this.tbVehicleID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbVehicleID.UseSystemPasswordChar = false;
@@ -518,12 +522,13 @@
             // tbYearModel
             // 
             this.tbYearModel.BackColor = System.Drawing.Color.White;
-            this.tbYearModel.Location = new System.Drawing.Point(478, 232);
+            this.tbYearModel.Location = new System.Drawing.Point(637, 286);
+            this.tbYearModel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbYearModel.MaxLength = 32767;
-            this.tbYearModel.MinimumSize = new System.Drawing.Size(80, 32);
+            this.tbYearModel.MinimumSize = new System.Drawing.Size(107, 39);
             this.tbYearModel.Name = "tbYearModel";
-            this.tbYearModel.Padding = new System.Windows.Forms.Padding(10, 9, 10, 5);
-            this.tbYearModel.Size = new System.Drawing.Size(333, 32);
+            this.tbYearModel.Padding = new System.Windows.Forms.Padding(13, 11, 13, 6);
+            this.tbYearModel.Size = new System.Drawing.Size(444, 39);
             this.tbYearModel.TabIndex = 30;
             this.tbYearModel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbYearModel.UseSystemPasswordChar = false;
@@ -531,12 +536,13 @@
             // tbDailyRate
             // 
             this.tbDailyRate.BackColor = System.Drawing.Color.White;
-            this.tbDailyRate.Location = new System.Drawing.Point(105, 324);
+            this.tbDailyRate.Location = new System.Drawing.Point(140, 399);
+            this.tbDailyRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbDailyRate.MaxLength = 32767;
-            this.tbDailyRate.MinimumSize = new System.Drawing.Size(80, 32);
+            this.tbDailyRate.MinimumSize = new System.Drawing.Size(107, 39);
             this.tbDailyRate.Name = "tbDailyRate";
-            this.tbDailyRate.Padding = new System.Windows.Forms.Padding(10, 9, 10, 5);
-            this.tbDailyRate.Size = new System.Drawing.Size(286, 32);
+            this.tbDailyRate.Padding = new System.Windows.Forms.Padding(13, 11, 13, 6);
+            this.tbDailyRate.Size = new System.Drawing.Size(381, 39);
             this.tbDailyRate.TabIndex = 32;
             this.tbDailyRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbDailyRate.UseSystemPasswordChar = false;
@@ -546,10 +552,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(474, 297);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(632, 366);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 20);
+            this.label8.Size = new System.Drawing.Size(67, 25);
             this.label8.TabIndex = 7;
             this.label8.Text = "Status";
             // 
@@ -558,27 +563,28 @@
             this.cmbStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbStatus.FormattingEnabled = true;
             this.cmbStatus.IntegralHeight = false;
-            this.cmbStatus.ItemHeight = 22;
+            this.cmbStatus.ItemHeight = 29;
             this.cmbStatus.Items.AddRange(new object[] {
             "Available",
             "Rented",
             "Maintenance"});
-            this.cmbStatus.Location = new System.Drawing.Point(477, 326);
-            this.cmbStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbStatus.Location = new System.Drawing.Point(636, 401);
+            this.cmbStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(334, 30);
+            this.cmbStatus.Size = new System.Drawing.Size(444, 37);
             this.cmbStatus.TabIndex = 13;
             // 
             // tbVehicleBrand
             // 
             this.tbVehicleBrand.BackColor = System.Drawing.Color.White;
             this.tbVehicleBrand.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVehicleBrand.Location = new System.Drawing.Point(478, 139);
+            this.tbVehicleBrand.Location = new System.Drawing.Point(637, 171);
+            this.tbVehicleBrand.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbVehicleBrand.MaxLength = 32767;
-            this.tbVehicleBrand.MinimumSize = new System.Drawing.Size(80, 32);
+            this.tbVehicleBrand.MinimumSize = new System.Drawing.Size(107, 39);
             this.tbVehicleBrand.Name = "tbVehicleBrand";
-            this.tbVehicleBrand.Padding = new System.Windows.Forms.Padding(10, 9, 10, 5);
-            this.tbVehicleBrand.Size = new System.Drawing.Size(333, 32);
+            this.tbVehicleBrand.Padding = new System.Windows.Forms.Padding(13, 11, 13, 6);
+            this.tbVehicleBrand.Size = new System.Drawing.Size(444, 39);
             this.tbVehicleBrand.TabIndex = 28;
             this.tbVehicleBrand.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbVehicleBrand.UseSystemPasswordChar = false;
@@ -588,10 +594,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(103, 36);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(137, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 20);
+            this.label1.Size = new System.Drawing.Size(99, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Vehicle ID";
             // 
@@ -600,10 +605,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(474, 205);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(632, 252);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 20);
+            this.label6.Size = new System.Drawing.Size(112, 25);
             this.label6.TabIndex = 5;
             this.label6.Text = "Year Model";
             // 
@@ -611,13 +615,13 @@
             // 
             this.tbPlateNumber.BackColor = System.Drawing.Color.White;
             this.tbPlateNumber.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPlateNumber.Location = new System.Drawing.Point(478, 62);
-            this.tbPlateNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbPlateNumber.Location = new System.Drawing.Point(637, 76);
+            this.tbPlateNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbPlateNumber.MaxLength = 32767;
-            this.tbPlateNumber.MinimumSize = new System.Drawing.Size(60, 26);
+            this.tbPlateNumber.MinimumSize = new System.Drawing.Size(80, 32);
             this.tbPlateNumber.Name = "tbPlateNumber";
-            this.tbPlateNumber.Padding = new System.Windows.Forms.Padding(8, 7, 8, 4);
-            this.tbPlateNumber.Size = new System.Drawing.Size(333, 28);
+            this.tbPlateNumber.Padding = new System.Windows.Forms.Padding(11, 9, 11, 5);
+            this.tbPlateNumber.Size = new System.Drawing.Size(444, 34);
             this.tbPlateNumber.TabIndex = 22;
             this.tbPlateNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbPlateNumber.UseSystemPasswordChar = false;
@@ -627,10 +631,9 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(103, 297);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(137, 366);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(80, 20);
+            this.label11.Size = new System.Drawing.Size(100, 25);
             this.label11.TabIndex = 31;
             this.label11.Text = "Daily Rate";
             // 
@@ -639,17 +642,17 @@
             this.cmbVehicleType.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbVehicleType.FormattingEnabled = true;
             this.cmbVehicleType.IntegralHeight = false;
-            this.cmbVehicleType.ItemHeight = 22;
+            this.cmbVehicleType.ItemHeight = 29;
             this.cmbVehicleType.Items.AddRange(new object[] {
             "Sedan",
             "SUV",
             "Sports",
             "Van",
             "Truck"});
-            this.cmbVehicleType.Location = new System.Drawing.Point(106, 141);
-            this.cmbVehicleType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbVehicleType.Location = new System.Drawing.Point(141, 174);
+            this.cmbVehicleType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbVehicleType.Name = "cmbVehicleType";
-            this.cmbVehicleType.Size = new System.Drawing.Size(287, 30);
+            this.cmbVehicleType.Size = new System.Drawing.Size(381, 37);
             this.cmbVehicleType.TabIndex = 12;
             // 
             // label4
@@ -657,10 +660,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(474, 114);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(632, 140);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 20);
+            this.label4.Size = new System.Drawing.Size(66, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Brand";
             // 
@@ -669,10 +671,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(103, 114);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(137, 140);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 20);
+            this.label3.Size = new System.Drawing.Size(121, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Vehicle Type";
             // 
@@ -681,22 +682,22 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(474, 36);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(632, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 20);
+            this.label2.Size = new System.Drawing.Size(135, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Plate Number";
             // 
             // tbVehicleModel
             // 
             this.tbVehicleModel.BackColor = System.Drawing.Color.White;
-            this.tbVehicleModel.Location = new System.Drawing.Point(105, 232);
+            this.tbVehicleModel.Location = new System.Drawing.Point(140, 286);
+            this.tbVehicleModel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbVehicleModel.MaxLength = 32767;
-            this.tbVehicleModel.MinimumSize = new System.Drawing.Size(80, 32);
+            this.tbVehicleModel.MinimumSize = new System.Drawing.Size(107, 39);
             this.tbVehicleModel.Name = "tbVehicleModel";
-            this.tbVehicleModel.Padding = new System.Windows.Forms.Padding(10, 9, 10, 5);
-            this.tbVehicleModel.Size = new System.Drawing.Size(286, 32);
+            this.tbVehicleModel.Padding = new System.Windows.Forms.Padding(13, 11, 13, 6);
+            this.tbVehicleModel.Size = new System.Drawing.Size(381, 39);
             this.tbVehicleModel.TabIndex = 29;
             this.tbVehicleModel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbVehicleModel.UseSystemPasswordChar = false;
@@ -706,10 +707,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(103, 205);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(137, 252);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 20);
+            this.label5.Size = new System.Drawing.Size(69, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "Model";
             // 
@@ -735,17 +735,18 @@
             this.pnlDashboardSidebar.Controls.Add(this.btnRentals);
             this.pnlDashboardSidebar.Controls.Add(this.btnReports);
             this.pnlDashboardSidebar.Location = new System.Drawing.Point(0, 0);
-            this.pnlDashboardSidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlDashboardSidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlDashboardSidebar.Name = "pnlDashboardSidebar";
-            this.pnlDashboardSidebar.Size = new System.Drawing.Size(244, 1062);
+            this.pnlDashboardSidebar.Size = new System.Drawing.Size(325, 1307);
             this.pnlDashboardSidebar.TabIndex = 64;
             // 
             // pictureBox17
             // 
             this.pictureBox17.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.bi__person_fill;
-            this.pictureBox17.Location = new System.Drawing.Point(38, 457);
+            this.pictureBox17.Location = new System.Drawing.Point(51, 562);
+            this.pictureBox17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox17.Size = new System.Drawing.Size(56, 48);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox17.TabIndex = 34;
             this.pictureBox17.TabStop = false;
@@ -758,9 +759,10 @@
             this.btnReturns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturns.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturns.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnReturns.Location = new System.Drawing.Point(86, 542);
+            this.btnReturns.Location = new System.Drawing.Point(115, 667);
+            this.btnReturns.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReturns.Name = "btnReturns";
-            this.btnReturns.Size = new System.Drawing.Size(112, 39);
+            this.btnReturns.Size = new System.Drawing.Size(149, 48);
             this.btnReturns.TabIndex = 33;
             this.btnReturns.Text = "Returns";
             this.btnReturns.UseVisualStyleBackColor = false;
@@ -772,9 +774,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(12, 994);
+            this.button2.Location = new System.Drawing.Point(16, 1223);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(196, 55);
+            this.button2.Size = new System.Drawing.Size(261, 68);
             this.button2.TabIndex = 32;
             this.button2.Text = "LogOut";
             this.button2.UseVisualStyleBackColor = false;
@@ -782,9 +785,10 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.streamline_flex__investing_and_banking_white;
-            this.pictureBox7.Location = new System.Drawing.Point(38, 542);
+            this.pictureBox7.Location = new System.Drawing.Point(51, 667);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox7.Size = new System.Drawing.Size(56, 48);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 31;
             this.pictureBox7.TabStop = false;
@@ -792,9 +796,10 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.oui__nav_reports_white;
-            this.pictureBox6.Location = new System.Drawing.Point(38, 620);
+            this.pictureBox6.Location = new System.Drawing.Point(51, 763);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox6.Size = new System.Drawing.Size(56, 48);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 31;
             this.pictureBox6.TabStop = false;
@@ -802,9 +807,10 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.guidance__car_rental_white;
-            this.pictureBox5.Location = new System.Drawing.Point(38, 378);
+            this.pictureBox5.Location = new System.Drawing.Point(51, 465);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox5.Size = new System.Drawing.Size(56, 48);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 31;
             this.pictureBox5.TabStop = false;
@@ -812,9 +818,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.glyphs__users_1_white;
-            this.pictureBox4.Location = new System.Drawing.Point(38, 297);
+            this.pictureBox4.Location = new System.Drawing.Point(51, 366);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox4.Size = new System.Drawing.Size(56, 48);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 31;
             this.pictureBox4.TabStop = false;
@@ -822,9 +829,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.bi__house_white;
-            this.pictureBox3.Location = new System.Drawing.Point(38, 133);
+            this.pictureBox3.Location = new System.Drawing.Point(51, 164);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox3.Size = new System.Drawing.Size(56, 48);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 31;
             this.pictureBox3.TabStop = false;
@@ -832,9 +840,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.ant_design__car_filled_white;
-            this.pictureBox2.Location = new System.Drawing.Point(38, 218);
+            this.pictureBox2.Location = new System.Drawing.Point(51, 268);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(41, 39);
+            this.pictureBox2.Size = new System.Drawing.Size(55, 48);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 31;
             this.pictureBox2.TabStop = false;
@@ -843,9 +852,10 @@
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.logo_navy;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(35, 30);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(55, 57);
+            this.pictureBox1.Size = new System.Drawing.Size(73, 70);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
@@ -855,9 +865,10 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label9.Location = new System.Drawing.Point(84, 61);
+            this.label9.Location = new System.Drawing.Point(112, 75);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(120, 20);
+            this.label9.Size = new System.Drawing.Size(147, 25);
             this.label9.TabIndex = 31;
             this.label9.Text = "Vehicles Rental";
             // 
@@ -868,9 +879,10 @@
             this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomers.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCustomers.Location = new System.Drawing.Point(86, 297);
+            this.btnCustomers.Location = new System.Drawing.Point(115, 366);
+            this.btnCustomers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCustomers.Name = "btnCustomers";
-            this.btnCustomers.Size = new System.Drawing.Size(112, 39);
+            this.btnCustomers.Size = new System.Drawing.Size(149, 48);
             this.btnCustomers.TabIndex = 31;
             this.btnCustomers.Text = "Customers";
             this.btnCustomers.UseVisualStyleBackColor = false;
@@ -882,9 +894,10 @@
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnDashboard.Location = new System.Drawing.Point(86, 133);
+            this.btnDashboard.Location = new System.Drawing.Point(115, 164);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(112, 39);
+            this.btnDashboard.Size = new System.Drawing.Size(149, 48);
             this.btnDashboard.TabIndex = 30;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
@@ -893,10 +906,9 @@
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(82, 24);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(109, 30);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(118, 37);
+            this.label7.Size = new System.Drawing.Size(157, 46);
             this.label7.TabIndex = 25;
             this.label7.Text = "Broom";
             // 
@@ -907,9 +919,10 @@
             this.btnVehicles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVehicles.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVehicles.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnVehicles.Location = new System.Drawing.Point(86, 218);
+            this.btnVehicles.Location = new System.Drawing.Point(115, 268);
+            this.btnVehicles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVehicles.Name = "btnVehicles";
-            this.btnVehicles.Size = new System.Drawing.Size(112, 39);
+            this.btnVehicles.Size = new System.Drawing.Size(149, 48);
             this.btnVehicles.TabIndex = 29;
             this.btnVehicles.Text = "Vehicles";
             this.btnVehicles.UseVisualStyleBackColor = false;
@@ -922,9 +935,10 @@
             this.btnDriver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDriver.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnDriver.Location = new System.Drawing.Point(86, 457);
+            this.btnDriver.Location = new System.Drawing.Point(115, 562);
+            this.btnDriver.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDriver.Name = "btnDriver";
-            this.btnDriver.Size = new System.Drawing.Size(112, 39);
+            this.btnDriver.Size = new System.Drawing.Size(149, 48);
             this.btnDriver.TabIndex = 28;
             this.btnDriver.Text = "Drivers";
             this.btnDriver.UseVisualStyleBackColor = false;
@@ -936,9 +950,10 @@
             this.btnRentals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRentals.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRentals.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRentals.Location = new System.Drawing.Point(86, 378);
+            this.btnRentals.Location = new System.Drawing.Point(115, 465);
+            this.btnRentals.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRentals.Name = "btnRentals";
-            this.btnRentals.Size = new System.Drawing.Size(112, 39);
+            this.btnRentals.Size = new System.Drawing.Size(149, 48);
             this.btnRentals.TabIndex = 27;
             this.btnRentals.Text = "Rentals";
             this.btnRentals.UseVisualStyleBackColor = false;
@@ -950,23 +965,25 @@
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReports.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnReports.Location = new System.Drawing.Point(86, 620);
+            this.btnReports.Location = new System.Drawing.Point(115, 763);
+            this.btnReports.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(112, 39);
+            this.btnReports.Size = new System.Drawing.Size(149, 48);
             this.btnReports.TabIndex = 17;
             this.btnReports.Text = "Reports";
             this.btnReports.UseVisualStyleBackColor = false;
             // 
             // Form2Vehicles
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1443, 857);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.pnlDashboardSidebar);
             this.Controls.Add(this.roundedGroupBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.grbActions);
             this.Controls.Add(this.roundedGroupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form2Vehicles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2Vehicles";

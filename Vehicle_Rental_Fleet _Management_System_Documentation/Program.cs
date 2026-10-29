@@ -17,12 +17,21 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            string loggedInFullName;
+            string loggedInRole;
+
             using (var login = new LoginForm())
             {
                 if (login.ShowDialog() != DialogResult.OK)
                     return;
+
+                loggedInFullName = login.LoggedInFullName;
+                loggedInRole = login.LoggedInRole;
             }
-            Application.Run(new Form1());
+
+            Application.Run(new Form1(loggedInFullName, loggedInRole));
         }
+
+
     }
 }
