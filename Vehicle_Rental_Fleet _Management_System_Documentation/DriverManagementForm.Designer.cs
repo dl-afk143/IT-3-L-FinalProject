@@ -31,22 +31,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.roundedTextBox4 = new RoundedTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pnlDashboardSidebar = new System.Windows.Forms.Panel();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnCustomers = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
@@ -58,7 +48,6 @@
             this.roundedGroupBox1 = new Vehicle_Rental_Fleet__Management_System_Documentation.RoundedGroupBox();
             this.tbSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.dgvDriverList = new System.Windows.Forms.DataGridView();
             this.DriverID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,12 +56,7 @@
             this.LicenseExpiry = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DriverStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CreatedAt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grbActions = new Vehicle_Rental_Fleet__Management_System_Documentation.RoundedGroupBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.btnClearDriver = new Vehicle_Rental_Fleet__Management_System_Documentation.RoundedButton();
             this.label10 = new System.Windows.Forms.Label();
             this.btnDeactivateDriver = new Vehicle_Rental_Fleet__Management_System_Documentation.RoundedButton();
@@ -89,11 +73,28 @@
             this.label2 = new System.Windows.Forms.Label();
             this.roundedPanel1 = new Vehicle_Rental_Fleet__Management_System_Documentation.RoundedPanel();
             this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.pnlDashboardSidebar.SuspendLayout();
+            this.roundedGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDriverList)).BeginInit();
+            this.grbActions.SuspendLayout();
+            this.roundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -102,15 +103,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.roundedGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDriverList)).BeginInit();
-            this.grbActions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.roundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.SuspendLayout();
             // 
@@ -140,17 +139,6 @@
             this.label14.Size = new System.Drawing.Size(162, 25);
             this.label14.TabIndex = 59;
             this.label14.Text = "Welcome, Admin";
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackColor = System.Drawing.Color.White;
-            this.pictureBox13.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.emojione_monotone__letter_a__2_;
-            this.pictureBox13.Location = new System.Drawing.Point(1241, 40);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(47, 53);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 58;
-            this.pictureBox13.TabStop = false;
             // 
             // roundedTextBox4
             // 
@@ -192,16 +180,6 @@
             this.label11.Text = "Driver Management";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.ix__steering_user_filled__1_;
-            this.pictureBox12.Location = new System.Drawing.Point(29, 12);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(132, 99);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 32;
-            this.pictureBox12.TabStop = false;
-            // 
             // pnlDashboardSidebar
             // 
             this.pnlDashboardSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
@@ -228,16 +206,6 @@
             this.pnlDashboardSidebar.Name = "pnlDashboardSidebar";
             this.pnlDashboardSidebar.Size = new System.Drawing.Size(244, 1062);
             this.pnlDashboardSidebar.TabIndex = 40;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.bi__person_fill;
-            this.pictureBox17.Location = new System.Drawing.Point(38, 457);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(42, 39);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox17.TabIndex = 34;
-            this.pictureBox17.TabStop = false;
             // 
             // button1
             // 
@@ -268,77 +236,6 @@
             this.button2.TabIndex = 32;
             this.button2.Text = "LogOut";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.streamline_flex__investing_and_banking_white;
-            this.pictureBox7.Location = new System.Drawing.Point(38, 542);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(42, 39);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 31;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.oui__nav_reports_white;
-            this.pictureBox6.Location = new System.Drawing.Point(38, 620);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(42, 39);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 31;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.guidance__car_rental_white;
-            this.pictureBox5.Location = new System.Drawing.Point(38, 378);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(42, 39);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 31;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.glyphs__users_1_white;
-            this.pictureBox4.Location = new System.Drawing.Point(38, 297);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(42, 39);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 31;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.bi__house_white;
-            this.pictureBox3.Location = new System.Drawing.Point(38, 133);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(42, 39);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 31;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.ant_design__car_filled_white;
-            this.pictureBox2.Location = new System.Drawing.Point(38, 218);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(41, 39);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 31;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.logo_navy;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(55, 57);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 31;
-            this.pictureBox1.TabStop = false;
             // 
             // label9
             // 
@@ -458,11 +355,11 @@
             this.roundedGroupBox1.Controls.Add(this.dgvDriverList);
             this.roundedGroupBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.roundedGroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(49)))), ((int)(((byte)(78)))));
-            this.roundedGroupBox1.Location = new System.Drawing.Point(700, 145);
+            this.roundedGroupBox1.Location = new System.Drawing.Point(627, 145);
             this.roundedGroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedGroupBox1.Name = "roundedGroupBox1";
             this.roundedGroupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.roundedGroupBox1.Size = new System.Drawing.Size(1199, 733);
+            this.roundedGroupBox1.Size = new System.Drawing.Size(900, 704);
             this.roundedGroupBox1.TabIndex = 36;
             this.roundedGroupBox1.TabStop = false;
             // 
@@ -489,17 +386,6 @@
             this.label1.TabIndex = 64;
             this.label1.Text = "Driver List";
             // 
-            // pictureBox16
-            // 
-            this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox16.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.iconoven__driver_log;
-            this.pictureBox16.Location = new System.Drawing.Point(5, 16);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(89, 50);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 65;
-            this.pictureBox16.TabStop = false;
-            // 
             // dgvDriverList
             // 
             this.dgvDriverList.AllowUserToAddRows = false;
@@ -522,10 +408,9 @@
             this.LicenseNumber,
             this.LicenseExpiry,
             this.DriverStatus,
-            this.CreatedAt,
-            this.Status});
+            this.CreatedAt});
             this.dgvDriverList.EnableHeadersVisualStyles = false;
-            this.dgvDriverList.Location = new System.Drawing.Point(19, 93);
+            this.dgvDriverList.Location = new System.Drawing.Point(5, 93);
             this.dgvDriverList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvDriverList.MultiSelect = false;
             this.dgvDriverList.Name = "dgvDriverList";
@@ -533,7 +418,7 @@
             this.dgvDriverList.RowHeadersWidth = 51;
             this.dgvDriverList.RowTemplate.Height = 24;
             this.dgvDriverList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDriverList.Size = new System.Drawing.Size(1159, 622);
+            this.dgvDriverList.Size = new System.Drawing.Size(816, 319);
             this.dgvDriverList.TabIndex = 10;
             // 
             // DriverID
@@ -545,16 +430,19 @@
             // FullName
             // 
             this.FullName.HeaderText = "Full Name";
+            this.FullName.MinimumWidth = 6;
             this.FullName.Name = "FullName";
             // 
             // ContactNumber
             // 
             this.ContactNumber.HeaderText = "Contact Number";
+            this.ContactNumber.MinimumWidth = 6;
             this.ContactNumber.Name = "ContactNumber";
             // 
             // LicenseNumber
             // 
             this.LicenseNumber.HeaderText = "License Number";
+            this.LicenseNumber.MinimumWidth = 6;
             this.LicenseNumber.Name = "LicenseNumber";
             // 
             // LicenseExpiry
@@ -572,13 +460,8 @@
             // CreatedAt
             // 
             this.CreatedAt.HeaderText = "Created At";
+            this.CreatedAt.MinimumWidth = 6;
             this.CreatedAt.Name = "CreatedAt";
-            // 
-            // Status
-            // 
-            this.Status.HeaderText = "Status";
-            this.Status.MinimumWidth = 6;
-            this.Status.Name = "Status";
             // 
             // grbActions
             // 
@@ -605,57 +488,13 @@
             this.grbActions.Controls.Add(this.roundedPanel1);
             this.grbActions.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.grbActions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(49)))), ((int)(((byte)(78)))));
-            this.grbActions.Location = new System.Drawing.Point(260, 145);
+            this.grbActions.Location = new System.Drawing.Point(248, 145);
             this.grbActions.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbActions.Name = "grbActions";
             this.grbActions.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grbActions.Size = new System.Drawing.Size(425, 733);
+            this.grbActions.Size = new System.Drawing.Size(374, 704);
             this.grbActions.TabIndex = 35;
             this.grbActions.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pictureBox11.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.iconoir__erase__1_;
-            this.pictureBox11.Location = new System.Drawing.Point(258, 613);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(37, 30);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 56;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Green;
-            this.pictureBox10.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.dashicons__update_alt;
-            this.pictureBox10.Location = new System.Drawing.Point(234, 540);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(37, 30);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 56;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Blue;
-            this.pictureBox9.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.akar_icons__plus;
-            this.pictureBox9.Location = new System.Drawing.Point(43, 540);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(37, 30);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 55;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Red;
-            this.pictureBox8.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.lsicon__disable_outline2;
-            this.pictureBox8.Location = new System.Drawing.Point(43, 613);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(37, 30);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 54;
-            this.pictureBox8.TabStop = false;
             // 
             // btnClearDriver
             // 
@@ -666,10 +505,10 @@
             this.btnClearDriver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnClearDriver.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnClearDriver.ForeColor = System.Drawing.Color.Black;
-            this.btnClearDriver.Location = new System.Drawing.Point(216, 604);
+            this.btnClearDriver.Location = new System.Drawing.Point(191, 604);
             this.btnClearDriver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClearDriver.Name = "btnClearDriver";
-            this.btnClearDriver.Size = new System.Drawing.Size(183, 47);
+            this.btnClearDriver.Size = new System.Drawing.Size(166, 47);
             this.btnClearDriver.TabIndex = 41;
             this.btnClearDriver.Text = "     Clear";
             this.btnClearDriver.UseVisualStyleBackColor = false;
@@ -698,7 +537,7 @@
             this.btnDeactivateDriver.Location = new System.Drawing.Point(20, 604);
             this.btnDeactivateDriver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDeactivateDriver.Name = "btnDeactivateDriver";
-            this.btnDeactivateDriver.Size = new System.Drawing.Size(183, 47);
+            this.btnDeactivateDriver.Size = new System.Drawing.Size(156, 47);
             this.btnDeactivateDriver.TabIndex = 40;
             this.btnDeactivateDriver.Text = "        Deactivate ";
             this.btnDeactivateDriver.UseVisualStyleBackColor = false;
@@ -714,7 +553,7 @@
             this.cbStatus.Location = new System.Drawing.Point(20, 451);
             this.cbStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbStatus.Name = "cbStatus";
-            this.cbStatus.Size = new System.Drawing.Size(379, 33);
+            this.cbStatus.Size = new System.Drawing.Size(338, 33);
             this.cbStatus.TabIndex = 53;
             this.cbStatus.Text = "Available ";
             // 
@@ -727,10 +566,10 @@
             this.btnUpdateDriver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnUpdateDriver.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnUpdateDriver.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateDriver.Location = new System.Drawing.Point(216, 531);
+            this.btnUpdateDriver.Location = new System.Drawing.Point(191, 531);
             this.btnUpdateDriver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUpdateDriver.Name = "btnUpdateDriver";
-            this.btnUpdateDriver.Size = new System.Drawing.Size(183, 47);
+            this.btnUpdateDriver.Size = new System.Drawing.Size(166, 47);
             this.btnUpdateDriver.TabIndex = 39;
             this.btnUpdateDriver.Text = "        Update Driver";
             this.btnUpdateDriver.UseVisualStyleBackColor = false;
@@ -747,7 +586,7 @@
             this.btnAddDriver.Location = new System.Drawing.Point(20, 531);
             this.btnAddDriver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddDriver.Name = "btnAddDriver";
-            this.btnAddDriver.Size = new System.Drawing.Size(183, 47);
+            this.btnAddDriver.Size = new System.Drawing.Size(156, 47);
             this.btnAddDriver.TabIndex = 38;
             this.btnAddDriver.Text = "        Add Driver";
             this.btnAddDriver.UseVisualStyleBackColor = false;
@@ -773,7 +612,7 @@
             this.tbLicenseNumber.MinimumSize = new System.Drawing.Size(60, 26);
             this.tbLicenseNumber.Name = "tbLicenseNumber";
             this.tbLicenseNumber.Padding = new System.Windows.Forms.Padding(8, 7, 8, 4);
-            this.tbLicenseNumber.Size = new System.Drawing.Size(379, 31);
+            this.tbLicenseNumber.Size = new System.Drawing.Size(338, 31);
             this.tbLicenseNumber.TabIndex = 51;
             this.tbLicenseNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbLicenseNumber.UseSystemPasswordChar = false;
@@ -790,7 +629,7 @@
             this.DtpLicenseExpiry.Location = new System.Drawing.Point(20, 368);
             this.DtpLicenseExpiry.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DtpLicenseExpiry.Name = "DtpLicenseExpiry";
-            this.DtpLicenseExpiry.Size = new System.Drawing.Size(379, 27);
+            this.DtpLicenseExpiry.Size = new System.Drawing.Size(338, 27);
             this.DtpLicenseExpiry.TabIndex = 49;
             // 
             // label6
@@ -813,7 +652,7 @@
             this.tbContactNumber.MinimumSize = new System.Drawing.Size(80, 32);
             this.tbContactNumber.Name = "tbContactNumber";
             this.tbContactNumber.Padding = new System.Windows.Forms.Padding(10, 9, 10, 5);
-            this.tbContactNumber.Size = new System.Drawing.Size(379, 32);
+            this.tbContactNumber.Size = new System.Drawing.Size(338, 32);
             this.tbContactNumber.TabIndex = 44;
             this.tbContactNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbContactNumber.UseSystemPasswordChar = false;
@@ -826,7 +665,7 @@
             this.tbFullName.MinimumSize = new System.Drawing.Size(80, 32);
             this.tbFullName.Name = "tbFullName";
             this.tbFullName.Padding = new System.Windows.Forms.Padding(10, 9, 10, 5);
-            this.tbFullName.Size = new System.Drawing.Size(379, 32);
+            this.tbFullName.Size = new System.Drawing.Size(338, 32);
             this.tbFullName.TabIndex = 43;
             this.tbFullName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbFullName.UseSystemPasswordChar = false;
@@ -865,7 +704,7 @@
             this.roundedPanel1.Controls.Add(this.pictureBox15);
             this.roundedPanel1.Location = new System.Drawing.Point(0, 0);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(423, 64);
+            this.roundedPanel1.Size = new System.Drawing.Size(374, 64);
             this.roundedPanel1.TabIndex = 38;
             // 
             // label13
@@ -879,6 +718,163 @@
             this.label13.Size = new System.Drawing.Size(206, 30);
             this.label13.TabIndex = 35;
             this.label13.Text = "Driver Information";
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.bi__person_fill;
+            this.pictureBox17.Location = new System.Drawing.Point(38, 457);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox17.TabIndex = 34;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.streamline_flex__investing_and_banking_white;
+            this.pictureBox7.Location = new System.Drawing.Point(38, 542);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 31;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.oui__nav_reports_white;
+            this.pictureBox6.Location = new System.Drawing.Point(38, 620);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 31;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.guidance__car_rental_white;
+            this.pictureBox5.Location = new System.Drawing.Point(38, 378);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 31;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.glyphs__users_1_white;
+            this.pictureBox4.Location = new System.Drawing.Point(38, 297);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 31;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.bi__house_white;
+            this.pictureBox3.Location = new System.Drawing.Point(38, 133);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(42, 39);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 31;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.ant_design__car_filled_white;
+            this.pictureBox2.Location = new System.Drawing.Point(38, 218);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(41, 39);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 31;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.logo_navy;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(55, 57);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 31;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.White;
+            this.pictureBox13.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.emojione_monotone__letter_a__2_;
+            this.pictureBox13.Location = new System.Drawing.Point(1241, 40);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(47, 53);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 58;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.ix__steering_user_filled__1_;
+            this.pictureBox12.Location = new System.Drawing.Point(29, 12);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(132, 99);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 32;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox16.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.iconoven__driver_log;
+            this.pictureBox16.Location = new System.Drawing.Point(5, 16);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(89, 50);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 65;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pictureBox11.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.iconoir__erase__1_;
+            this.pictureBox11.Location = new System.Drawing.Point(208, 613);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(37, 30);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 56;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Green;
+            this.pictureBox10.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.dashicons__update_alt;
+            this.pictureBox10.Location = new System.Drawing.Point(206, 540);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(37, 30);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 56;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Blue;
+            this.pictureBox9.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.akar_icons__plus;
+            this.pictureBox9.Location = new System.Drawing.Point(29, 540);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(37, 30);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 55;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Red;
+            this.pictureBox8.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.lsicon__disable_outline2;
+            this.pictureBox8.Location = new System.Drawing.Point(36, 613);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(37, 30);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 54;
+            this.pictureBox8.TabStop = false;
             // 
             // pictureBox15
             // 
@@ -895,7 +891,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1925, 862);
+            this.ClientSize = new System.Drawing.Size(1443, 857);
             this.Controls.Add(this.pnlDashboardSidebar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.roundedGroupBox1);
@@ -904,10 +900,15 @@
             this.Text = "y";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.pnlDashboardSidebar.ResumeLayout(false);
             this.pnlDashboardSidebar.PerformLayout();
+            this.roundedGroupBox1.ResumeLayout(false);
+            this.roundedGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDriverList)).EndInit();
+            this.grbActions.ResumeLayout(false);
+            this.grbActions.PerformLayout();
+            this.roundedPanel1.ResumeLayout(false);
+            this.roundedPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -916,18 +917,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.roundedGroupBox1.ResumeLayout(false);
-            this.roundedGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDriverList)).EndInit();
-            this.grbActions.ResumeLayout(false);
-            this.grbActions.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.roundedPanel1.ResumeLayout(false);
-            this.roundedPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.ResumeLayout(false);
 
@@ -957,14 +953,6 @@
         private System.Windows.Forms.PictureBox pictureBox11;
         private RoundedGroupBox roundedGroupBox1;
         private System.Windows.Forms.DataGridView dgvDriverList;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DriverID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FullName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ContactNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LicenseNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LicenseExpiry;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DriverStatus;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CreatedAt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox pictureBox13;
@@ -995,5 +983,12 @@
         private System.Windows.Forms.Button btnDriver;
         private System.Windows.Forms.Button btnRentals;
         private System.Windows.Forms.Button btnReports;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DriverID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FullName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ContactNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LicenseNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LicenseExpiry;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DriverStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CreatedAt;
     }
 }

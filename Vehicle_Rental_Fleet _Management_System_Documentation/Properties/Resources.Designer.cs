@@ -93,6 +93,36 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap andrsrxn__car_front {
+            get {
+                object obj = ResourceManager.GetObject("andrsrxn--car-front", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap andrsrxn__car_front__1_ {
+            get {
+                object obj = ResourceManager.GetObject("andrsrxn--car-front (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap andrsrxn__car_front1 {
+            get {
+                object obj = ResourceManager.GetObject("andrsrxn--car-front1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap andrsrxn__receipt {
             get {
                 object obj = ResourceManager.GetObject("andrsrxn--receipt", resourceCulture);
@@ -116,6 +146,16 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Properties {
         internal static System.Drawing.Bitmap arcticons__letter_uppercase_circle_a {
             get {
                 object obj = ResourceManager.GetObject("arcticons--letter-uppercase-circle-a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bi__calendar_date {
+            get {
+                object obj = ResourceManager.GetObject("bi--calendar-date", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,6 +433,26 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8__shutdown {
+            get {
+                object obj = ResourceManager.GetObject("icons8--shutdown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ix__maintenance_warning_filled {
+            get {
+                object obj = ResourceManager.GetObject("ix--maintenance-warning-filled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ix__steering_user_filled {
             get {
                 object obj = ResourceManager.GetObject("ix--steering-user-filled", resourceCulture);
@@ -483,9 +543,29 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mdi__car_multiple {
+            get {
+                object obj = ResourceManager.GetObject("mdi--car-multiple", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap oui__nav_reports_white {
             get {
                 object obj = ResourceManager.GetObject("oui--nav-reports_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pepicons_pencil__car_circle_filled {
+            get {
+                object obj = ResourceManager.GetObject("pepicons-pencil--car-circle-filled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

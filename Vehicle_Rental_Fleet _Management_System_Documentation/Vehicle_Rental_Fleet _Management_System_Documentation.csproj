@@ -107,12 +107,6 @@
     <Compile Include="DriverManagementForm.Designer.cs">
       <DependentUpon>DriverManagementForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AddVehicle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AddVehicle.Designer.cs">
-      <DependentUpon>AddVehicle.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\CustomerManagementForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,9 +171,6 @@
     <EmbeddedResource Include="DriverManagementForm.resx">
       <DependentUpon>DriverManagementForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddVehicle.resx">
-      <DependentUpon>AddVehicle.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomerManagementForm.resx">
       <DependentUpon>CustomerManagementForm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -236,6 +227,14 @@
   <ItemGroup>
     <Content Include="Database\VehicleRentalDB.sql" />
     <Content Include="logo-navy.ico" />
+    <None Include="Resources\icons8--shutdown.png" />
+    <None Include="Resources\bi--calendar-date.png" />
+    <None Include="Resources\ix--maintenance-warning-filled.png" />
+    <None Include="Resources\mdi--car-multiple.png" />
+    <None Include="Resources\andrsrxn--car-front %281%29.png" />
+    <None Include="Resources\andrsrxn--car-front1.png" />
+    <None Include="Resources\pepicons-pencil--car-circle-filled.png" />
+    <None Include="Resources\andrsrxn--car-front.png" />
     <None Include="Resources\bi--car-front-fill.png" />
     <None Include="Resources\f7--phone-fill.png" />
     <None Include="Resources\bi--person %282%29.png" />

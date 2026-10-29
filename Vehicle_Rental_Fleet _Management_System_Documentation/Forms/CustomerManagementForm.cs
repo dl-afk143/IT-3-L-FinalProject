@@ -35,10 +35,12 @@
                     btnRentals.Click -= btnRentals_Click;
                     btnRentals.Click += btnRentals_Click;
 
-                    //btnReturns.Click -= btnReturns_Click;
-                    //btnReturns.Click += btnReturns_Click;
+                    button1.Click -= button1_Click;
+                    button1.Click += button1_Click;
+            //btnReturns.Click -= btnReturns_Click;
+            //btnReturns.Click += btnReturns_Click;
 
-                    btnReports.Click -= btnReports_Click;
+            btnReports.Click -= btnReports_Click;
                     btnReports.Click += btnReports_Click;
 
                     btnCustomers.Click -= btnCustomers_Click;
@@ -282,12 +284,20 @@
                     OpenForm(new Form3RentalManagement());
                 }
 
-                private void btnReturns_Click(object sender, EventArgs e)
-                {
-                    OpenForm(new Form4ReturnManagement());
-                }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Please open Rentals Management and select an active rental before processing a return.",
+                "Rental Required",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
 
-                private void btnReports_Click(object sender, EventArgs e)
+            return;
+        }
+        
+
+
+        private void btnReports_Click(object sender, EventArgs e)
                 {
                     OpenForm(new Form5Reports());
                 }

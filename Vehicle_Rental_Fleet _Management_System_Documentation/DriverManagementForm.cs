@@ -500,12 +500,12 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
                 return;
 
             form.StartPosition = FormStartPosition.Manual;
-            form.Location = Location;
-            form.Size = Size;
-            form.WindowState = WindowState;
+            form.Location = this.Location;
+            form.Size = this.Size;
+            form.WindowState = this.WindowState;
 
             form.Show();
-            Hide();
+            this.Hide();
         }
 
         private void btnRentals_Click(object sender, EventArgs e)
@@ -540,7 +540,13 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenForm(new Form4ReturnManagement());
+            MessageBox.Show(
+                "Please open Rentals Management and select an active rental before processing a return.",
+                "Rental Required",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+
+            return;
         }
     }
 }

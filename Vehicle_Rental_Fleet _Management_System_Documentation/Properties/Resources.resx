@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bi--calendar-date" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bi--calendar-date.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dcx2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dcx2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,6 +154,9 @@
   <data name="dsc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dsc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Screenshot_2026-09-27_121017-removebg-preview2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot_2026-09-27_121017-removebg-preview2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="v2321" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v2321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -162,6 +168,9 @@
   </data>
   <data name="glyphs--users-1_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\glyphs--users-1_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bi--car-front-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bi--car-front-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="famicons--person-sharp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\famicons--person-sharp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,6 +220,21 @@
   <data name="dashicons--update-alt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dashicons--update-alt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="andrsrxn--car-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\andrsrxn--car-front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bi--person-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bi--person-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="andrsrxn--car-front (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\andrsrxn--car-front (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="andrsrxn--car-front1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\andrsrxn--car-front1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconoir--erase (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconoir--erase (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="codicon--search-large" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\codicon--search-large.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -235,6 +259,9 @@
   <data name="f7--phone-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\f7--phone-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mdi--car-multiple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mdi--car-multiple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="emojione-monotone--letter-a (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\emojione-monotone--letter-a (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -243,9 +270,6 @@
   </data>
   <data name="akar-icons--plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\akar-icons--plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="emojione-monotone--letter-a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\emojione-monotone--letter-a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="roentgen--fuel-station" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\roentgen--fuel-station.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,19 +286,19 @@
   <data name="iconoven--driver-log" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconoven--driver-log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconoir--erase (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconoir--erase (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="emojione-monotone--letter-a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emojione-monotone--letter-a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bi--person-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bi--person-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pepicons-pencil--car-circle-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pepicons-pencil--car-circle-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="oui--nav-reports_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oui--nav-reports_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Screenshot_2026-09-27_121017-removebg-preview2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot_2026-09-27_121017-removebg-preview2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ix--maintenance-warning-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ix--maintenance-warning-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bi--car-front-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bi--car-front-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8--shutdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8--shutdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

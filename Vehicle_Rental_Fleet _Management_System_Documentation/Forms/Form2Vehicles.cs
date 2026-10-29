@@ -93,7 +93,13 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation.Form2
 
         private void btnReturns_Click(object sender, EventArgs e)
         {
-            OpenForm(new Form4ReturnManagement());
+            MessageBox.Show(
+                "Please open Rentals Management and select an active rental before processing a return.",
+                "Rental Required",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+
+            return;
         }
 
         private void btnReports_Click(object sender, EventArgs e)

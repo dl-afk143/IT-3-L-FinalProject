@@ -75,7 +75,6 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.roundedGroupBox1 = new Vehicle_Rental_Fleet__Management_System_Documentation.RoundedGroupBox();
-            this.tbSearch = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.dgvRentalList = new System.Windows.Forms.DataGridView();
             this.RentalID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -449,18 +448,17 @@
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(325, 1307);
+            this.panel1.Size = new System.Drawing.Size(244, 1062);
             this.panel1.TabIndex = 38;
             // 
             // pictureBox17
             // 
             this.pictureBox17.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.bi__person_fill;
-            this.pictureBox17.Location = new System.Drawing.Point(51, 562);
-            this.pictureBox17.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox17.Location = new System.Drawing.Point(38, 457);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(56, 48);
+            this.pictureBox17.Size = new System.Drawing.Size(42, 39);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox17.TabIndex = 34;
             this.pictureBox17.TabStop = false;
@@ -473,10 +471,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(115, 667);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(86, 542);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 48);
+            this.button1.Size = new System.Drawing.Size(112, 39);
             this.button1.TabIndex = 33;
             this.button1.Text = "Returns";
             this.button1.UseVisualStyleBackColor = false;
@@ -489,10 +486,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(16, 1223);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(12, 994);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(261, 68);
+            this.button2.Size = new System.Drawing.Size(196, 55);
             this.button2.TabIndex = 32;
             this.button2.Text = "LogOut";
             this.button2.UseVisualStyleBackColor = false;
@@ -500,10 +496,9 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.streamline_flex__investing_and_banking_white;
-            this.pictureBox8.Location = new System.Drawing.Point(51, 667);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox8.Location = new System.Drawing.Point(38, 542);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(56, 48);
+            this.pictureBox8.Size = new System.Drawing.Size(42, 39);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 31;
             this.pictureBox8.TabStop = false;
@@ -511,10 +506,9 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.oui__nav_reports_white;
-            this.pictureBox9.Location = new System.Drawing.Point(51, 763);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox9.Location = new System.Drawing.Point(38, 620);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(56, 48);
+            this.pictureBox9.Size = new System.Drawing.Size(42, 39);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 31;
             this.pictureBox9.TabStop = false;
@@ -522,10 +516,9 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.guidance__car_rental_white;
-            this.pictureBox10.Location = new System.Drawing.Point(51, 465);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox10.Location = new System.Drawing.Point(38, 378);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(56, 48);
+            this.pictureBox10.Size = new System.Drawing.Size(42, 39);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 31;
             this.pictureBox10.TabStop = false;
@@ -533,10 +526,9 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.glyphs__users_1_white;
-            this.pictureBox11.Location = new System.Drawing.Point(51, 366);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox11.Location = new System.Drawing.Point(38, 297);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(56, 48);
+            this.pictureBox11.Size = new System.Drawing.Size(42, 39);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 31;
             this.pictureBox11.TabStop = false;
@@ -544,10 +536,9 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.bi__house_white;
-            this.pictureBox12.Location = new System.Drawing.Point(51, 164);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox12.Location = new System.Drawing.Point(38, 133);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(56, 48);
+            this.pictureBox12.Size = new System.Drawing.Size(42, 39);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 31;
             this.pictureBox12.TabStop = false;
@@ -555,10 +546,9 @@
             // pictureBox13
             // 
             this.pictureBox13.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.ant_design__car_filled_white;
-            this.pictureBox13.Location = new System.Drawing.Point(51, 268);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox13.Location = new System.Drawing.Point(38, 218);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(55, 48);
+            this.pictureBox13.Size = new System.Drawing.Size(41, 39);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox13.TabIndex = 31;
             this.pictureBox13.TabStop = false;
@@ -567,10 +557,9 @@
             // 
             this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox14.Image = global::Vehicle_Rental_Fleet__Management_System_Documentation.Properties.Resources.logo_navy;
-            this.pictureBox14.Location = new System.Drawing.Point(35, 30);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox14.Location = new System.Drawing.Point(26, 24);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(73, 70);
+            this.pictureBox14.Size = new System.Drawing.Size(55, 57);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox14.TabIndex = 31;
             this.pictureBox14.TabStop = false;
@@ -580,10 +569,9 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label10.Location = new System.Drawing.Point(112, 75);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(84, 61);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(147, 25);
+            this.label10.Size = new System.Drawing.Size(120, 20);
             this.label10.TabIndex = 31;
             this.label10.Text = "Vehicles Rental";
             // 
@@ -594,10 +582,9 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(115, 366);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(86, 297);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(149, 48);
+            this.button3.Size = new System.Drawing.Size(112, 39);
             this.button3.TabIndex = 31;
             this.button3.Text = "Customers";
             this.button3.UseVisualStyleBackColor = false;
@@ -609,10 +596,9 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4.Location = new System.Drawing.Point(115, 164);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(86, 133);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(149, 48);
+            this.button4.Size = new System.Drawing.Size(112, 39);
             this.button4.TabIndex = 30;
             this.button4.Text = "Dashboard";
             this.button4.UseVisualStyleBackColor = false;
@@ -621,9 +607,10 @@
             // 
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(109, 30);
+            this.label11.Location = new System.Drawing.Point(82, 24);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(157, 46);
+            this.label11.Size = new System.Drawing.Size(118, 37);
             this.label11.TabIndex = 25;
             this.label11.Text = "Broom";
             // 
@@ -634,10 +621,9 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.Control;
-            this.button5.Location = new System.Drawing.Point(115, 268);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Location = new System.Drawing.Point(86, 218);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(149, 48);
+            this.button5.Size = new System.Drawing.Size(112, 39);
             this.button5.TabIndex = 29;
             this.button5.Text = "Vehicles";
             this.button5.UseVisualStyleBackColor = false;
@@ -651,10 +637,9 @@
             this.btnDriver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDriver.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnDriver.Location = new System.Drawing.Point(115, 562);
-            this.btnDriver.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDriver.Location = new System.Drawing.Point(86, 457);
             this.btnDriver.Name = "btnDriver";
-            this.btnDriver.Size = new System.Drawing.Size(149, 48);
+            this.btnDriver.Size = new System.Drawing.Size(112, 39);
             this.btnDriver.TabIndex = 28;
             this.btnDriver.Text = "Drivers";
             this.btnDriver.UseVisualStyleBackColor = false;
@@ -666,10 +651,9 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.Control;
-            this.button6.Location = new System.Drawing.Point(115, 465);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
+            this.button6.Location = new System.Drawing.Point(86, 378);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(149, 48);
+            this.button6.Size = new System.Drawing.Size(112, 39);
             this.button6.TabIndex = 27;
             this.button6.Text = "Rentals";
             this.button6.UseVisualStyleBackColor = false;
@@ -682,10 +666,9 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.Control;
-            this.button7.Location = new System.Drawing.Point(115, 763);
-            this.button7.Margin = new System.Windows.Forms.Padding(4);
+            this.button7.Location = new System.Drawing.Point(86, 620);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(149, 48);
+            this.button7.Size = new System.Drawing.Size(112, 39);
             this.button7.TabIndex = 17;
             this.button7.Text = "Reports";
             this.button7.UseVisualStyleBackColor = false;
@@ -695,30 +678,17 @@
             // 
             this.roundedGroupBox1.BackColor = System.Drawing.Color.White;
             this.roundedGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(228)))), ((int)(((byte)(239)))));
-            this.roundedGroupBox1.Controls.Add(this.tbSearch);
             this.roundedGroupBox1.Controls.Add(this.label22);
             this.roundedGroupBox1.Controls.Add(this.dgvRentalList);
             this.roundedGroupBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.roundedGroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(49)))), ((int)(((byte)(78)))));
-            this.roundedGroupBox1.Location = new System.Drawing.Point(336, 826);
-            this.roundedGroupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedGroupBox1.Location = new System.Drawing.Point(252, 671);
+            this.roundedGroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedGroupBox1.Name = "roundedGroupBox1";
-            this.roundedGroupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.roundedGroupBox1.Size = new System.Drawing.Size(1586, 503);
+            this.roundedGroupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedGroupBox1.Size = new System.Drawing.Size(1190, 409);
             this.roundedGroupBox1.TabIndex = 37;
             this.roundedGroupBox1.TabStop = false;
-            // 
-            // tbSearch
-            // 
-            this.tbSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSearch.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.tbSearch.Location = new System.Drawing.Point(1226, 29);
-            this.tbSearch.Margin = new System.Windows.Forms.Padding(4);
-            this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(343, 34);
-            this.tbSearch.TabIndex = 68;
-            this.tbSearch.Text = "Search for Rental ID";
             // 
             // label22
             // 
@@ -726,9 +696,10 @@
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(16, 20);
+            this.label22.Location = new System.Drawing.Point(12, 16);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(140, 32);
+            this.label22.Size = new System.Drawing.Size(109, 25);
             this.label22.TabIndex = 58;
             this.label22.Text = "Vehicle List";
             // 
@@ -758,15 +729,15 @@
             this.TotalAmount,
             this.Status});
             this.dgvRentalList.EnableHeadersVisualStyles = false;
-            this.dgvRentalList.Location = new System.Drawing.Point(19, 69);
-            this.dgvRentalList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvRentalList.Location = new System.Drawing.Point(12, 56);
+            this.dgvRentalList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvRentalList.MultiSelect = false;
             this.dgvRentalList.Name = "dgvRentalList";
             this.dgvRentalList.RowHeadersVisible = false;
             this.dgvRentalList.RowHeadersWidth = 51;
             this.dgvRentalList.RowTemplate.Height = 24;
             this.dgvRentalList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvRentalList.Size = new System.Drawing.Size(1550, 393);
+            this.dgvRentalList.Size = new System.Drawing.Size(1162, 319);
             this.dgvRentalList.TabIndex = 9;
             // 
             // RentalID
@@ -842,11 +813,11 @@
             this.grpRentalSummary.Controls.Add(this.label1);
             this.grpRentalSummary.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.grpRentalSummary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(49)))), ((int)(((byte)(78)))));
-            this.grpRentalSummary.Location = new System.Drawing.Point(1399, 30);
-            this.grpRentalSummary.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpRentalSummary.Location = new System.Drawing.Point(1049, 24);
+            this.grpRentalSummary.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpRentalSummary.Name = "grpRentalSummary";
-            this.grpRentalSummary.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpRentalSummary.Size = new System.Drawing.Size(513, 774);
+            this.grpRentalSummary.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpRentalSummary.Size = new System.Drawing.Size(385, 629);
             this.grpRentalSummary.TabIndex = 29;
             this.grpRentalSummary.TabStop = false;
             // 
@@ -859,10 +830,10 @@
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnClear.ForeColor = System.Drawing.Color.Black;
-            this.btnClear.Location = new System.Drawing.Point(283, 681);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClear.Location = new System.Drawing.Point(212, 553);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(204, 74);
+            this.btnClear.Size = new System.Drawing.Size(153, 60);
             this.btnClear.TabIndex = 70;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -876,10 +847,9 @@
             this.btnCreateRental.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreateRental.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateRental.ForeColor = System.Drawing.Color.White;
-            this.btnCreateRental.Location = new System.Drawing.Point(27, 681);
-            this.btnCreateRental.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCreateRental.Location = new System.Drawing.Point(20, 553);
             this.btnCreateRental.Name = "btnCreateRental";
-            this.btnCreateRental.Size = new System.Drawing.Size(249, 75);
+            this.btnCreateRental.Size = new System.Drawing.Size(187, 61);
             this.btnCreateRental.TabIndex = 69;
             this.btnCreateRental.Text = "Create Rental";
             this.btnCreateRental.UseVisualStyleBackColor = false;
@@ -888,10 +858,9 @@
             // 
             this.lblBalanceDue.AutoSize = true;
             this.lblBalanceDue.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBalanceDue.Location = new System.Drawing.Point(151, 627);
-            this.lblBalanceDue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBalanceDue.Location = new System.Drawing.Point(113, 509);
             this.lblBalanceDue.Name = "lblBalanceDue";
-            this.lblBalanceDue.Size = new System.Drawing.Size(80, 25);
+            this.lblBalanceDue.Size = new System.Drawing.Size(63, 20);
             this.lblBalanceDue.TabIndex = 68;
             this.lblBalanceDue.Text = "2,800.00";
             // 
@@ -899,10 +868,9 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(120, 627);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Location = new System.Drawing.Point(90, 509);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(23, 25);
+            this.label17.Size = new System.Drawing.Size(18, 20);
             this.label17.TabIndex = 67;
             this.label17.Text = "₱";
             // 
@@ -911,9 +879,10 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label16.Location = new System.Drawing.Point(161, 638);
+            this.label16.Location = new System.Drawing.Point(121, 518);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(0, 23);
+            this.label16.Size = new System.Drawing.Size(0, 20);
             this.label16.TabIndex = 66;
             // 
             // label15
@@ -921,22 +890,22 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label15.Location = new System.Drawing.Point(23, 628);
+            this.label15.Location = new System.Drawing.Point(17, 510);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(106, 23);
+            this.label15.Size = new System.Drawing.Size(85, 20);
             this.label15.TabIndex = 65;
             this.label15.Text = "Balance due: ";
             // 
             // tbAmountPaid
             // 
             this.tbAmountPaid.BackColor = System.Drawing.Color.White;
-            this.tbAmountPaid.Location = new System.Drawing.Point(27, 571);
-            this.tbAmountPaid.Margin = new System.Windows.Forms.Padding(4);
+            this.tbAmountPaid.Location = new System.Drawing.Point(20, 464);
             this.tbAmountPaid.MaxLength = 32767;
-            this.tbAmountPaid.MinimumSize = new System.Drawing.Size(107, 39);
+            this.tbAmountPaid.MinimumSize = new System.Drawing.Size(80, 32);
             this.tbAmountPaid.Name = "tbAmountPaid";
-            this.tbAmountPaid.Padding = new System.Windows.Forms.Padding(13, 11, 13, 6);
-            this.tbAmountPaid.Size = new System.Drawing.Size(460, 47);
+            this.tbAmountPaid.Padding = new System.Windows.Forms.Padding(10, 9, 10, 5);
+            this.tbAmountPaid.Size = new System.Drawing.Size(345, 38);
             this.tbAmountPaid.TabIndex = 64;
             this.tbAmountPaid.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbAmountPaid.UseSystemPasswordChar = false;
@@ -946,9 +915,10 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(20, 537);
+            this.label14.Location = new System.Drawing.Point(15, 436);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(214, 25);
+            this.label14.Size = new System.Drawing.Size(169, 20);
             this.label14.TabIndex = 63;
             this.label14.Text = "Amount Paid (deposit)";
             // 
@@ -966,20 +936,18 @@
             this.roundedPanel1.Controls.Add(this.label21);
             this.roundedPanel1.Controls.Add(this.lblSelectedVehicle);
             this.roundedPanel1.Controls.Add(this.label18);
-            this.roundedPanel1.Location = new System.Drawing.Point(27, 272);
-            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedPanel1.Location = new System.Drawing.Point(20, 221);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(460, 254);
+            this.roundedPanel1.Size = new System.Drawing.Size(345, 206);
             this.roundedPanel1.TabIndex = 62;
             // 
             // lblRentalTotal
             // 
             this.lblRentalTotal.AutoSize = true;
             this.lblRentalTotal.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRentalTotal.Location = new System.Drawing.Point(337, 168);
-            this.lblRentalTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRentalTotal.Location = new System.Drawing.Point(253, 136);
             this.lblRentalTotal.Name = "lblRentalTotal";
-            this.lblRentalTotal.Size = new System.Drawing.Size(72, 37);
+            this.lblRentalTotal.Size = new System.Drawing.Size(55, 30);
             this.lblRentalTotal.TabIndex = 65;
             this.lblRentalTotal.Text = "0.00";
             // 
@@ -987,10 +955,9 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(295, 168);
-            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label28.Location = new System.Drawing.Point(221, 136);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(34, 37);
+            this.label28.Size = new System.Drawing.Size(26, 30);
             this.label28.TabIndex = 64;
             this.label28.Text = "₱";
             // 
@@ -998,10 +965,9 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(51, 177);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Location = new System.Drawing.Point(38, 144);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(55, 25);
+            this.label27.Size = new System.Drawing.Size(44, 20);
             this.label27.TabIndex = 63;
             this.label27.Text = "Total";
             // 
@@ -1009,10 +975,9 @@
             // 
             this.lblRentalDays.AutoSize = true;
             this.lblRentalDays.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRentalDays.Location = new System.Drawing.Point(331, 118);
-            this.lblRentalDays.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRentalDays.Location = new System.Drawing.Point(248, 96);
             this.lblRentalDays.Name = "lblRentalDays";
-            this.lblRentalDays.Size = new System.Drawing.Size(28, 32);
+            this.lblRentalDays.Size = new System.Drawing.Size(23, 25);
             this.lblRentalDays.TabIndex = 62;
             this.lblRentalDays.Text = "0";
             // 
@@ -1020,10 +985,9 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(51, 118);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Location = new System.Drawing.Point(38, 96);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(52, 25);
+            this.label25.Size = new System.Drawing.Size(41, 20);
             this.label25.TabIndex = 61;
             this.label25.Text = "Days";
             // 
@@ -1031,10 +995,9 @@
             // 
             this.lblDailyRate.AutoSize = true;
             this.lblDailyRate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDailyRate.Location = new System.Drawing.Point(296, 64);
-            this.lblDailyRate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDailyRate.Location = new System.Drawing.Point(222, 52);
             this.lblDailyRate.Name = "lblDailyRate";
-            this.lblDailyRate.Size = new System.Drawing.Size(63, 32);
+            this.lblDailyRate.Size = new System.Drawing.Size(50, 25);
             this.lblDailyRate.TabIndex = 60;
             this.lblDailyRate.Text = "0.00";
             // 
@@ -1042,10 +1005,9 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(237, 64);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Location = new System.Drawing.Point(178, 52);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(29, 32);
+            this.label23.Size = new System.Drawing.Size(24, 25);
             this.label23.TabIndex = 59;
             this.label23.Text = "₱";
             // 
@@ -1053,10 +1015,9 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(51, 71);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Location = new System.Drawing.Point(38, 58);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(96, 25);
+            this.label21.Size = new System.Drawing.Size(77, 20);
             this.label21.TabIndex = 58;
             this.label21.Text = "Daily Rate";
             // 
@@ -1064,10 +1025,9 @@
             // 
             this.lblSelectedVehicle.AutoSize = true;
             this.lblSelectedVehicle.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSelectedVehicle.Location = new System.Drawing.Point(268, 20);
-            this.lblSelectedVehicle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSelectedVehicle.Location = new System.Drawing.Point(201, 16);
             this.lblSelectedVehicle.Name = "lblSelectedVehicle";
-            this.lblSelectedVehicle.Size = new System.Drawing.Size(102, 32);
+            this.lblSelectedVehicle.Size = new System.Drawing.Size(83, 25);
             this.lblSelectedVehicle.TabIndex = 57;
             this.lblSelectedVehicle.Text = "F3G4G5";
             // 
@@ -1075,10 +1035,9 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(51, 27);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Location = new System.Drawing.Point(38, 22);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(73, 25);
+            this.label18.Size = new System.Drawing.Size(56, 20);
             this.label18.TabIndex = 53;
             this.label18.Text = "Vehicle";
             // 
@@ -1087,9 +1046,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label7.Location = new System.Drawing.Point(26, 206);
+            this.label7.Location = new System.Drawing.Point(20, 167);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(371, 23);
+            this.label7.Size = new System.Drawing.Size(299, 20);
             this.label7.TabIndex = 51;
             this.label7.Text = "Only Active customers with a valid licensed are listed.";
             // 
@@ -1097,10 +1057,9 @@
             // 
             this.cbCustomer.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCustomer.FormattingEnabled = true;
-            this.cbCustomer.Location = new System.Drawing.Point(27, 162);
-            this.cbCustomer.Margin = new System.Windows.Forms.Padding(4);
+            this.cbCustomer.Location = new System.Drawing.Point(20, 132);
             this.cbCustomer.Name = "cbCustomer";
-            this.cbCustomer.Size = new System.Drawing.Size(460, 40);
+            this.cbCustomer.Size = new System.Drawing.Size(346, 33);
             this.cbCustomer.TabIndex = 50;
             // 
             // label2
@@ -1108,9 +1067,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(22, 133);
+            this.label2.Location = new System.Drawing.Point(16, 108);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 25);
+            this.label2.Size = new System.Drawing.Size(77, 20);
             this.label2.TabIndex = 49;
             this.label2.Text = "Customer";
             // 
@@ -1119,9 +1079,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(48, 26);
+            this.label1.Location = new System.Drawing.Point(36, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(272, 38);
+            this.label1.Size = new System.Drawing.Size(215, 30);
             this.label1.TabIndex = 34;
             this.label1.Text = "Customer and Total";
             // 
@@ -1145,11 +1106,9 @@
             this.pnlRentalInformation.Controls.Add(this.label4);
             this.pnlRentalInformation.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.pnlRentalInformation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(49)))), ((int)(((byte)(78)))));
-            this.pnlRentalInformation.Location = new System.Drawing.Point(358, 30);
-            this.pnlRentalInformation.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlRentalInformation.Location = new System.Drawing.Point(268, 24);
             this.pnlRentalInformation.Name = "pnlRentalInformation";
-            this.pnlRentalInformation.Padding = new System.Windows.Forms.Padding(4);
-            this.pnlRentalInformation.Size = new System.Drawing.Size(1033, 774);
+            this.pnlRentalInformation.Size = new System.Drawing.Size(775, 629);
             this.pnlRentalInformation.TabIndex = 16;
             this.pnlRentalInformation.TabStop = false;
             // 
@@ -1158,10 +1117,10 @@
             this.cbNoDriver.AutoSize = true;
             this.cbNoDriver.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbNoDriver.ForeColor = System.Drawing.Color.Black;
-            this.cbNoDriver.Location = new System.Drawing.Point(157, 343);
-            this.cbNoDriver.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbNoDriver.Location = new System.Drawing.Point(118, 279);
+            this.cbNoDriver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbNoDriver.Name = "cbNoDriver";
-            this.cbNoDriver.Size = new System.Drawing.Size(148, 36);
+            this.cbNoDriver.Size = new System.Drawing.Size(118, 29);
             this.cbNoDriver.TabIndex = 57;
             this.cbNoDriver.Text = "No Driver";
             this.cbNoDriver.UseVisualStyleBackColor = true;
@@ -1171,10 +1130,10 @@
             this.cbDriver.AutoSize = true;
             this.cbDriver.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDriver.ForeColor = System.Drawing.Color.Black;
-            this.cbDriver.Location = new System.Drawing.Point(44, 343);
-            this.cbDriver.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbDriver.Location = new System.Drawing.Point(33, 279);
+            this.cbDriver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbDriver.Name = "cbDriver";
-            this.cbDriver.Size = new System.Drawing.Size(107, 36);
+            this.cbDriver.Size = new System.Drawing.Size(86, 29);
             this.cbDriver.TabIndex = 56;
             this.cbDriver.Text = "Driver";
             this.cbDriver.UseVisualStyleBackColor = true;
@@ -1184,9 +1143,10 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label20.Location = new System.Drawing.Point(28, 400);
+            this.label20.Location = new System.Drawing.Point(21, 325);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(421, 25);
+            this.label20.Size = new System.Drawing.Size(332, 20);
             this.label20.TabIndex = 53;
             this.label20.Text = "Available vehicles for these dates, cheapest first";
             // 
@@ -1195,9 +1155,10 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label19.Location = new System.Drawing.Point(29, 741);
+            this.label19.Location = new System.Drawing.Point(22, 603);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(538, 23);
+            this.label19.Size = new System.Drawing.Size(427, 20);
             this.label19.TabIndex = 52;
             this.label19.Text = "Shows only Available vehicles with no rental overlapping these dates. 3 found\r\n";
             // 
@@ -1216,14 +1177,13 @@
             this.Vehicle,
             this.DailyRate});
             this.dgvAvailableVehicles.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvAvailableVehicles.Location = new System.Drawing.Point(33, 478);
-            this.dgvAvailableVehicles.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvAvailableVehicles.Location = new System.Drawing.Point(25, 388);
             this.dgvAvailableVehicles.MultiSelect = false;
             this.dgvAvailableVehicles.Name = "dgvAvailableVehicles";
             this.dgvAvailableVehicles.RowHeadersVisible = false;
             this.dgvAvailableVehicles.RowHeadersWidth = 51;
             this.dgvAvailableVehicles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAvailableVehicles.Size = new System.Drawing.Size(972, 261);
+            this.dgvAvailableVehicles.Size = new System.Drawing.Size(729, 212);
             this.dgvAvailableVehicles.TabIndex = 26;
             // 
             // Plate
@@ -1259,22 +1219,22 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(37, 26);
+            this.label13.Location = new System.Drawing.Point(28, 21);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(249, 38);
+            this.label13.Size = new System.Drawing.Size(197, 30);
             this.label13.TabIndex = 51;
             this.label13.Text = "Dates and Vehicle";
             // 
             // tbMaxDailyRate
             // 
             this.tbMaxDailyRate.BackColor = System.Drawing.Color.White;
-            this.tbMaxDailyRate.Location = new System.Drawing.Point(566, 287);
-            this.tbMaxDailyRate.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMaxDailyRate.Location = new System.Drawing.Point(424, 233);
             this.tbMaxDailyRate.MaxLength = 32767;
-            this.tbMaxDailyRate.MinimumSize = new System.Drawing.Size(107, 39);
+            this.tbMaxDailyRate.MinimumSize = new System.Drawing.Size(80, 32);
             this.tbMaxDailyRate.Name = "tbMaxDailyRate";
-            this.tbMaxDailyRate.Padding = new System.Windows.Forms.Padding(13, 11, 13, 6);
-            this.tbMaxDailyRate.Size = new System.Drawing.Size(427, 44);
+            this.tbMaxDailyRate.Padding = new System.Windows.Forms.Padding(10, 9, 10, 5);
+            this.tbMaxDailyRate.Size = new System.Drawing.Size(320, 36);
             this.tbMaxDailyRate.TabIndex = 49;
             this.tbMaxDailyRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbMaxDailyRate.UseSystemPasswordChar = false;
@@ -1284,9 +1244,10 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(561, 245);
+            this.label12.Location = new System.Drawing.Point(421, 199);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(149, 25);
+            this.label12.Size = new System.Drawing.Size(118, 20);
             this.label12.TabIndex = 48;
             this.label12.Text = "Max Daily Rate ";
             // 
@@ -1294,19 +1255,18 @@
             // 
             this.cbVehicleType.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbVehicleType.FormattingEnabled = true;
-            this.cbVehicleType.Location = new System.Drawing.Point(44, 286);
-            this.cbVehicleType.Margin = new System.Windows.Forms.Padding(4);
+            this.cbVehicleType.Location = new System.Drawing.Point(33, 232);
             this.cbVehicleType.Name = "cbVehicleType";
-            this.cbVehicleType.Size = new System.Drawing.Size(425, 40);
+            this.cbVehicleType.Size = new System.Drawing.Size(320, 33);
             this.cbVehicleType.TabIndex = 47;
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(566, 175);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePicker2.Location = new System.Drawing.Point(424, 142);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(425, 34);
+            this.dateTimePicker2.Size = new System.Drawing.Size(320, 29);
             this.dateTimePicker2.TabIndex = 13;
             this.dateTimePicker2.Value = new System.DateTime(2026, 9, 20, 0, 0, 0, 0);
             // 
@@ -1315,19 +1275,20 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(561, 134);
+            this.label5.Location = new System.Drawing.Point(421, 109);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 25);
+            this.label5.Size = new System.Drawing.Size(94, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Return Date";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(45, 174);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePicker1.Location = new System.Drawing.Point(34, 141);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(425, 34);
+            this.dateTimePicker1.Size = new System.Drawing.Size(320, 29);
             this.dateTimePicker1.TabIndex = 9;
             this.dateTimePicker1.Value = new System.DateTime(2026, 9, 20, 0, 0, 0, 0);
             // 
@@ -1336,9 +1297,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(42, 133);
+            this.label3.Location = new System.Drawing.Point(32, 108);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 25);
+            this.label3.Size = new System.Drawing.Size(97, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Pick-up Date";
             // 
@@ -1347,22 +1309,23 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(42, 245);
+            this.label4.Location = new System.Drawing.Point(32, 199);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 25);
+            this.label4.Size = new System.Drawing.Size(58, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Vehicle";
             // 
             // Form3RentalManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1443, 857);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.roundedGroupBox1);
             this.Controls.Add(this.grpRentalSummary);
             this.Controls.Add(this.pnlRentalInformation);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form3RentalManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "vv";
@@ -1479,7 +1442,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Days;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalAmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
-        private System.Windows.Forms.TextBox tbSearch;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.Button button1;
