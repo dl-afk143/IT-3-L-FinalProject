@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using System;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using Vehicle_Rental_Fleet__Management_System_Documentation.Form2;
@@ -17,116 +11,87 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
         public Form1()
         {
             InitializeComponent();
-            //TestDatabaseConnection();
-
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // NEW: sample values (replace with database calls later)
+            // Dashboard statistics
             lblTotalCount.Text = "24";
             lblAvailableCount.Text = "13";
             lblMaintenanceCount.Text = "3";
             lblRentedCount.Text = "8";
             lblActiveCount.Text = "8";
 
-            dgvRecentRentals.Rows.Clear();
-            dgvRecentRentals.Rows.Add();
-            dgvRecentRentals.Rows.Add();
-            dgvRecentRentals.Rows.Add();
+
+            btnDashboard.Click -= btnDashboard_Click;
+            btnDashboard.Click += btnDashboard_Click;
+
+            btnDriver.Click -= btnDriver_Click;
+            btnDriver.Click += btnDriver_Click;
+
+            btnVehicles.Click -= btnVehicles_Click;
+            btnVehicles.Click += btnVehicles_Click;
+
+            btnReports.Click -= btnReports_Click;
+            btnReports.Click += btnReports_Click;
+
+            btnCustomers.Click -= btnCustomerManagement_Click;
+            btnCustomers.Click += btnCustomerManagement_Click;
+
+            btnRentals.Click -= btnRentals_Click;
+            btnRentals.Click += btnRentals_Click;
+
+            button1.Click -= button1_Click;
+            button1.Click += button1_Click;
+
+            // Do not modify dgvRecentRentals here.
+            // Its appearance and layout remain controlled
+            // by the Windows Forms Designer.
         }
-
-        // NEW: grid styling
-        private void StyleGrid(DataGridView dgv)
+        private void OpenForm(Form form)
         {
-            dgv.BorderStyle = BorderStyle.None;
-            dgv.BackgroundColor = Color.White;
-            dgv.GridColor = Color.FromArgb(226, 231, 239);
-            dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dgv.EnableHeadersVisualStyles = false;
+            if (form == null)
+                return;
 
-            dgv.RowHeadersVisible = false;
-            dgv.AllowUserToAddRows = false;
-            dgv.AllowUserToDeleteRows = false;
-            dgv.AllowUserToResizeRows = false;
-            dgv.ReadOnly = true;
-            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgv.MultiSelect = false;
-            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            form.StartPosition = FormStartPosition.Manual;
+            form.Location = Location;
+            form.Size = Size;
+            form.WindowState = WindowState;
 
-            dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dgv.ColumnHeadersHeight = 38;
-            dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(11, 58, 107);
-            dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10f, FontStyle.Bold);
-            dgv.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.FromArgb(11, 58, 107);
-            dgv.ColumnHeadersDefaultCellStyle.Padding = new Padding(8, 0, 0, 0);
-
-            dgv.RowTemplate.Height = 34;
-            dgv.DefaultCellStyle.Font = new Font("Segoe UI", 10f);
-            dgv.DefaultCellStyle.ForeColor = Color.FromArgb(20, 32, 47);
-            dgv.DefaultCellStyle.BackColor = Color.White;
-            dgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(219, 231, 246);
-            dgv.DefaultCellStyle.SelectionForeColor = Color.FromArgb(20, 32, 47);
-            dgv.DefaultCellStyle.Padding = new Padding(8, 0, 0, 0);
-            dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(244, 246, 250);
+            form.Show();
+            Hide();
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            Form1 form1Form = new Form1();
-            form1Form.Show();
-
-            this.Hide();
+            OpenForm(new Form1());
         }
 
-        // If I click the Vehicles button, open the Form2Vehicles form
         private void btnVehicles_Click(object sender, EventArgs e)
         {
-            Form2Vehicles form2VehiclesForm = new Form2Vehicles();
-            form2VehiclesForm.Show();
-
-            this.Hide();
+            OpenForm(new Form2Vehicles());
         }
-
 
         private void btnCustomerManagement_Click(object sender, EventArgs e)
         {
-            CustomerManagementForm customerManagementForm = new CustomerManagementForm();
-            customerManagementForm.Show();
-
-            this.Hide();
+            OpenForm(new CustomerManagementForm());
         }
 
-
-        // If I click the Rentals button, open the Form3RentalManagement form
         private void btnRentals_Click(object sender, EventArgs e)
         {
-            Form3RentalManagement form3RentalManagementForm = new Form3RentalManagement();
-            form3RentalManagementForm.Show();
-
-            this.Hide();
+            OpenForm(new Form3RentalManagement());
         }
 
-        // If I click the Returns button, open the Form4ReturnManagement form
-        private void btnReturns_Click(object sender, EventArgs e)
+        private void btnDriver_Click(object sender, EventArgs e)
         {
-            Form4ReturnManagement form4ReturnManagementForm = new Form4ReturnManagement();
-            form4ReturnManagementForm.Show();
-
-            this.Hide();
+            OpenForm(new DriverManagementForm());
         }
 
-        // If I click the Reports button, open the Form5Reports form
         private void btnReports_Click(object sender, EventArgs e)
         {
-            Form5Reports form5ReportsForm = new Form5Reports();
-            form5ReportsForm.Show();
-
-            this.Hide();
+            OpenForm(new Form5Reports());
         }
+
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -135,9 +100,6 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
         private void dgvRecentRentals_CellContentClick(
             object sender,
             DataGridViewCellEventArgs e)
-
-
-
         {
         }
 
@@ -176,7 +138,11 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
 
         private void label7_Click(object sender, EventArgs e)
         {
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Form4ReturnManagement());
         }
     }
 }

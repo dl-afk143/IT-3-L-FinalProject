@@ -1,30 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Security.Cryptography;
+using System.Text;
+using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace Vehicle_Rental_Fleet__Management_System_Documentation
 {
     public partial class LoginForm : Form
     {
+        // Available after a successful login (read them from Program.cs or your main form)
+        public string LoggedInFullName { get; private set; }
+        public string LoggedInRole { get; private set; }
+
         public LoginForm()
         {
             InitializeComponent();
-        }
 
-        private void txtUsername_TextChanged(object sender, EventArgs e)
-        {
-        }
+            // Card panel: white, on top, and a child of the form so it can overlap the green panel
+            cardPanel1.CarImage = Properties.Resources.v2321_removebg_preview;
+            cardPanel1.Parent = this;
+            cardPanel1.BackColor = Color.White;
 
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
+
+            // Login behavior
+            txtPassword.UseSystemPasswordChar = true;
+            this.AcceptButton = btnLogin;          // Enter = Login
+            this.CancelButton = btnCancelLogin;    // Esc = Cancel
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -56,6 +59,8 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
                         {
                             if (reader.Read())
                             {
+                                LoggedInFullName = reader.GetString("full_name");
+                                LoggedInRole = reader.GetString("role");
                                 this.DialogResult = DialogResult.OK;
                             }
                             else
@@ -72,9 +77,16 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
             {
                 MessageBox.Show("Database error: " + ex.Message);
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Something went wrong: " + ex.Message);
+            }
         }
 
-        
+        private void btnCancelLogin_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+        }
 
         private static string HashPassword(string password)
         {
@@ -85,19 +97,13 @@ namespace Vehicle_Rental_Fleet__Management_System_Documentation
             }
         }
 
-        private void btnCancelLogin_Click(object sender, EventArgs e)
-        {
-            this.DialogResult = DialogResult.Cancel;
-        }
-
-        private void lblUsername_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblPassword_Click(object sender, EventArgs e)
-        {
-
-        }
+        // Empty handlers kept because the designer may still be wired to them.
+        // If you delete them, also remove the event hookup in LoginForm.Desi   gner.cs.
+        private void txtUsername_TextChanged(object sender, EventArgs e) { }
+        private void txtPassword_TextChanged(object sender, EventArgs e) { }
+        private void lblUsername_Click(object sender, EventArgs e) { }
+        private void lblPassword_Click(object sender, EventArgs e) { }
+        private void panel1_Paint(object sender, PaintEventArgs e) { }
+        private void pictureBox1_Click(object sender, EventArgs e) { }
     }
 }

@@ -118,31 +118,163 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="oui--nav-reports_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\oui--nav-reports_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dcx2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dcx2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dscx" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dscx.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="emojione-monotone--letter-a (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emojione-monotone--letter-a (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Screenshot_2026-09-27_121017-removebg-preview2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot_2026-09-27_121017-removebg-preview2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="v2321-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\v2321-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="guidance--car-rental_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\guidance--car-rental_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo-navy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo-navy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="akar-icons--check (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\akar-icons--check (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Silver Toyota Vios Studio Showcase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Silver Toyota Vios Studio Showcase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bi--person" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bi--person.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ant-design--car-filled_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ant-design--car-filled_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="logo-navy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-navy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="andrsrxn--receipt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\andrsrxn--receipt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dsc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dsc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="v2321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\v2321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fa7-solid--check-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fa7-solid--check-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bi--person (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bi--person (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="glyphs--users-1_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\glyphs--users-1_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="famicons--person-sharp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\famicons--person-sharp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bx--time-five" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bx--time-five.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="akar-icons--check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\akar-icons--check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dscx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dscx.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-flex--investing-and-banking_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline-flex--investing-and-banking_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lsicon--disable-outline2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lsicon--disable-outline2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bi--person (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bi--person (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lucide-extended--calendar-days-duotone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lucide-extended--calendar-days-duotone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arcticons--letter-uppercase-circle-a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arcticons--letter-uppercase-circle-a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lsicon--disable-outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lsicon--disable-outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="v2321-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\v2321-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="codicon--search-large1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\codicon--search-large1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconoir--erase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconoir--erase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="griddy-icons--private-driver-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\griddy-icons--private-driver-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Teal Toyota FJ Cruiser Cutout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Teal Toyota FJ Cruiser Cutout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dashicons--update-alt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dashicons--update-alt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="codicon--search-large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\codicon--search-large.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ix--steering-user-filled1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ix--steering-user-filled1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluent-mdl2--cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent-mdl2--cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lsicon--disable-outline1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lsicon--disable-outline1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluent-mdl2--cancel (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent-mdl2--cancel (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Silver Sedan Isolated on Transparent Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Silver Sedan Isolated on Transparent Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ix--steering-user-filled (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ix--steering-user-filled (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="f7--phone-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\f7--phone-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emojione-monotone--letter-a (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emojione-monotone--letter-a (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ix--steering-user-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ix--steering-user-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="akar-icons--plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\akar-icons--plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emojione-monotone--letter-a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emojione-monotone--letter-a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="roentgen--fuel-station" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\roentgen--fuel-station.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bi--house_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bi--house_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="streamline-flex--investing-and-banking_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline-flex--investing-and-banking_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="v2321-removebg-preview2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\v2321-removebg-preview2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="material-symbols--security" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\material-symbols--security.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconoven--driver-log" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconoven--driver-log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconoir--erase (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconoir--erase (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bi--person-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bi--person-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oui--nav-reports_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oui--nav-reports_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot_2026-09-27_121017-removebg-preview2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot_2026-09-27_121017-removebg-preview2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bi--car-front-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bi--car-front-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

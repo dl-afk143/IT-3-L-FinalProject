@@ -1,461 +1,576 @@
-﻿using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Vehicle_Rental_Fleet__Management_System_Documentation.Form2;
+﻿        using System;
+        using System.Data;
+        using System.Drawing;
+        using System.Drawing.Drawing2D;
+        using System.Windows.Forms;
+        using MySql.Data.MySqlClient;
+        using Vehicle_Rental_Fleet__Management_System_Documentation.Form2;
 
-namespace Vehicle_Rental_Fleet__Management_System_Documentation
-{
-    public partial class CustomerManagementForm : Form
-    {
-        private void LoadCustomers()
+        namespace Vehicle_Rental_Fleet__Management_System_Documentation
         {
-            try
+            public partial class CustomerManagementForm : Form
             {
-                using (MySqlConnection connection = db.GetConnection())
+                
+                private readonly string connectionString =
+                    "Server=localhost;Port=3306;" + 
+                    "Database=vehiclerentaldb;" +
+                    "Uid=rental_app;Pwd=dl4321;";
+
+                public CustomerManagementForm()
                 {
-                    connection.Open();
+                    InitializeComponent();
 
-                    string query = @"
-                SELECT
-                    customer_id,
-                    first_name,
-                    last_name,
-                    phone,
-                    email,
-                    license_number,
-                    address,
-                    created_at
-                FROM customers
-                ORDER BY customer_id DESC";
-
-                    using (MySqlDataAdapter adapter =
-                           new MySqlDataAdapter(query, connection))
-                    {
-                        DataTable table = new DataTable();
-                        adapter.Fill(table);
-
-                        dgvCustomerManagement.AutoGenerateColumns = false;
-
-                        dgvCustomerManagement.Columns["VehicleCustomerID"].DataPropertyName = "customer_id";
-                        dgvCustomerManagement.Columns["VehicleFirstName"].DataPropertyName = "first_name";
-                        dgvCustomerManagement.Columns["VehicleLastName"].DataPropertyName = "last_name";
-                        dgvCustomerManagement.Columns["VehicleContactNumber"].DataPropertyName = "phone";
-                        dgvCustomerManagement.Columns["VehicleEmail"].DataPropertyName = "email";
-                        dgvCustomerManagement.Columns["VehicleLicenseNumber"].DataPropertyName = "license_number";
-                        dgvCustomerManagement.Columns["VehicleAddress"].DataPropertyName = "address";
-                        dgvCustomerManagement.Columns["VehicleDateCreated"].DataPropertyName = "created_at";
-
-                        dgvCustomerManagement.DataSource = table;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(
-                    "Failed to load customers:\n" + ex.Message,
-                    "Database Error",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
-                );
-            }
-        }
-        private readonly DatabaseConnection db = new DatabaseConnection();
-
-        public CustomerManagementForm()
-        {
-            InitializeComponent();
-            LoadCustomers();
-        }
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.WindowState = FormWindowState.Maximized;
+            this.AutoScaleMode = AutoScaleMode.Dpi;
 
 
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-            Form1 form1Form = new Form1();
-            form1Form.Show();
+            // SIDEBAR BUTTON EVENTS
+            btnDashboard.Click -= btnDashboard_Click;
+                    btnDashboard.Click += btnDashboard_Click;
 
-            this.Hide();
-        }
+                    btnVehicles.Click -= btnVehicles_Click;
+                    btnVehicles.Click += btnVehicles_Click;
 
-        // If I click the Vehicles button, open the Form2Vehicles form
-        private void btnVehicles_Click(object sender, EventArgs e)
-        {
-            Form2Vehicles form2VehiclesForm = new Form2Vehicles();
-            form2VehiclesForm.Show();
+                    btnRentals.Click -= btnRentals_Click;
+                    btnRentals.Click += btnRentals_Click;
 
-            this.Hide();
-        }
+                    //btnReturns.Click -= btnReturns_Click;
+                    //btnReturns.Click += btnReturns_Click;
 
+                    btnReports.Click -= btnReports_Click;
+                    btnReports.Click += btnReports_Click;
 
-        private void btnCustomerManagement_Click(object sender, EventArgs e)
-        {
-            CustomerManagementForm customerManagementForm = new CustomerManagementForm();
-            customerManagementForm.Show();
+                    btnCustomers.Click -= btnCustomers_Click;
+                    btnCustomers.Click += btnCustomers_Click;
 
-            this.Hide();
-        }
+                    // CUSTOMER ACTION BUTTON EVENTS
+                    // Assumes the Add button's control name is btnCustomer.
+                    btnAddCustomer.Click -= btnAddCustomer_Click;
+                    btnAddCustomer.Click += btnAddCustomer_Click;
 
+                    btnUpdateCustomer.Click -= btnUpdateCustomer_Click;
+                    btnUpdateCustomer.Click += btnUpdateCustomer_Click;
 
-        // If I click the Rentals button, open the Form3RentalManagement form
-        private void btnRentals_Click(object sender, EventArgs e)
-        {
-            Form3RentalManagement form3RentalManagementForm = new Form3RentalManagement();
-            form3RentalManagementForm.Show();
+                    btnDeactivateCustomer.Click -= btnDeleteCustomer_Click;
+                    btnDeactivateCustomer.Click += btnDeleteCustomer_Click;
 
-            this.Hide();
-        }
-
-        // If I click the Returns button, open the Form4ReturnManagement form
-        private void btnReturns_Click(object sender, EventArgs e)
-        {
-            Form4ReturnManagement form4ReturnManagementForm = new Form4ReturnManagement();
-            form4ReturnManagementForm.Show();
-
-            this.Hide();
-        }
-
-        // If I click the Reports button, open the Form5Reports form
-        private void btnReports_Click(object sender, EventArgs e)
-        {
-            Form5Reports form5ReportsForm = new Form5Reports();
-            form5ReportsForm.Show();
-
-            this.Hide();
-        }
-
-
-        private void btnCustomer_Click(object sender, EventArgs e)
-        {
-            // Get customer information
-            string firstName = tbFirstName.Text.Trim();
-            string lastName = tbLastName.Text.Trim();
-            string contactNumber = tbContactNumber.Text.Trim();
-            string email = tbEmail.Text.Trim();
-            string licenseNumber = tbLicenseNumber.Text.Trim();
-            string address = tbAddress.Text.Trim();
-
-            // Validate required fields
-            if (string.IsNullOrWhiteSpace(firstName) ||
-                string.IsNullOrWhiteSpace(lastName) ||
-                string.IsNullOrWhiteSpace(contactNumber) ||
-                string.IsNullOrWhiteSpace(licenseNumber) ||
-                string.IsNullOrWhiteSpace(address))
-            {
-                MessageBox.Show(
-                    "Please fill in the first name, last name, contact number, license number, and address.",
-                    "Missing Information",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning
-                );
-                return;
-            }
-
-            // Validate Philippine mobile number
-            // Accepted: 09123456789 or 0912-345-6789
-            if (!System.Text.RegularExpressions.Regex.IsMatch(
-                    contactNumber,
-                    @"^(09\d{9}|09\d-\d{3}-\d{4})$"))
-            {
-                MessageBox.Show(
-                    "Invalid contact number. Use 09123456789 or 0912-345-6789.",
-                    "Invalid Contact Number",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning
-                );
-
-                tbContactNumber.Focus();
-                return;
-            }
-
-            // Normalize contact number before saving
-            string normalizedNumber = contactNumber.Replace("-", "");
-
-            try
-            {
-                using (MySqlConnection connection = db.GetConnection())
-                {
-                    connection.Open();
-
-                    string query = @"
-                INSERT INTO customers
-                    (first_name, last_name, phone, email, license_number, address)
-                VALUES
-                    (@firstName, @lastName, @phone, @email, @licenseNumber, @address)";
-
-                    using (MySqlCommand command =
-                           new MySqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@firstName", firstName);
-                        command.Parameters.AddWithValue("@lastName", lastName);
-                        command.Parameters.AddWithValue("@phone", normalizedNumber);
-                        command.Parameters.AddWithValue("@email",
-                            string.IsNullOrWhiteSpace(email) ? (object)DBNull.Value : email);
-                        command.Parameters.AddWithValue("@licenseNumber", licenseNumber);
-                        command.Parameters.AddWithValue("@address", address);
-
-                        command.ExecuteNonQuery();
-                    }
+                    btnClearCustomer.Click -= btnClear_Click;
+                    btnClearCustomer.Click += btnClear_Click;
                 }
 
-                MessageBox.Show(
-                    "Customer added successfully!",
-                    "Success",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information
-                );
-
-                // Clear the form and refresh the customer table
-                ClearCustomerFields();
-                LoadCustomers();
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show(
-                    "Database error:\n\n" +
-                    ex.Message +
-                    "\n\nError Code: " + ex.Number +
-                    "\nSQL State: " + ex.SqlState,
-                    "Add Customer Failed",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
-                );
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(
-                    "Error:\n\n" + ex.Message,
-                    "Add Customer Failed",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
-                );
-            }
-        }
-
-        private void btnUpdateCustomer_Click(object sender, EventArgs e)
-        {
-            string customerID = tbCustomerID.Text.Trim();
-            string firstName = tbFirstName.Text.Trim();
-            string lastName = tbLastName.Text.Trim();
-            string contactNumber = tbContactNumber.Text.Trim();
-            string email = tbEmail.Text.Trim();
-            string licenseNumber = tbLicenseNumber.Text.Trim();
-            string address = tbAddress.Text.Trim();
-
-            if (string.IsNullOrEmpty(customerID))
-            {
-                MessageBox.Show("Please select a customer to update.");
-                return;
-            }
-
-            if (string.IsNullOrWhiteSpace(firstName) ||
-                string.IsNullOrWhiteSpace(lastName) ||
-                string.IsNullOrWhiteSpace(contactNumber) ||
-                string.IsNullOrWhiteSpace(licenseNumber) ||
-                string.IsNullOrWhiteSpace(address))
-            {
-                MessageBox.Show("Please fill in all required fields.");
-                return;
-            }
-
-            if (!int.TryParse(customerID, out int id))
-            {
-                MessageBox.Show("Invalid Customer ID.");
-                return;
-            }
-
-            DialogResult result = MessageBox.Show(
-                "Are you sure you want to update this customer?",
-                "Update Customer",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question
-            );
-
-            if (result == DialogResult.Yes)
-            {
-                try
+                // =========================
+                // DATAGRIDVIEW DESIGN
+                // =========================
+                private void StyleCustomerDataGridView()
                 {
-                    using (MySqlConnection conn = db.GetConnection())
+                    dgvCustomerList.SuspendLayout();
+
+                    dgvCustomerList.BorderStyle = BorderStyle.None;
+                    dgvCustomerList.BackgroundColor = Color.White;
+                    dgvCustomerList.GridColor = Color.FromArgb(225, 232, 242);
+                    dgvCustomerList.EnableHeadersVisualStyles = false;
+                    dgvCustomerList.RowHeadersVisible = false;
+                    dgvCustomerList.AllowUserToAddRows = false;
+                    dgvCustomerList.AllowUserToResizeRows = false;
+                    dgvCustomerList.ReadOnly = true;
+                    dgvCustomerList.MultiSelect = false;
+                    dgvCustomerList.SelectionMode =
+                        DataGridViewSelectionMode.FullRowSelect;
+
+                    dgvCustomerList.AutoSizeColumnsMode =
+                        DataGridViewAutoSizeColumnsMode.Fill;
+                    dgvCustomerList.AutoSizeRowsMode =
+                        DataGridViewAutoSizeRowsMode.None;
+                    dgvCustomerList.ScrollBars = ScrollBars.Both;
+
+                    dgvCustomerList.ColumnHeadersHeight = 42;
+                    dgvCustomerList.ColumnHeadersHeightSizeMode =
+                        DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+
+                    dgvCustomerList.ColumnHeadersDefaultCellStyle.BackColor =
+                        Color.FromArgb(239, 243, 249);
+                    dgvCustomerList.ColumnHeadersDefaultCellStyle.ForeColor =
+                        Color.FromArgb(51, 67, 93);
+                    dgvCustomerList.ColumnHeadersDefaultCellStyle.Font =
+                        new Font("Segoe UI", 9F, FontStyle.Bold);
+                    dgvCustomerList.ColumnHeadersDefaultCellStyle.Padding =
+                        new Padding(10, 0, 5, 0);
+                    dgvCustomerList.ColumnHeadersDefaultCellStyle.Alignment =
+                        DataGridViewContentAlignment.MiddleLeft;
+                    dgvCustomerList.ColumnHeadersDefaultCellStyle.SelectionBackColor =
+                        Color.FromArgb(239, 243, 249);
+                    dgvCustomerList.ColumnHeadersDefaultCellStyle.SelectionForeColor =
+                        Color.FromArgb(51, 67, 93);
+
+                    dgvCustomerList.DefaultCellStyle.BackColor = Color.White;
+                    dgvCustomerList.DefaultCellStyle.ForeColor =
+                        Color.FromArgb(31, 48, 75);
+                    dgvCustomerList.DefaultCellStyle.Font =
+                        new Font("Segoe UI", 9.5F, FontStyle.Regular);
+                    dgvCustomerList.DefaultCellStyle.Padding =
+                        new Padding(10, 3, 5, 3);
+                    dgvCustomerList.DefaultCellStyle.SelectionBackColor =
+                        Color.FromArgb(228, 238, 251);
+                    dgvCustomerList.DefaultCellStyle.SelectionForeColor =
+                        Color.FromArgb(31, 48, 75);
+
+                    dgvCustomerList.AlternatingRowsDefaultCellStyle.BackColor =
+                        Color.FromArgb(228, 238, 251);
+                    dgvCustomerList.AlternatingRowsDefaultCellStyle.ForeColor =
+                        Color.FromArgb(31, 48, 75);
+                    dgvCustomerList.AlternatingRowsDefaultCellStyle.SelectionBackColor =
+                        Color.FromArgb(215, 229, 248);
+                    dgvCustomerList.AlternatingRowsDefaultCellStyle.SelectionForeColor =
+                        Color.FromArgb(31, 48, 75);
+
+                    dgvCustomerList.RowTemplate.Height = 44;
+                    dgvCustomerList.CellBorderStyle =
+                        DataGridViewCellBorderStyle.SingleHorizontal;
+                    dgvCustomerList.ColumnHeadersBorderStyle =
+                        DataGridViewHeaderBorderStyle.Single;
+
+                    SetCustomerColumnWidth("ID", 6);
+                    SetCustomerColumnWidth("Full Name", 17);
+                    SetCustomerColumnWidth("Contact", 13);
+                    SetCustomerColumnWidth("License No.", 14);
+                    SetCustomerColumnWidth("Address", 21);
+                    SetCustomerColumnWidth("Status", 10);
+                    SetCustomerColumnWidth("Registered", 14);
+
+                    dgvCustomerList.CellPainting -= dgvRecentRentals_CellPainting;
+                    dgvCustomerList.CellPainting += dgvRecentRentals_CellPainting;
+
+                    dgvCustomerList.ResumeLayout();
+                }
+
+                private void SetCustomerColumnWidth(string headerName, float fillWeight)
+                {
+                    foreach (DataGridViewColumn column in dgvCustomerList.Columns)
                     {
-                        conn.Open();
-
-                        string query = @"UPDATE customers
-                                 SET first_name = @firstName,
-                                     last_name = @lastName,
-                                     phone = @phone,
-                                     email = @email,
-                                     license_number = @licenseNumber,
-                                     address = @address
-                                 WHERE customer_id = @customerID";
-
-                        using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                        if (string.Equals(
+                            column.HeaderText.Trim(),
+                            headerName,
+                            StringComparison.OrdinalIgnoreCase))
                         {
-                            cmd.Parameters.AddWithValue("@firstName", firstName);
-                            cmd.Parameters.AddWithValue("@lastName", lastName);
-                            cmd.Parameters.AddWithValue("@phone", contactNumber);
-                            cmd.Parameters.AddWithValue(
-                                    "@email",
-                                string.IsNullOrWhiteSpace(email)
-                                ? (object)DBNull.Value
-                                : email
- );
-                            cmd.Parameters.AddWithValue("@licenseNumber", licenseNumber);
-                            cmd.Parameters.AddWithValue("@address", address);
-                            cmd.Parameters.AddWithValue("@customerID", id);
-
-                            int rowsAffected = cmd.ExecuteNonQuery();
-
-                            if (rowsAffected > 0)
-                            {
-                                MessageBox.Show("Customer updated successfully!");
-                                LoadCustomers();
-                                ClearCustomerFields();
-                            }
-                            else
-                            {
-                                MessageBox.Show(
-                                    "No changes were made, or the customer was not found."
-                                );
-                            }
+                            column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                            column.FillWeight = fillWeight;
+                            break;
                         }
                     }
                 }
-                catch (MySqlException ex)
+
+                // =========================
+                // STATUS BADGES
+                // =========================
+                private void dgvRecentRentals_CellPainting(
+                    object sender, DataGridViewCellPaintingEventArgs e)
                 {
-                    MessageBox.Show(
-                        "Unable to update customer.\n\n" + ex.Message,
-                        "Update Error",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error
-                    );
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("An error occurred: " + ex.Message);
-                }
-            }
-        }
+                    if (e.RowIndex < 0 || e.ColumnIndex < 0)
+                        return;
 
-        private void btnDeleteCustomer_Click(object sender, EventArgs e)
-        {
-            string customerID = tbCustomerID.Text.Trim();
+                    DataGridViewColumn column =
+                        dgvCustomerList.Columns[e.ColumnIndex];
 
-            if (string.IsNullOrEmpty(customerID))
-            {
-                MessageBox.Show("Please select a customer to delete.");
-                return;
-            }
+                    if (!column.HeaderText.Trim().Equals(
+                        "Status", StringComparison.OrdinalIgnoreCase))
+                        return;
 
-            if (!int.TryParse(customerID, out int id))
-            {
-                MessageBox.Show("Invalid Customer ID.");
-                return;
-            }
+                    if (e.Value == null)
+                        return;
 
-            DialogResult result = MessageBox.Show(
-                "Are you sure you want to delete this customer?",
-                "Delete Customer",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question
-            );
+                    string status = e.Value.ToString().Trim();
 
-            if (result == DialogResult.Yes)
-            {
-                try
-                {
-                    using (MySqlConnection conn = db.GetConnection())
+                    Color backColor;
+                    Color foreColor;
+
+                    if (status.Equals("Active", StringComparison.OrdinalIgnoreCase))
                     {
-                        conn.Open();
+                        backColor = Color.FromArgb(220, 243, 227);
+                        foreColor = Color.FromArgb(28, 119, 61);
+                    }
+                    else if (status.Equals("Inactive", StringComparison.OrdinalIgnoreCase))
+                    {
+                        backColor = Color.FromArgb(230, 234, 241);
+                        foreColor = Color.FromArgb(78, 88, 105);
+                    }
+                    else
+                    {
+                        return;
+                    }
 
-                        string query = "DELETE FROM customers WHERE customer_id = @customerID";
+                    e.PaintBackground(e.CellBounds, true);
 
-                        using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    using (Font font = new Font("Segoe UI", 8F, FontStyle.Bold))
+                    using (SolidBrush backBrush = new SolidBrush(backColor))
+                    using (SolidBrush foreBrush = new SolidBrush(foreColor))
+                    using (GraphicsPath path = new GraphicsPath())
+                    using (StringFormat format = new StringFormat())
+                    {
+                        Graphics g = e.Graphics;
+                        g.SmoothingMode = SmoothingMode.AntiAlias;
+
+                        SizeF textSize = g.MeasureString(status, font);
+                        int badgeWidth = (int)Math.Ceiling(textSize.Width) + 18;
+                        int badgeHeight = 20;
+
+                        badgeWidth = Math.Min(
+                            badgeWidth,
+                            Math.Max(1, e.CellBounds.Width - 8));
+
+                        Rectangle badge = new Rectangle(
+                            e.CellBounds.X + (e.CellBounds.Width - badgeWidth) / 2,
+                            e.CellBounds.Y + (e.CellBounds.Height - badgeHeight) / 2,
+                            badgeWidth,
+                            badgeHeight);
+
+                        int radius = Math.Min(badgeHeight / 2, badgeWidth / 2);
+
+                        path.AddArc(
+                            badge.X, badge.Y, radius * 2, badge.Height, 90, 180);
+                        path.AddArc(
+                            badge.Right - radius * 2, badge.Y,
+                            radius * 2, badge.Height, 270, 180);
+                        path.CloseFigure();
+
+                        g.FillPath(backBrush, path);
+
+                        format.Alignment = StringAlignment.Center;
+                        format.LineAlignment = StringAlignment.Center;
+
+                        g.DrawString(status, font, foreBrush, badge, format);
+                    }
+
+                    e.Handled = true;
+                }
+
+                // =========================
+                // FORM NAVIGATION
+                // =========================
+                private void OpenForm(Form form)
+                {
+                    if (form == null)
+                        return;
+
+                    form.StartPosition = FormStartPosition.Manual;
+                    form.Location = this.Location;
+                    form.Size = this.Size;
+                    form.WindowState = this.WindowState;
+
+                    form.Show();
+                    this.Hide();
+                }
+
+                private void btnDashboard_Click(object sender, EventArgs e)
+                {
+                    OpenForm(new Form1());
+                }
+
+                private void btnVehicles_Click(object sender, EventArgs e)
+                {
+                    OpenForm(new Form2Vehicles());
+                }
+
+                private void btnCustomers_Click(object sender, EventArgs e)
+                {
+                    this.Show();
+                    this.Activate();
+                }
+
+                private void btnRentals_Click(object sender, EventArgs e)
+                {
+                    OpenForm(new Form3RentalManagement());
+                }
+
+                private void btnReturns_Click(object sender, EventArgs e)
+                {
+                    OpenForm(new Form4ReturnManagement());
+                }
+
+                private void btnReports_Click(object sender, EventArgs e)
+                {
+                    OpenForm(new Form5Reports());
+                }
+
+                // =========================
+                // ADD CUSTOMER
+                // =========================
+                private void btnAddCustomer_Click(object sender, EventArgs e)
+                {
+                    string customerID = tbCustomerID.Text.Trim();
+                    string fullName = tbFullName.Text.Trim();
+                    string contactNumber = tbContactNumber.Text.Trim();
+                    string address = tbAddress.Text.Trim();
+
+                    if (string.IsNullOrWhiteSpace(customerID) ||
+                        string.IsNullOrWhiteSpace(fullName) ||
+                        string.IsNullOrWhiteSpace(contactNumber) ||
+                        string.IsNullOrWhiteSpace(address))
+                    {
+                        MessageBox.Show(
+                            "Please fill in Customer ID, Full Name, Contact Number, and Address.",
+                            "Missing Information",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    try
+                    {
+                        using (MySqlConnection conn =
+                            new MySqlConnection(connectionString))
                         {
-                            cmd.Parameters.AddWithValue("@customerID", id);
+                            string query = @"
+                                INSERT INTO customers
+                                    (customer_id, full_name, contact_number,
+                                     license_no, address, created_at, status)
+                                VALUES
+                                    (@id, @name, @contact, @address, @license_no,
+                                     NOW(), 'Active');";
 
-                            int rowsAffected = cmd.ExecuteNonQuery();
-
-                            if (rowsAffected > 0)
+                            using (MySqlCommand cmd = new MySqlCommand(query, conn))
                             {
-                                MessageBox.Show("Customer deleted successfully!");
+                                cmd.Parameters.AddWithValue("@id", customerID);
+                                cmd.Parameters.AddWithValue("@name", fullName);
+                                cmd.Parameters.AddWithValue("@contact", contactNumber);
+                                cmd.Parameters.AddWithValue("@license_no", tbDriverLicense.Text.Trim());
+                                cmd.Parameters.AddWithValue("@address", address);
 
-                                ClearCustomerFields();
-                                LoadCustomers();
+                                conn.Open();
+                                cmd.ExecuteNonQuery();
                             }
-                            else
+                        }
+
+                        LoadCustomers();
+
+                        MessageBox.Show(
+                            "Customer added successfully!",
+                            "Success",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+
+                        ClearCustomerFields();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(
+                            "Failed to add customer:\n" + ex.Message,
+                            "Database Error",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                    }
+                }
+
+                // =========================
+                // UPDATE CUSTOMER
+                // =========================
+                private void btnUpdateCustomer_Click(object sender, EventArgs e)
+                {
+                    string customerID = tbCustomerID.Text.Trim();
+                    string fullName = tbFullName.Text.Trim();
+                    string contactNumber = tbContactNumber.Text.Trim();
+                    string address = tbAddress.Text.Trim();
+
+                    if (string.IsNullOrWhiteSpace(customerID) ||
+                        string.IsNullOrWhiteSpace(fullName) ||
+                        string.IsNullOrWhiteSpace(contactNumber) ||
+                        string.IsNullOrWhiteSpace(address))
+                    {
+                        MessageBox.Show(
+                            "Please fill in all customer fields.",
+                            "Missing Information",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    try
+                    {
+                        using (MySqlConnection conn =
+                            new MySqlConnection(connectionString))
+                        {
+                            string query = @"
+                                UPDATE customers
+                                SET full_name = @name,
+                                    contact_number = @contact,
+                                    address = @address
+                                WHERE customer_id = @id
+                                  AND status = 'Active';";
+
+                            using (MySqlCommand cmd = new MySqlCommand(query, conn))
                             {
-                                MessageBox.Show("Customer not found.");
+                                cmd.Parameters.AddWithValue("@id", customerID);
+                                cmd.Parameters.AddWithValue("@name", fullName);
+                                cmd.Parameters.AddWithValue("@contact", contactNumber);
+                                cmd.Parameters.AddWithValue("@address", address);
+
+                                conn.Open();
+                                int rowsAffected = cmd.ExecuteNonQuery();
+
+                                if (rowsAffected > 0)
+                                {
+                                    MessageBox.Show("Customer updated successfully!");
+                                    LoadCustomers();
+                                    ClearCustomerFields();
+                                }
+                                else
+                                {
+                                    MessageBox.Show(
+                                        "No active customer found with that Customer ID.");
+                                }
                             }
                         }
                     }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(
+                            "Failed to update customer:\n" + ex.Message,
+                            "Database Error",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                    }
                 }
-                catch (MySqlException ex)
+
+                // =========================
+                // DEACTIVATE CUSTOMER
+                // =========================
+                private void btnDeleteCustomer_Click(object sender, EventArgs e)
                 {
-                    MessageBox.Show(
-                        "Unable to delete customer. They may have related records.\n\n" + ex.Message,
-                        "Delete Error",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error
-                    );
+                    string customerID = tbCustomerID.Text.Trim();
+
+                    if (string.IsNullOrWhiteSpace(customerID))
+                    {
+                        MessageBox.Show("Please enter a Customer ID.");
+                        return;
+                    }
+
+                    DialogResult result = MessageBox.Show(
+                        "Are you sure you want to deactivate this customer?",
+                        "Deactivate Customer",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question);
+
+                    if (result != DialogResult.Yes)
+                        return;
+
+                    try
+                    {
+                        using (MySqlConnection conn =
+                            new MySqlConnection(connectionString))
+                        {
+                            string query = @"
+                                UPDATE customers
+                                SET status = 'Inactive'
+                                WHERE customer_id = @id
+                                  AND status = 'Active';";
+
+                            using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                            {
+                                cmd.Parameters.AddWithValue("@id", customerID);
+
+                                conn.Open();
+                                int rowsAffected = cmd.ExecuteNonQuery();
+
+                                if (rowsAffected > 0)
+                                {
+                                    MessageBox.Show("Customer deactivated successfully!");
+                                    LoadCustomers();
+                                    ClearCustomerFields();
+                                }
+                                else
+                                {
+                                    MessageBox.Show(
+                                        "No active customer found with that Customer ID.");
+                                }
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(
+                            "Failed to deactivate customer:\n" + ex.Message,
+                            "Database Error",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                    }
                 }
-                catch (Exception ex)
+
+                // =========================
+                // CLEAR CUSTOMER FIELDS
+                // =========================
+                private void btnClear_Click(object sender, EventArgs e)
                 {
-                    MessageBox.Show(
-                        "An error occurred: " + ex.Message,
-                        "Error",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error
-                    );
+                    ClearCustomerFields();
+                }
+
+                private void ClearCustomerFields()
+                {
+                    tbCustomerID.Clear();
+                    tbFullName.Clear();
+                    tbContactNumber.Clear();
+                    tbAddress.Clear();
+                    tbEmail.Clear();
+                }
+
+                // =========================
+                // LOAD CUSTOMERS
+                // =========================
+                private void CustomerManagementForm_Load(object sender, EventArgs e)
+                {
+                    LoadCustomers();
+                }
+
+                private void LoadCustomers()
+                {
+                    try
+                    {
+                        using (MySqlConnection conn =
+                            new MySqlConnection(connectionString))
+                        {
+                            string query = @"
+                                SELECT
+                                    customer_id AS 'ID',
+                                    full_name AS 'Full Name',
+                                    contact_number AS 'Contact',
+                                    license_no AS 'License No.',
+                                    address AS 'Address',
+                                    status AS 'Status',
+                                    created_at AS 'Registered'
+                                FROM customers
+                                ORDER BY customer_id;";
+
+                            using (MySqlDataAdapter adapter =
+                                new MySqlDataAdapter(query, conn))
+                            {
+                                DataTable table = new DataTable();
+                                adapter.Fill(table);
+                                dgvCustomerList.DataSource = null;
+                                dgvCustomerList.Columns.Clear();
+                                dgvCustomerList.AutoGenerateColumns = true;
+                                dgvCustomerList.DataSource = table;
+                    }
+                        }
+
+                        StyleCustomerDataGridView();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(
+                            "Error loading customers:\n" + ex.Message,
+                            "Database Error",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                    }
+                }
+
+                // Keep these methods if your Designer references them.
+                private void label3_Click(object sender, EventArgs e)
+                {
+                }
+
+                private void dgvRecentRentals_CellContentClick(
+                    object sender, DataGridViewCellEventArgs e)
+                {
                 }
             }
         }
-
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            ClearCustomerFields();
-        }
-
-        private void ClearCustomerFields()
-        {
-            tbCustomerID.Clear();
-            tbFirstName.Clear();
-            tbLastName.Clear();
-            tbContactNumber.Clear();
-            tbEmail.Clear();
-            tbLicenseNumber.Clear();
-            tbAddress.Clear();
-            tbDateCreated.Clear();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void dgvCustomerManagement_CellClick(object sender,DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex < 0)
-                return;
-
-            DataGridViewRow row = dgvCustomerManagement.Rows[e.RowIndex];
-
-            tbCustomerID.Text = Convert.ToString(row.Cells["VehicleCustomerID"].Value);
-            tbFirstName.Text = Convert.ToString(row.Cells["VehicleFirstName"].Value);
-            tbLastName.Text = Convert.ToString(row.Cells["VehicleLastName"].Value);
-            tbContactNumber.Text = Convert.ToString(row.Cells["VehicleContactNumber"].Value);
-            tbEmail.Text = Convert.ToString(row.Cells["VehicleEmail"].Value);
-            tbLicenseNumber.Text = Convert.ToString(row.Cells["VehicleLicenseNumber"].Value);
-            tbAddress.Text = Convert.ToString(row.Cells["VehicleAddress"].Value);
-            tbDateCreated.Text = Convert.ToString(row.Cells["VehicleDateCreated"].Value);
-        }
-        private void CustomerManagementForm_Load(object sender, EventArgs e)
-        {
-
-        }
-    }
-}

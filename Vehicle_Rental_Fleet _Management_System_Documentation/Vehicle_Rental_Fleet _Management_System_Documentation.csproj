@@ -55,7 +55,9 @@
     <Reference Include="MySql.Data, Version=26.7.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.26.7.0\lib\net462\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.6.0\lib\net462\System.Buffers.dll</HintPath>
     </Reference>
@@ -96,6 +98,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CardPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DriverManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverManagementForm.Designer.cs">
+      <DependentUpon>DriverManagementForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddVehicle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,8 +159,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="RoundedComboBox.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoundedGroupBox.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="RoundedPanel.cs">
       <SubType>Component</SubType>
@@ -157,11 +174,15 @@
     <Compile Include="RoundedTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <EmbeddedResource Include="DriverManagementForm.resx">
+      <DependentUpon>DriverManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddVehicle.resx">
       <DependentUpon>AddVehicle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomerManagementForm.resx">
       <DependentUpon>CustomerManagementForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -215,6 +236,49 @@
   <ItemGroup>
     <Content Include="Database\VehicleRentalDB.sql" />
     <Content Include="logo-navy.ico" />
+    <None Include="Resources\bi--car-front-fill.png" />
+    <None Include="Resources\f7--phone-fill.png" />
+    <None Include="Resources\bi--person %282%29.png" />
+    <None Include="Resources\bi--person-fill.png" />
+    <None Include="Resources\andrsrxn--receipt.png" />
+    <None Include="Resources\akar-icons--check %281%29.png" />
+    <None Include="Resources\akar-icons--check.png" />
+    <None Include="Resources\fluent-mdl2--cancel %281%29.png" />
+    <None Include="Resources\fluent-mdl2--cancel.png" />
+    <None Include="Resources\fa7-solid--check-circle.png" />
+    <None Include="Resources\Silver Sedan Isolated on Transparent Background.png" />
+    <None Include="Resources\Silver Toyota Vios Studio Showcase.png" />
+    <None Include="Resources\lucide-extended--calendar-days-duotone.png" />
+    <None Include="Resources\roentgen--fuel-station.png" />
+    <None Include="Resources\bx--time-five.png" />
+    <None Include="Resources\material-symbols--security.png" />
+    <None Include="Resources\iconoven--driver-log.png" />
+    <None Include="Resources\griddy-icons--private-driver-filled.png" />
+    <None Include="Resources\ix--steering-user-filled %281%29.png" />
+    <None Include="Resources\ix--steering-user-filled1.png" />
+    <None Include="Resources\ix--steering-user-filled.png" />
+    <None Include="Resources\codicon--search-large1.png" />
+    <None Include="Resources\codicon--search-large.png" />
+    <None Include="Resources\emojione-monotone--letter-a %282%29.png" />
+    <None Include="Resources\emojione-monotone--letter-a %281%29.png" />
+    <None Include="Resources\emojione-monotone--letter-a.png" />
+    <None Include="Resources\arcticons--letter-uppercase-circle-a.png" />
+    <None Include="Resources\famicons--person-sharp.png" />
+    <None Include="Resources\bi--person %281%29.png" />
+    <None Include="Resources\bi--person.png" />
+    <None Include="Resources\dsc.png" />
+    <None Include="Resources\iconoir--erase %281%29.png" />
+    <None Include="Resources\dashicons--update-alt.png" />
+    <None Include="Resources\akar-icons--plus.png" />
+    <None Include="Resources\lsicon--disable-outline2.png" />
+    <None Include="Resources\iconoir--erase.png" />
+    <None Include="Resources\lsicon--disable-outline1.png" />
+    <None Include="Resources\lsicon--disable-outline.png" />
+    <None Include="Resources\v2321.png" />
+    <None Include="Resources\v2321-removebg-preview2.png" />
+    <None Include="Resources\v2321-removebg-preview1.png" />
+    <None Include="Resources\v2321-removebg-preview.png" />
+    <None Include="Resources\Teal Toyota FJ Cruiser Cutout.png" />
     <None Include="Resources\streamline-flex--investing-and-banking_white.png" />
     <None Include="Resources\oui--nav-reports_white.png" />
     <None Include="Resources\guidance--car-rental_white.png" />
